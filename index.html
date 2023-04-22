@@ -14,7 +14,8 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-
+    <!-- home js -->
+    <script src="js/home.js"></script>
     <!-- bootstrap js cdn -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
@@ -43,7 +44,10 @@
             </div>
             <!-- menu items -->
             <div class="col-8 menu-bar">
-              <div class="menu-btn">
+              <div
+                class="menu-btn"
+                onclick="showBox()"
+              >
                 Platform
                 <img
                   class="menu-btn-icon"
@@ -81,7 +85,7 @@
       </nav>
 
       <!-- nav drop downs -->
-      <div style="display: flex; flex-direction: column; align-items: center">
+      <div style="display: none; flex-direction: column; align-items: center" id="box" onmouseleave="hideBox()">
         <div
           class="container"
           style="
