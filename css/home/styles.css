@@ -5,6 +5,11 @@
 * {
   font-family: "Inter", sans-serif;
 }
+
+header{
+  z-index: 99;
+}
+
 .nav-bar {
   height: 64px;
   background: #ffffff;
