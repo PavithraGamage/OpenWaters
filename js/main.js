@@ -1,11 +1,11 @@
 // platform drop down start --------------------------------
-function showBox() {
-  var box = document.getElementById("box");
+function platform_dropdown_show() {
+  var box = document.getElementById("platform-dropdown");
   box.style.display = "flex";
 }
 
-function hideBox() {
-  var box = document.getElementById("box");
+function platform_dropdown_hide() {
+  var box = document.getElementById("platform-dropdown");
   box.style.display = "none";
 }
 // platform drop down end --------------------------------

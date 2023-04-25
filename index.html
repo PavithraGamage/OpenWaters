@@ -44,7 +44,7 @@
             </div>
             <!-- menu items -->
             <div class="col-8 menu-bar">
-              <div class="menu-btn" onclick="showBox()">
+              <div class="menu-btn" onclick="platform_dropdown_show()">
                 Platform
                 <img
                   class="menu-btn-icon"
@@ -83,22 +83,12 @@
 
       <!-- nav drop downs -->
       <div
-        style="display: none; flex-direction: column; align-items: center"
-        id="box"
-        onmouseleave="hideBox()"
+        class="platform-dropdown-wrapper"
+        id="platform-dropdown"
+        onmouseleave="platform_dropdown_hide()"
       >
-        <div
-          class="container"
-          style="
-            height: 600px;
-            background-color: #fff;
-            display: block;
-            position: absolute;
-            margin-top: 6px;
-            box-shadow: 0px 48px 34px rgba(97, 114, 141, 0.25);
-            border-radius: 5px;
-          "
-        >
+        <div class="container platform-dropdown">
+          <h1>Hello</h1>
           <!-- need to create css class for inline styles -->
         </div>
       </div>
@@ -169,9 +159,13 @@
         </h2>
 
         <!-- take export form all the image in one group and add here -->
-        <img src="images/box-for-brackets.svg" alt="" style="margin-top: 94px;" />
+        <img
+          src="images/box-for-brackets.svg"
+          alt=""
+          style="margin-top: 94px"
+        />
         <img src="images/brackets.svg" alt="" />
-        
+
         <div class="the-open-water-platform-row-wrapper">
           <div class="row">
             <div class="col open-water-platform-box">
@@ -212,11 +206,7 @@
             <div class="col open-water-platform-box">
               <hr class="orange" />
               <div class="better-platform-heading-wrapper">
-                <img
-                  src="images/Grants.svg"
-                  class="platform-icon"
-                  alt=""
-                />
+                <img src="images/Grants.svg" class="platform-icon" alt="" />
                 <h4 class="better-platform-heading">Grants</h4>
               </div>
               <p>
@@ -258,6 +248,65 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="the-power-of-open-water">
+      <div class="container the-power-of-open-water-container">
+        <div class="the-open-water-platform-heading-contents">
+          <h6>GROW WITH US</h6>
+          <h2>The Power of <span>Openwater</span></h2>
+          <p class="the-power-of-open-water-container-p">
+            These metrics demonstrates the impact Getopenwater has on
+            productivity and consumer satisfaction.
+          </p>
+        </div>
+
+        <div class="power-of-open-water-box-wrapper">
+
+          <div class="row">
+            <div class="col the-power-of-open-water-box">
+              <img src="images/power-of-open-water-arrow.svg" alt="" />
+  
+              <div class="power-box-heading-wrapper">
+                <h4>5,403,435+</h4>
+                <p>Submissions seamlessly collected through OpenWater</p>
+              </div>
+            </div>
+  
+            <div class="col the-power-of-open-water-box">
+              <img src="images/power-of-open-water-arrow.svg" alt="" />
+  
+              <div class="power-box-heading-wrapper">
+                <h4>10,000,000+</h4>
+                <p>Hours of content Streamed using Openwater globally</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col the-power-of-open-water-box">
+              <img src="images/power-of-open-water-arrow.svg" alt="" />
+  
+              <div class="power-box-heading-wrapper">
+                <h4>10 minutes</h4>
+                <p>Average response time from our US customer support team</p>
+              </div>
+            </div>
+  
+            <div class="col the-power-of-open-water-box">
+              <img src="images/power-of-open-water-arrow.svg" alt="" />
+  
+              <div class="power-box-heading-wrapper">
+                <h4>750+</h4>
+                <p>Organizations trust OpenWater to power their programs</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+     
+        
       </div>
     </section>
   </body>

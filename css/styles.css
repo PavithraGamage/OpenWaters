@@ -1,4 +1,4 @@
-/* home page css */
+/* home page css start */
 
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
@@ -6,7 +6,7 @@
   font-family: "Inter", sans-serif;
 }
 
-header{
+header {
   z-index: 99;
 }
 
@@ -241,13 +241,13 @@ header{
   opacity: 1;
 }
 
-.open-water-platform-box .orange{
-    height: 3px;
-    background: #F56D42;
-    border-radius: 21px;
-    opacity: 1;
+.open-water-platform-box .orange {
+  height: 3px;
+  background: #f56d42;
+  border-radius: 21px;
+  opacity: 1;
 }
-.better-platform-heading{
+.better-platform-heading {
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -256,7 +256,7 @@ header{
   margin-bottom: 0px;
 }
 
-.platform-icon{
+.platform-icon {
   margin-right: 16px;
 }
 
@@ -268,7 +268,7 @@ header{
   color: #ffffff;
 }
 
-.better-platform-heading-wrapper{
+.better-platform-heading-wrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -276,6 +276,121 @@ header{
   margin-bottom: 20px;
 }
 
-.the-open-water-platform-row-wrapper{
-  width: 1130px;
+.the-open-water-platform-row-wrapper {
+  width: 1092px;
 }
+
+.platform-dropdown-wrapper {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.platform-dropdown {
+  height: 600px;
+  background-color: #fff;
+  display: block;
+  position: absolute;
+  margin-top: 6px;
+  box-shadow: 0px 48px 34px rgba(97, 114, 141, 0.25);
+  border-radius: 5px;
+}
+
+.the-power-of-open-water {
+  background-image: url("../images/The-Power-of-Openwater-background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0% 100%;
+}
+
+.the-power-of-open-water-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 113px;
+  padding-bottom: 192px;
+}
+
+.the-power-of-open-water-container h6 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 51px;
+  color: #15293f;
+}
+
+.the-power-of-open-water-container h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 51px;
+  color: #15293f;
+}
+
+.the-power-of-open-water-container h2 span {
+  color: #3196f5;
+}
+
+.the-power-of-open-water-container-p {
+  width: 528.05px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #15293f;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.the-power-of-open-water-box {
+  background: rgba(255, 255, 255, 0.95);
+  border: 11px solid rgba(255, 255, 255, 0.24);
+  box-shadow: 0px 34px 8px rgba(33, 56, 138, 0.07);
+  border-radius: 6.48387px;
+  margin-bottom: 25px;
+  margin-left: 15px;
+  margin-right: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 40px 18px;
+}
+
+.the-open-water-platform-heading-contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 72px;
+}
+
+.the-power-of-open-water-box h4 {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 39.3351px;
+  line-height: 41px;
+  color: #15293f;
+}
+
+.the-power-of-open-water-box p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17.2903px;
+  line-height: 24px;
+  color: #15293f;
+}
+
+.power-box-heading-wrapper{
+  margin-left: 18px;
+}
+
+.power-box-heading-wrapper p {
+  margin-top: 20px;
+}
+
+.power-of-open-water-box-wrapper{
+  width: 898px;
+}
+
+
+/* home page css end */
