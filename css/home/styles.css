@@ -247,12 +247,17 @@ header{
     border-radius: 21px;
     opacity: 1;
 }
-.open-water-platform-box h4 {
+.better-platform-heading{
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 27px;
   color: rgba(255, 255, 255, 0.96);
+  margin-bottom: 0px;
+}
+
+.platform-icon{
+  margin-right: 16px;
 }
 
 .open-water-platform-box p {
@@ -261,4 +266,16 @@ header{
   font-size: 16px;
   line-height: 27px;
   color: #ffffff;
+}
+
+.better-platform-heading-wrapper{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 34px;
+  margin-bottom: 20px;
+}
+
+.the-open-water-platform-row-wrapper{
+  width: 1130px;
 }
