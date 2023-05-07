@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Open Water - Home</title>
+    <title>OpenWater | Application and Event Software</title>
     <!-- home page css -->
     <link rel="stylesheet" href="css/styles.css" />
     <!-- bootstrap ccs cdn -->
@@ -13,6 +13,11 @@
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
+    />
+    <!-- swiper js css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
     <!-- home js -->
     <script src="js/main.js"></script>
@@ -27,6 +32,8 @@
       integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
       crossorigin="anonymous"
     ></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   </head>
   <body>
     <!-- navigation start -->
@@ -263,20 +270,19 @@
         </div>
 
         <div class="power-of-open-water-box-wrapper">
-
           <div class="row">
             <div class="col the-power-of-open-water-box">
               <img src="images/power-of-open-water-arrow.svg" alt="" />
-  
+
               <div class="power-box-heading-wrapper">
                 <h4>5,403,435+</h4>
                 <p>Submissions seamlessly collected through OpenWater</p>
               </div>
             </div>
-  
+
             <div class="col the-power-of-open-water-box">
               <img src="images/power-of-open-water-arrow.svg" alt="" />
-  
+
               <div class="power-box-heading-wrapper">
                 <h4>10,000,000+</h4>
                 <p>Hours of content Streamed using Openwater globally</p>
@@ -287,27 +293,94 @@
           <div class="row">
             <div class="col the-power-of-open-water-box">
               <img src="images/power-of-open-water-arrow.svg" alt="" />
-  
+
               <div class="power-box-heading-wrapper">
                 <h4>10 minutes</h4>
                 <p>Average response time from our US customer support team</p>
               </div>
             </div>
-  
+
             <div class="col the-power-of-open-water-box">
               <img src="images/power-of-open-water-arrow.svg" alt="" />
-  
+
               <div class="power-box-heading-wrapper">
                 <h4>750+</h4>
                 <p>Organizations trust OpenWater to power their programs</p>
               </div>
             </div>
           </div>
-
         </div>
-     
+      </div>
+    </section>
+
+    <section class="industry-leaders">
+      <h2>Trusted by the Industry Leaders</h2>
+
+      <div class="swiper industry-swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/ford-foundation.svg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/prsa.svg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/james.svg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/oracal.svg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/asae.svg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/texas.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="home-page-cta">
+      <div class="container">
+
+
+        <div class="cta-background">
+          <img src="images/home-page-cta-background.svg" alt="" />
+          <div class="cta-headding">
+            "We are what we repeatedly do. Excellence, then, is not an act, but
+            a habit"
+          </div>
+        </div>
+
         
       </div>
     </section>
   </body>
+
+  <!-- industry-swiper -->
+  <script>
+    var swiper = new Swiper(".industry-swiper", {
+      freeMode: true,
+      loop: true,
+      autoplay: {
+        delay: 1,
+        disableOnInteraction: false,
+      },
+      speed: 5000,
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+      },
+    });
+  </script>
 </html>

@@ -380,7 +380,7 @@ header {
   color: #15293f;
 }
 
-.power-box-heading-wrapper{
+.power-box-heading-wrapper {
   margin-left: 18px;
 }
 
@@ -388,9 +388,49 @@ header {
   margin-top: 20px;
 }
 
-.power-of-open-water-box-wrapper{
+.power-of-open-water-box-wrapper {
   width: 898px;
 }
 
+.industry-leaders {
+  padding-bottom: 100px;
+}
+
+.industry-leaders h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 51px;
+  color: #3196f5;
+  text-align: center;
+}
+
+/* industry slider css start */
+.swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+/* industry slider css end */
+.home-page-cta {
+  margin-bottom: 150px;
+}
+
+.cta-background {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.cta-headding {
+  text-align: center;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44px;
+  color: #ffffff;
+  text-shadow: 0px 4px 4px rgba(30, 39, 118, 0.15);
+  position: absolute;
+  top: 0;
+  padding: 40px;
+  width: 1000px;
+}
 
 /* home page css end */
