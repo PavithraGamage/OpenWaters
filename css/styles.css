@@ -411,7 +411,7 @@ header {
 }
 /* industry slider css end */
 .home-page-cta {
-  margin-bottom: 150px;
+  margin-bottom: 80px;
 }
 
 .cta-background {
@@ -433,4 +433,73 @@ header {
   width: 1000px;
 }
 
+.at-glance {
+  margin-bottom: 71px;
+}
+
+.at-glance-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.at-glance-box-title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: #15293f;
+  width: 141px;
+  padding-top: 18px;
+}
+
+.at-glance-box-para {
+  width: 273.86px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #15293f;
+}
+
+.at-glance-row {
+  padding-top: 75px;
+  padding-bottom: 85px;
+}
+
+.at-glance-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 51px;
+  text-align: center;
+}
+
+.at-glance-title span {
+  color: #3196f5;
+}
+
+.at-glance-para {
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  color: #15293f;
+  width: 464.32px;
+}
+
+.at-glance-btn {
+  background: #ff6332;
+  border-radius: 100px;
+  border: none;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 22px;
+  color: #fff;
+  width: 159px;
+  height: 50px;
+  margin-top: 50px;
+}
 /* home page css end */
