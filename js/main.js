@@ -21,3 +21,13 @@ function resources_dropdown_hide() {
   box.style.display = "none";
 }
 // resources drop down end --------------------------------
+
+function about_dropdown_show() {
+  var box = document.getElementById("about-dropdown");
+  box.style.display = "flex";
+}
+
+function about_dropdown_hide() {
+  var box = document.getElementById("about-dropdown");
+  box.style.display = "none";
+}

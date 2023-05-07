@@ -51,7 +51,7 @@
             </div>
             <!-- menu items -->
             <div class="col-8 menu-bar">
-              <div class="menu-btn" onmousemove="platform_dropdown_show(), resources_dropdown_hide()">
+              <div class="menu-btn" onmousemove="platform_dropdown_show(), resources_dropdown_hide(), about_dropdown_hide()">
                 Platform
                 <img
                   class="menu-btn-icon"
@@ -60,7 +60,7 @@
                 />
               </div>
 
-              <div class="menu-btn" onmousemove="resources_dropdown_show(), platform_dropdown_hide()" >
+              <div class="menu-btn" onmousemove="resources_dropdown_show(), platform_dropdown_hide(), about_dropdown_hide()" >
                 Resources
                 <img
                   class="menu-btn-icon"
@@ -69,7 +69,7 @@
                 />
               </div>
 
-              <div class="menu-btn">
+              <div class="menu-btn" onmousemove="about_dropdown_show(), platform_dropdown_hide(), resources_dropdown_hide()">
                 About Us
                 <img
                   class="menu-btn-icon"
@@ -240,6 +240,20 @@
       </div>
     
     </div>
+
+    <div class="about-dropdown-wrapper" id="about-dropdown" onmouseleave="about_dropdown_hide()">
+      <div class="container about-dropdown">
+           <div class="row">
+            <div class="co1 about-dropdown-small-box">
+              <p>Who we are?</p>
+              <p>Why OpenWater?</p>
+              <p>Careers</p>
+              <p>Press</p>
+              <p>Blog</p>
+            </div>
+           </div>
+      </div>
+    </div>  
 
 
     </header>
