@@ -654,4 +654,27 @@ header {
 .faq-container{
   max-width: 800px !important;
 }
+
+/* tons-of-integrations slider start */
+
+.tons-of-integrations-slider{
+  height: 180px;
+  padding: 40px !important;
+}
+.tons-of-integrations-logo-box{
+background: #FFFFFF;
+box-shadow: 0px 19px 16.0335px rgba(82, 83, 109, 0.05);
+border-radius: 10px;
+display: flex !important;
+justify-content: center;
+align-items: center;
+
+}
+
+.tons-of-integrations-slider-right{
+  height: 180px;
+  padding: 40px !important;
+}
+
+/* tons-of-integrations slider end */
 /* home page css end */
