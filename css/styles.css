@@ -538,15 +538,120 @@ header {
 /* testimonial slider start */
 
 .testimonial-slider {
-  height: 556px;
+  height: 680px;
   margin-top: 60px;
+  padding-bottom: 40px !important;
+  margin-left: 30px !important;
+  margin-right: 30px !important;
 }
 
 .testimonial-slider-card {
   background: #ffffff;
   box-shadow: 0px 29.3947px 16.0335px rgba(82, 83, 109, 0.08);
   border-radius: 11px;
+  padding: 35px;
+}
+
+.testimonial-company-logo {
+  margin-left: 30px;
+}
+
+.testimonial-para {
+  height: 300px;
+}
+
+.testimonial-name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  color: #15293f;
+}
+
+.testimonial-designation {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 28px;
+  color: #3196f5;
 }
 
 /* testimonial slider end */
+
+.tons-of-integrations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f6f8fc;
+}
+
+.tons-of-integrations .at-glance-btn {
+  margin-top: 32px;
+}
+
+.faq-section {
+  background: #0d2943;
+  padding-top: 115px;
+  padding-bottom: 163px;
+}
+
+.faq-header {
+  color: #fff;
+  margin-bottom: 32px;
+}
+
+.accordion-button {
+  background-color: #0d2943 !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px !important;
+  border-bottom: 3px solid red !important;
+}
+
+.accordion-body {
+  background-color: #0d2943 !important;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.75);
+  border-bottom: 3px red solid !important;
+  padding: 20px 40px !important;
+}
+
+.accordion-item {
+  border: none !important;
+}
+
+.accordion-item:first-of-type .accordion-button {
+  border-top: 3px red solid !important;
+  border-bottom: 3px red solid !important;
+  border-top-left-radius: 0px !important;
+  border-top-right-radius: 0px !important;
+  font-size: 18px;
+}
+
+.accordion-header {
+  border-right: none !important;
+  border-left: none !important;
+  border-radius: 0px !important;
+}
+
+
+.accordion-button::after{
+  background-image: url('../images/plus.svg') !important;
+}
+
+.accordion-button:not(.collapsed)::after{
+  transform: rotate(135deg) !important;
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed{
+  border-bottom-right-radius: 0px !important ;
+  border-bottom-left-radius: 0px !important ;
+}
+
+.faq-container{
+  max-width: 800px !important;
+}
 /* home page css end */
