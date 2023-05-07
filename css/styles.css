@@ -658,8 +658,9 @@ header {
 /* tons-of-integrations slider start */
 
 .tons-of-integrations-slider{
-  height: 180px;
-  padding: 40px !important;
+  height: 220px;
+  padding-top: 0px !important;
+  padding-bottom: 40px !important;
 }
 .tons-of-integrations-logo-box{
 background: #FFFFFF;
@@ -672,8 +673,9 @@ align-items: center;
 }
 
 .tons-of-integrations-slider-right{
-  height: 180px;
-  padding: 40px !important;
+  height: 220px;
+  padding-top: 0px !important;
+  padding-bottom: 40px !important;
 }
 
 /* tons-of-integrations slider end */
