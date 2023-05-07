@@ -9,3 +9,15 @@ function platform_dropdown_hide() {
   box.style.display = "none";
 }
 // platform drop down end --------------------------------
+
+// resources drop down start --------------------------------
+function resources_dropdown_show() {
+  var box = document.getElementById("resources-dropdown");
+  box.style.display = "flex";
+}
+
+function resources_dropdown_hides() {
+  var box = document.getElementById("resources-dropdown");
+  box.style.display = "none";
+}
+// resources drop down end --------------------------------

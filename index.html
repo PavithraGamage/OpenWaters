@@ -51,7 +51,7 @@
             </div>
             <!-- menu items -->
             <div class="col-8 menu-bar">
-              <div class="menu-btn" onmousemove="platform_dropdown_show()">
+              <div class="menu-btn" onmousemove="platform_dropdown_show(), resources_dropdown_hide()">
                 Platform
                 <img
                   class="menu-btn-icon"
@@ -60,7 +60,7 @@
                 />
               </div>
 
-              <div class="menu-btn">
+              <div class="menu-btn" onmousemove="resources_dropdown_show(), platform_dropdown_hide()" >
                 Resources
                 <img
                   class="menu-btn-icon"
@@ -95,10 +95,135 @@
         onmouseleave="platform_dropdown_hide()"
       >
         <div class="container platform-dropdown">
-          <h1>Hello</h1>
-          <!-- need to create css class for inline styles -->
+          <div class="row drop-down-items-center">
+            <div class="col-3 platform-border">
+              <h2 class="platform-menu-headding">Platform</h2>
+
+              <div class="menu-links">
+                <img src="images/abstract-soft-menu.svg" alt="">
+                <div class="menu-dropdown-text">
+                  <h4>Abstract Software</h4>
+                  <p>Visual project management</p>
+                </div>
+              </div>
+
+              <div class="menu-links">
+                <img src="images/awards-software-menu.svg" alt="">
+                <div class="menu-dropdown-text">
+                  <h4>Awards Software</h4>
+                  <p>Project and issue tracking</p>
+                </div>
+              </div>
+
+              <div class="menu-links">
+                <img src="images/grants-menu.svg" alt="">
+                <div class="menu-dropdown-text">
+                  <h4>Grants </h4>
+                  <p>Project and issue tracking</p>
+                </div>
+              </div>
+
+              <div class="menu-links">
+                <img src="images/scolaership-menu.svg" alt="">
+                <div class="menu-dropdown-text">
+                  <h4>Scholarships</h4>
+                  <p>Project and issue tracking</p>
+                </div>
+              </div>
+
+              <div class="menu-links">
+                <img src="images/fellowships-menu.svg" alt="">
+                <div class="menu-dropdown-text">
+                  <h4>Fellowships</h4>
+                  <p>Project and issue tracking</p>
+                </div>
+              </div>
+
+              
+
+            </div>
+
+
+            <div class="col-4 integration-padding">
+              <h2 class="platform-menu-headding">Integrations</h2>
+              <div class="menu-links-integrations">
+                <div class="menu-dropdown-text">
+                  <h4>iMis</h4>
+                  <p>iMIS is the world's only Engagement Management System (EMS)</p>
+                </div>
+              </div>
+
+              <div class="menu-links-integrations">
+                <div class="menu-dropdown-text">
+                  <h4>Salesforce</h4>
+                  <p>Unify marketing, sales, service, commerce, and IT on the world's #1 CRM.</p>
+                </div>
+              </div>
+
+              <div class="menu-links-integrations">
+                <div class="menu-dropdown-text">
+                  <h4>Airtable</h4>
+                  <p>Airtable is the spreadsheet system that does wonders. </p>
+                </div>
+              </div>
+
+              <div class="menu-links-integrations">
+                <div class="menu-dropdown-text">
+                  <h4>Airtable</h4>
+                  <p>Airtable is the spreadsheet system that does wonders. </p>
+                </div>
+              </div>
+
+              <button class="menu-integration-btn">Browse All</button>
+
+            </div>
+            <div class="col-5">
+              <img src="images/platform-menu-image.svg" alt="" class="menu-dropdown-image">
+            </div>
+          </div>
+          
+          
         </div>
       </div>
+
+      <div
+        class="resources-dropdown-wrapper"
+        id="resources-dropdown"
+        onmouseleave="resources_dropdown_hide()"
+      >
+
+      <div class="container resources-dropdown">
+        
+        <div class="row">
+          <div class="col">
+            <div class="resources-dropdown-heading-wrapper">
+              <img src="images/menu-education.svg" alt="">
+              <h4>Education</h4>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="resources-dropdown-heading-wrapper">
+              <img src="images/menu-education.svg" alt="">
+              <h4>Education</h4>
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="resources-dropdown-heading-wrapper">
+              <img src="images/menu-education.svg" alt="">
+              <h4>Education</h4>
+            </div>
+          </div>
+        </div>
+        
+
+
+      </div>
+    
+    </div>
+
+
     </header>
     <!-- navigation end -->
 
@@ -318,6 +443,24 @@
 
       <div class="swiper industry-swiper">
         <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/ford-foundation.svg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/prsa.svg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/james.svg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/oracal.svg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/asae.svg" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/texas.svg" alt="" />
+          </div>
           <div class="swiper-slide">
             <img src="images/ford-foundation.svg" alt="" />
           </div>
@@ -622,7 +765,111 @@
       </div>
     </section>
 
-    <!-- add logo slider heare -->
+    <section class="integrations">
+      <div class="integrations-content">
+        <h2 class="testimonials-heading">Tons of Integrations</h2>
+        <p class="at-glance-para">
+          OpenWater has taken an integration first approach since the beginning.
+          We integrate will all major CRMs and Association Software. Have a
+          system we haven't integrated with yet? Let us know and we'll add it!
+        </p>
+        <button class="at-glance-btn">Learn More</button>
+      </div>
+
+      <div class="swiper tons-of-integrations-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide tons-of-integrations-logo-box">
+            <img src="images/ims.svg" alt="" />
+          </div>
+          <div class="swiper-slide tons-of-integrations-logo-box">
+            <img src="images/sales-force.svg" alt="" />
+          </div>
+          <div class="swiper-slide tons-of-integrations-logo-box">
+            <img src="images/personify.svg" alt="" />
+          </div>
+          <div class="swiper-slide tons-of-integrations-logo-box">
+            <img src="images/zapier.svg" alt="" />
+          </div>
+          <div class="swiper-slide tons-of-integrations-logo-box">
+            <img src="images/fonteve.svg" alt="" />
+          </div>
+          <div class="swiper-slide tons-of-integrations-logo-box">
+            <img src="images/nimble.svg" alt="" />
+          </div>
+          <div class="swiper-slide tons-of-integrations-logo-box">
+            <img src="images/member-suite.svg" alt="" />
+          </div>
+          <div class="swiper-slide tons-of-integrations-logo-box">
+            <img src="images/ims.svg" alt="" />
+          </div>
+          <div class="swiper-slide tons-of-integrations-logo-box">
+            <img src="images/sales-force.svg" alt="" />
+          </div>
+          <div class="swiper-slide tons-of-integrations-logo-box">
+            <img src="images/personify.svg" alt="" />
+          </div>
+          <div class="swiper-slide tons-of-integrations-logo-box">
+            <img src="images/zapier.svg" alt="" />
+          </div>
+          <div class="swiper-slide tons-of-integrations-logo-box">
+            <img src="images/fonteve.svg" alt="" />
+          </div>
+          <div class="swiper-slide tons-of-integrations-logo-box">
+            <img src="images/nimble.svg" alt="" />
+          </div>
+          <div class="swiper-slide tons-of-integrations-logo-box">
+            <img src="images/member-suite.svg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper tons-of-integrations-slider-right">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide tons-of-integrations-logo-box">
+            <img src="images/nova.svg" alt="" />
+          </div>
+          <div class="swiper-slide tons-of-integrations-logo-box">
+            <img src="images/you-member-ship.svg" alt="" />
+          </div>
+          <div class="swiper-slide tons-of-integrations-logo-box">
+            <img src="images/acgi.svg" alt="" />
+          </div>
+          <div class="swiper-slide tons-of-integrations-logo-box">
+            <img src="images/micorsoft-dynamics.svg" alt="" />
+          </div>
+          <div class="swiper-slide tons-of-integrations-logo-box">
+            <img src="images/netforum.svg" alt="" />
+          </div>
+          <div class="swiper-slide tons-of-integrations-logo-box">
+            <img src="images/impexium.svg" alt="" />
+          </div>
+          <div class="swiper-slide tons-of-integrations-logo-box">
+            <img src="images/guide-star.svg" alt="" />
+          </div>
+          <div class="swiper-slide tons-of-integrations-logo-box">
+            <img src="images/nova.svg" alt="" />
+          </div>
+          <div class="swiper-slide tons-of-integrations-logo-box">
+            <img src="images/you-member-ship.svg" alt="" />
+          </div>
+          <div class="swiper-slide tons-of-integrations-logo-box">
+            <img src="images/acgi.svg" alt="" />
+          </div>
+          <div class="swiper-slide tons-of-integrations-logo-box">
+            <img src="images/micorsoft-dynamics.svg" alt="" />
+          </div>
+          <div class="swiper-slide tons-of-integrations-logo-box">
+            <img src="images/netforum.svg" alt="" />
+          </div>
+          <div class="swiper-slide tons-of-integrations-logo-box">
+            <img src="images/impexium.svg" alt="" />
+          </div>
+          <div class="swiper-slide tons-of-integrations-logo-box">
+            <img src="images/guide-star.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="faq-section">
       <div class="container faq-container">
@@ -755,164 +1002,107 @@
       </div>
     </section>
 
-    <section class="industry-leaders">
-      <h2 class="testimonials-heading">What our clients say</h2>
+    <section class="footer-cta">
+      <h2 class="testimonials-heading">Get in touch with an Expert</h2>
       <p class="at-glance-para">
-        Features purposely designed to make your life easier and remove friction
-        from the review process.
+        Lorem Ipsum is simply dummy text of the printing and typesetting
+        industry. Lorem Ipsum has been the industry's standard dummy text ever
+        since.
       </p>
-      <button class="at-glance-btn">Learn More</button>
-
-      <div class="swiper tons-of-integrations-slider">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/ims.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/sales-force.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/personify.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/zapier.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/fonteve.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/nimble.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/member-suite.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/ims.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/sales-force.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/personify.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/zapier.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/fonteve.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/nimble.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/member-suite.svg" alt="" />
-          </div>
-        </div>
-      </div>
-
-      <script>
-        var swiper = new Swiper(".tons-of-integrations-slider", {
-          freeMode: true,
-          loop: true,
-          autoplay: {
-            delay: 1,
-            disableOnInteraction: false,
-          },
-          speed: 8000,
-          breakpoints: {
-            640: {
-              slidesPerView: 2,
-              spaceBetween: 10,
-            },
-            768: {
-              slidesPerView: 3,
-              spaceBetween: 10,
-            },
-            1024: {
-              slidesPerView: 7,
-              spaceBetween: 30,
-            },
-          },
-        });
-      </script>
-
-      <div class="swiper tons-of-integrations-slider-right">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/ims.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/sales-force.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/personify.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/zapier.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/fonteve.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/nimble.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/member-suite.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/ims.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/sales-force.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/personify.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/zapier.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/fonteve.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/nimble.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/member-suite.svg" alt="" />
-          </div>
-        </div>
-      </div>
-
-      <script>
-        var swiper = new Swiper(".tons-of-integrations-slider-right", {
-          freeMode: true,
-          loop: true,
-          autoplay: {
-            delay: 1,
-            disableOnInteraction: false,
-            reverseDirection: true,
-          },
-          speed: 8000,
-          breakpoints: {
-            640: {
-              slidesPerView: 2,
-              spaceBetween: 10,
-            },
-            768: {
-              slidesPerView: 3,
-              spaceBetween: 10,
-            },
-            1024: {
-              slidesPerView: 7,
-              spaceBetween: 30,
-            },
-          },
-        });
-      </script>
-
-
-
+      <button class="at-glance-btn">Request a Demo</button>
     </section>
+
+    <footer>
+      <section class="content-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-7">
+              <h5 class="footer-headings">follow us</h5>
+              <img src="images/facebook.svg" alt="" class="social-icons" />
+              <img src="images/twitter.svg" alt="" class="social-icons" />
+              <img src="images/linkedin.svg" alt="" class="social-icons" />
+              <img src="images/instagram.svg" alt="" class="social-icons" />
+
+              <div class="row footer-3col-row">
+                <div class="col">
+                  <h5 class="footer-headings">Software</h5>
+                  <div class="footer-links">
+                    <a href="http://">Awards</a>
+                    <a href="http://">Fellowships</a>
+                    <a href="http://">Scholarships</a>
+                    <a href="http://">Grants</a>
+                    <a href="http://">Applications</a>
+                    <a href="http://">Abstracts</a>
+                  </div>
+                </div>
+                <div class="col">
+                  <h5 class="footer-headings">Support</h5>
+                  <div class="footer-links">
+                    <a href="http://">Help Center</a>
+                    <a href="http://">API Documentation</a>
+                    <a href="http://">GDPR + Privacy</a>
+                  </div>
+                </div>
+                <div class="col">
+                  <h5 class="footer-headings">About us</h5>
+                  <div class="footer-links">
+                    <a href="http://">The Team</a>
+                    <a href="http://">Careers</a>
+                    <a href="http://">News</a>
+                    <a href="http://">Security</a>
+                    <a href="http://">Privacy Policy</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-5">
+              <h5 class="footer-headings footer-contat-us">Contact us</h5>
+              <img src="images/open-water-footer-logo.svg" alt="" />
+              <h6 class="footer-location">HQ</h6>
+              <p class="footer-address">
+                1800 Diagonal Road Suite 600 Alexandria, VA 22314
+              </p>
+              <p class="footer-email">info@getopenwater.com</p>
+              <p class="footer-email">202-765-0247</p>
+
+              <div class="row">
+                <div class="col">
+                  <div class="inc-wrapper">
+                    <img src="images/Capa_1.svg" alt="" />
+                    <div class="inc-para-wrapper">
+                      <p>
+                        OpenWater has been named to the Inc5000 List of the
+                        Fastest Growing Private Companies in America for four
+                        years in a row since 2017.
+                      </p>
+                      <p class="read-the-press">READ THE PRESS RELEASE</p>
+                    </div>
+                  </div>
+                  
+                  </div>
+                  <div class="col">
+                    <div class="inc-wrapper">
+                      <img src="images/Alliance-Partner_EVENTS-Partner_Seal_BLK.png.svg" alt="" />
+                      <div class="inc-para-wrapper">
+                        <p>
+                          OpenWater is a proud ASAE Alliance Partner
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="copyright">
+        <div>Copyright © 2023 <span>Openwater.</span> All Rights Reserved.</div>
+      </section>
+    </footer>
   </body>
 
   <!-- industry-swiper -->
@@ -924,7 +1114,7 @@
         delay: 1,
         disableOnInteraction: false,
       },
-      speed: 5000,
+      speed: 8000,
       breakpoints: {
         640: {
           slidesPerView: 2,
@@ -935,7 +1125,7 @@
           spaceBetween: 10,
         },
         1024: {
-          slidesPerView: 3,
+          slidesPerView: 6,
           spaceBetween: 20,
         },
       },
@@ -961,6 +1151,61 @@
         },
         1024: {
           slidesPerView: 4,
+          spaceBetween: 30,
+        },
+      },
+    });
+  </script>
+
+  <!-- tons of integration slider one -->
+  <script>
+    var swiper = new Swiper(".tons-of-integrations-slider", {
+      freeMode: true,
+      loop: true,
+      autoplay: {
+        delay: 1,
+        disableOnInteraction: false,
+      },
+      speed: 8000,
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+        1024: {
+          slidesPerView: 7,
+          spaceBetween: 30,
+        },
+      },
+    });
+  </script>
+
+  <!-- tons of integration slider two -->
+  <script>
+    var swiper = new Swiper(".tons-of-integrations-slider-right", {
+      freeMode: true,
+      loop: true,
+      autoplay: {
+        delay: 1,
+        disableOnInteraction: false,
+        reverseDirection: true,
+      },
+      speed: 8000,
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+        1024: {
+          slidesPerView: 7,
           spaceBetween: 30,
         },
       },
