@@ -111,7 +111,7 @@
         </a>
 
         <div class="hero-reviews">
-          <img src="images/nav-dropdown-icon.svg" alt="nav-dropdown-icon" />
+          <img src="images/home-stars.svg" alt="nav-dropdown-icon" />
           Based on stellar reviews on
         </div>
         <div>
@@ -421,6 +421,60 @@
         <button class="at-glance-btn">Learn More</button>
       </div>
     </section>
+
+    <section class="testimonials">
+      <div class="container testimonials-container">
+        <h6 class="testimonials-short-heading">TESTIMONIALS</h6>
+        <h2 class="testimonials-heading">What our clients say</h2>
+        <div class="hero-reviews testimonials-reviews">
+          <img src="images/home-stars.svg" alt="nav-dropdown-icon" />
+          Based on stellar reviews on
+        </div>
+        <div>
+          <img
+            src="images/crowd.svg"
+            class="hero-company-logo"
+            alt="nav-dropdown-icon"
+          />
+          <img
+            src="images/Trustpilot_brandmark_gr-blk_RGB-320x132px 1.svg"
+            class="hero-company-logo"
+            alt="nav-dropdown-icon"
+          />
+          <img
+            src="images/capterra.svg"
+            class="hero-company-logo"
+            alt="nav-dropdown-icon"
+          />
+        </div>
+      </div>
+
+      <!-- Swiper -->
+      <div class="swiper testimonial-slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide testimonial-slider-card">
+            <img src="images/aps-testi.png" alt="" />
+            <img src="images/aps-logo.svg" alt="" />
+            <p>
+              Our team deals with over 80 different programs that are reviewed
+              by 80 different committees who each have 3-12 volunteers.
+              OpenWater makes it easy for us to collect the information that
+              needs to be reviewed and enforce unique and diverse applicant
+              requirements. This year, OpenWater has allowed our team to process
+              over 1,200 applications reviewed by around 320+ volunteers.
+            </p>
+            
+          </div>
+          <div class="swiper-slide testimonial-slider-card">Slide 2</div>
+          <div class="swiper-slide testimonial-slider-card">Slide 3</div>
+          <div class="swiper-slide testimonial-slider-card">Slide 4</div>
+          <div class="swiper-slide testimonial-slider-card">Slide 5</div>
+          <div class="swiper-slide testimonial-slider-card">Slide 6</div>
+          <div class="swiper-slide testimonial-slider-card">Slide 7</div>
+          <div class="swiper-slide testimonial-slider-card">Slide 8</div>
+        </div>
+      </div>
+    </section>
   </body>
 
   <!-- industry-swiper -->
@@ -446,6 +500,19 @@
           slidesPerView: 3,
           spaceBetween: 20,
         },
+      },
+    });
+  </script>
+
+  <!-- testimonial slider -->
+  <script>
+    var swiper = new Swiper(".testimonial-slider", {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      loop: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
       },
     });
   </script>

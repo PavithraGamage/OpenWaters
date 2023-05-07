@@ -502,4 +502,51 @@ header {
   height: 50px;
   margin-top: 50px;
 }
+
+.testimonials {
+  background: #f6f8fc;
+  padding-top: 128px;
+  padding-bottom: 128px;
+}
+
+.testimonials-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonials-short-heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 51px;
+  color: #3196f5;
+}
+
+.testimonials-heading {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48.7195px;
+  line-height: 51px;
+  color: #2d3436;
+}
+
+.testimonials-reviews {
+  margin-top: 20px;
+}
+
+/* testimonial slider start */
+
+.testimonial-slider {
+  height: 556px;
+  margin-top: 60px;
+}
+
+.testimonial-slider-card {
+  background: #ffffff;
+  box-shadow: 0px 29.3947px 16.0335px rgba(82, 83, 109, 0.08);
+  border-radius: 11px;
+}
+
+/* testimonial slider end */
 /* home page css end */
