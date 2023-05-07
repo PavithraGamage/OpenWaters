@@ -16,7 +16,7 @@ function resources_dropdown_show() {
   box.style.display = "flex";
 }
 
-function resources_dropdown_hides() {
+function resources_dropdown_hide() {
   var box = document.getElementById("resources-dropdown");
   box.style.display = "none";
 }

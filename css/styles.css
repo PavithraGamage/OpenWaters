@@ -362,16 +362,15 @@ header {
   margin-left: 0px;
 }
 
-.platform-border{
-  border-right: 1px solid  rgba(170, 180, 190, 0.45);;
+.platform-border {
+  border-right: 1px solid rgba(170, 180, 190, 0.45);
 }
 
-.integration-padding{
-   padding-left: 48px !important;
-
+.integration-padding {
+  padding-left: 48px !important;
 }
 
-.drop-down-items-center{
+.drop-down-items-center {
   align-items: center;
 }
 
@@ -388,20 +387,19 @@ header {
   border: none;
 }
 
-.menu-dropdown-image{
+.menu-dropdown-image {
   display: flex;
   margin-left: auto;
   margin-right: auto;
 }
 
-.resources-dropdown-wrapper{
+.resources-dropdown-wrapper {
   display: none;
   flex-direction: column;
   align-items: center;
 }
 
-.resources-dropdown{
-  height: 650px;
+.resources-dropdown {
   background-color: #fff;
   display: block;
   position: absolute;
@@ -414,8 +412,43 @@ header {
   padding-bottom: 39px;
 }
 
+.resources-dropdown-heading-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-bottom: 31px;
+}
 
+.resources-dropdown-heading-wrapper h4 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  color: #15293f;
+  margin-left: 22px;
+  margin-bottom: 0px;
+}
 
+.resources-dropdown-border-first {
+  border-right: 1px solid rgba(170, 180, 190, 0.45);
+}
+
+.resources-dropdown-border {
+  border-right: 1px solid rgba(170, 180, 190, 0.45);
+  padding-left: 42px !important;
+}
+
+.resources-dropdown-border-last {
+  padding-left: 42px !important;
+}
+
+.resources-dropdown-links {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 27px;
+  letter-spacing: 0.324004px;
+  color: #15293f;
+}
 
 .the-power-of-open-water {
   background-image: url("../images/The-Power-of-Openwater-background.svg");
