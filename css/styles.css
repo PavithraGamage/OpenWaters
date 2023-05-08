@@ -194,11 +194,10 @@ header {
   cursor: pointer;
 }
 
-#grow-your-programs-lottie{
+#grow-your-programs-lottie {
   width: 496px;
-  margin-top: 46pX;
+  margin-top: 46px;
   margin-bottom: 21px;
-
 }
 
 .watch-btn-icon {
@@ -458,25 +457,23 @@ header {
   color: #15293f;
 }
 
-.about-dropdown-wrapper{
+.about-dropdown-wrapper {
   display: none;
   flex-direction: column;
   align-items: center;
 }
 
-.about-dropdown{
-  
+.about-dropdown {
   display: block;
   position: absolute;
   margin-top: 6px;
-  
 }
 
-.about-dropdown .row{
+.about-dropdown .row {
   justify-content: flex-end;
 }
 
-.about-dropdown-small-box{
+.about-dropdown-small-box {
   background-color: #fff;
   box-shadow: 0px 48px 34px rgba(97, 114, 141, 0.25);
   max-width: 220px !important;
@@ -605,9 +602,16 @@ header {
 }
 
 .cta-background {
+  background-image: url("../images/home-new-cta-background.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
   position: relative;
   display: flex;
   justify-content: center;
+  box-shadow: 0px 29.3947px 16.0335px rgba(82, 83, 109, 0.08);
+  border-radius: 14px;
+  background-size: cover;
+
 }
 
 .cta-headding {
@@ -617,10 +621,10 @@ header {
   font-size: 44px;
   color: #ffffff;
   text-shadow: 0px 4px 4px rgba(30, 39, 118, 0.15);
-  position: absolute;
-  top: 0;
+  /* position: absolute; */
+  /* top: 0; */
   padding: 40px;
-  width: 1000px;
+  /* width: 1000px; */
 }
 
 .at-glance {
@@ -1012,6 +1016,55 @@ header {
   letter-spacing: 0.380103px;
   text-transform: uppercase;
   color: #000000;
+}
+
+.at-glance-boxes{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: start;
+  grid-column-gap: 50px;
+  grid-row-gap: 85px;
+  margin-top: 72px;
+}
+
+
+
+/* home page responsive */
+@media (max-width: 1024px) {
+  .the-open-water-platform-row-wrapper {
+    width: auto;
+  }
+
+  .hero-section{
+    height: 50vh;
+  }
+
+}
+
+@media (max-width: 820px) {
+  .the-open-water-platform-row-wrapper {
+    width: auto;
+  }
+
+  .power-of-open-water-box-wrapper {
+    width: auto;
+  }
+
+  .faq-container {
+    max-width: 720px !important;
+  }
+ 
+  .at-glance-boxes{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero-section{
+    height: 60vh;
+  }
+
+  .nav-bar{
+    display: none;
+  }
 }
 
 /* home page css end */
