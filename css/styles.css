@@ -931,9 +931,13 @@ header {
 }
 
 .content-section {
-  background-image: url("../images/footer-botom.svg");
+  background-image: url("../images/new-footer.svg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+img.better-together-img {
+  margin-bottom: -90px;
 }
 
 .footer-headings {
@@ -1099,6 +1103,23 @@ header {
   .testimonial-slider {
     height: 750px;
   }
+
+  img.better-together-img {
+    width: 75%;
+  }
+
+  .cta-background {
+    background-position: 70% 0%;
+  }
+
+  .inc-wrapper{
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
+
+  .contact-number{
+    margin-bottom: 40px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -1186,15 +1207,27 @@ header {
     width: auto;
   }
 
-  .inc-wrapper{
+  .inc-wrapper {
     display: flex;
     flex-direction: column;
     margin-top: 50px;
   }
 
-  .inc-para-wrapper{
+  .inc-para-wrapper {
     margin-left: 0px;
+    margin-top: 20px;
   }
+
+  .footer-contat-us {
+    margin-top: 34px;
+  }
+
+  img.better-together-img {
+    margin-bottom: -55px;
+    width: 90%;
+  }
+
+  
 }
 
 /* home page css end */
