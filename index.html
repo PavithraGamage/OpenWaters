@@ -1,199 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>OpenWater | Application and Event Software</title>
-    <!-- home page css -->
-    <link rel="stylesheet" href="css/styles.css" />
-    <!-- bootstrap ccs cdn -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <!-- swiper js css -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
-    />
-    <!-- home js -->
-    <script src="js/main.js"></script>
-    <!-- bootstrap js cdn -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-      crossorigin="anonymous"
-    ></script>
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  </head>
-  <body>
-    <!-- navigation start -->
-    <header>
-      <nav class="nav-bar">
-        <div class="container">
-          <div class="row">
-            <!-- logo -->
-            <div class="col-2">
-              <img
-                src="images/nav-logo.svg"
-                class="img-fluid"
-                alt="Open Water Logo"
-              />
-            </div>
-            <!-- menu items -->
-            <div class="col-8 menu-bar">
-              <div class="menu-btn" onmousemove="platform_dropdown_show(), resources_dropdown_hide(), about_dropdown_hide()">
-                Platform
-                <img
-                  class="menu-btn-icon"
-                  src="images/nav-dropdown-icon.svg"
-                  alt="nav-dropdown-icon"
-                />
-              </div>
 
-              <div class="menu-btn" onmousemove="resources_dropdown_show(), platform_dropdown_hide(), about_dropdown_hide()" >
-                Resources
-                <img
-                  class="menu-btn-icon"
-                  src="images/nav-dropdown-icon.svg"
-                  alt="nav-dropdown-icon"
-                />
-              </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OpenWater | Application and Event Software</title>
+  <!-- home page css -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- bootstrap ccs cdn -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- swiper js css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <!-- home js -->
+  <script src="js/main.js"></script>
+  <!-- bootstrap js cdn -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!-- Lottie -->
+  <script src="https://cdn.jsdelivr.net/npm/lottie-web@5.7.8/build/player/lottie.min.js"></script>
+</head>
 
-              <div class="menu-btn" onmousemove="about_dropdown_show(), platform_dropdown_hide(), resources_dropdown_hide()">
-                About Us
-                <img
-                  class="menu-btn-icon"
-                  src="images/nav-dropdown-icon.svg"
-                  alt="nav-dropdown-icon"
-                />
-              </div>
+<body>
+  <!-- navigation start -->
+  <header>
+    <nav class="nav-bar">
+      <div class="container">
+        <div class="row">
+          <!-- logo -->
+          <div class="col-2">
+            <img src="images/nav-logo.svg" class="img-fluid" alt="Open Water Logo" />
+          </div>
+          <!-- menu items -->
+          <div class="col-8 menu-bar">
+            <div class="menu-btn"
+              onmousemove="platform_dropdown_show(), resources_dropdown_hide(), about_dropdown_hide()">
+              Platform
+              <img class="menu-btn-icon" src="images/nav-dropdown-icon.svg" alt="nav-dropdown-icon" />
             </div>
-            <!-- nav btn -->
-            <div class="col-2 menu-demo-btn">
-              <a href="http://google.lk">
-                <button class="demo-btn">Request a Demo</button>
-              </a>
+
+            <div class="menu-btn"
+              onmousemove="resources_dropdown_show(), platform_dropdown_hide(), about_dropdown_hide()">
+              Resources
+              <img class="menu-btn-icon" src="images/nav-dropdown-icon.svg" alt="nav-dropdown-icon" />
+            </div>
+
+            <div class="menu-btn"
+              onmousemove="about_dropdown_show(), platform_dropdown_hide(), resources_dropdown_hide()">
+              About Us
+              <img class="menu-btn-icon" src="images/nav-dropdown-icon.svg" alt="nav-dropdown-icon" />
             </div>
           </div>
-        </div>
-      </nav>
-
-      <!-- nav drop downs -->
-      <div
-        class="platform-dropdown-wrapper"
-        id="platform-dropdown"
-        onmouseleave="platform_dropdown_hide()"
-      >
-        <div class="container platform-dropdown">
-          <div class="row drop-down-items-center">
-            <div class="col-3 platform-border">
-              <h2 class="platform-menu-headding">Platform</h2>
-
-              <div class="menu-links">
-                <img src="images/abstract-soft-menu.svg" alt="">
-                <div class="menu-dropdown-text">
-                  <h4>Abstract Software</h4>
-                  <p>Visual project management</p>
-                </div>
-              </div>
-
-              <div class="menu-links">
-                <img src="images/awards-software-menu.svg" alt="">
-                <div class="menu-dropdown-text">
-                  <h4>Awards Software</h4>
-                  <p>Project and issue tracking</p>
-                </div>
-              </div>
-
-              <div class="menu-links">
-                <img src="images/grants-menu.svg" alt="">
-                <div class="menu-dropdown-text">
-                  <h4>Grants </h4>
-                  <p>Project and issue tracking</p>
-                </div>
-              </div>
-
-              <div class="menu-links">
-                <img src="images/scolaership-menu.svg" alt="">
-                <div class="menu-dropdown-text">
-                  <h4>Scholarships</h4>
-                  <p>Project and issue tracking</p>
-                </div>
-              </div>
-
-              <div class="menu-links">
-                <img src="images/fellowships-menu.svg" alt="">
-                <div class="menu-dropdown-text">
-                  <h4>Fellowships</h4>
-                  <p>Project and issue tracking</p>
-                </div>
-              </div>
-
-              
-
-            </div>
-
-
-            <div class="col-4 integration-padding">
-              <h2 class="platform-menu-headding">Integrations</h2>
-              <div class="menu-links-integrations">
-                <div class="menu-dropdown-text">
-                  <h4>iMis</h4>
-                  <p>iMIS is the world's only Engagement Management System (EMS)</p>
-                </div>
-              </div>
-
-              <div class="menu-links-integrations">
-                <div class="menu-dropdown-text">
-                  <h4>Salesforce</h4>
-                  <p>Unify marketing, sales, service, commerce, and IT on the world's #1 CRM.</p>
-                </div>
-              </div>
-
-              <div class="menu-links-integrations">
-                <div class="menu-dropdown-text">
-                  <h4>Airtable</h4>
-                  <p>Airtable is the spreadsheet system that does wonders. </p>
-                </div>
-              </div>
-
-              <div class="menu-links-integrations">
-                <div class="menu-dropdown-text">
-                  <h4>Airtable</h4>
-                  <p>Airtable is the spreadsheet system that does wonders. </p>
-                </div>
-              </div>
-
-              <button class="menu-integration-btn">Browse All</button>
-
-            </div>
-            <div class="col-5">
-              <img src="images/platform-menu-image.svg" alt="" class="menu-dropdown-image">
-            </div>
+          <!-- nav btn -->
+          <div class="col-2 menu-demo-btn">
+            <a href="http://google.lk">
+              <button class="demo-btn">Request a Demo</button>
+            </a>
           </div>
-          
-          
         </div>
       </div>
+    </nav>
 
-      <div
-        class="resources-dropdown-wrapper"
-        id="resources-dropdown"
-        onmouseleave="resources_dropdown_hide()"
-      >
+    <!-- nav drop downs -->
+    <div class="platform-dropdown-wrapper" id="platform-dropdown" onmouseleave="platform_dropdown_hide()">
+      <div class="container platform-dropdown">
+        <div class="row drop-down-items-center">
+          <div class="col-3 platform-border">
+            <h2 class="platform-menu-headding">Platform</h2>
+
+            <div class="menu-links">
+              <img src="images/abstract-soft-menu.svg" alt="">
+              <div class="menu-dropdown-text">
+                <h4>Abstract Software</h4>
+                <p>Visual project management</p>
+              </div>
+            </div>
+
+            <div class="menu-links">
+              <img src="images/awards-software-menu.svg" alt="">
+              <div class="menu-dropdown-text">
+                <h4>Awards Software</h4>
+                <p>Project and issue tracking</p>
+              </div>
+            </div>
+
+            <div class="menu-links">
+              <img src="images/grants-menu.svg" alt="">
+              <div class="menu-dropdown-text">
+                <h4>Grants </h4>
+                <p>Project and issue tracking</p>
+              </div>
+            </div>
+
+            <div class="menu-links">
+              <img src="images/scolaership-menu.svg" alt="">
+              <div class="menu-dropdown-text">
+                <h4>Scholarships</h4>
+                <p>Project and issue tracking</p>
+              </div>
+            </div>
+
+            <div class="menu-links">
+              <img src="images/fellowships-menu.svg" alt="">
+              <div class="menu-dropdown-text">
+                <h4>Fellowships</h4>
+                <p>Project and issue tracking</p>
+              </div>
+            </div>
+
+
+
+          </div>
+
+
+          <div class="col-4 integration-padding">
+            <h2 class="platform-menu-headding">Integrations</h2>
+            <div class="menu-links-integrations">
+              <div class="menu-dropdown-text">
+                <h4>iMis</h4>
+                <p>iMIS is the world's only Engagement Management System (EMS)</p>
+              </div>
+            </div>
+
+            <div class="menu-links-integrations">
+              <div class="menu-dropdown-text">
+                <h4>Salesforce</h4>
+                <p>Unify marketing, sales, service, commerce, and IT on the world's #1 CRM.</p>
+              </div>
+            </div>
+
+            <div class="menu-links-integrations">
+              <div class="menu-dropdown-text">
+                <h4>Airtable</h4>
+                <p>Airtable is the spreadsheet system that does wonders. </p>
+              </div>
+            </div>
+
+            <div class="menu-links-integrations">
+              <div class="menu-dropdown-text">
+                <h4>Airtable</h4>
+                <p>Airtable is the spreadsheet system that does wonders. </p>
+              </div>
+            </div>
+
+            <button class="menu-integration-btn">Browse All</button>
+
+          </div>
+          <div class="col-5">
+            <img src="images/platform-menu-image.svg" alt="" class="menu-dropdown-image">
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <div class="resources-dropdown-wrapper" id="resources-dropdown" onmouseleave="resources_dropdown_hide()">
 
       <div class="container resources-dropdown">
-        
+
         <div class="row">
           <div class="col resources-dropdown-border-first">
             <div class="resources-dropdown-heading-wrapper">
@@ -218,7 +190,7 @@
             <p class="resources-dropdown-links">Why Choose OpenWater?</p>
 
             <button class="menu-integration-btn">Browse All</button>
-            
+
           </div>
 
           <div class="col resources-dropdown-border-last">
@@ -234,1013 +206,933 @@
             <button class="menu-integration-btn">Browse All</button>
           </div>
         </div>
-        
+
 
 
       </div>
-    
+
     </div>
 
     <div class="about-dropdown-wrapper" id="about-dropdown" onmouseleave="about_dropdown_hide()">
       <div class="container about-dropdown">
-           <div class="row">
-            <div class="co1 about-dropdown-small-box">
-              <p>Who we are?</p>
-              <p>Why OpenWater?</p>
-              <p>Careers</p>
-              <p>Press</p>
-              <p>Blog</p>
-            </div>
-           </div>
-      </div>
-    </div>  
-
-
-    </header>
-    <!-- navigation end -->
-
-    <section class="hero-section">
-      <div class="container hero-contents">
-        <h1 class="h1-headding">We’ll help you Navigate</h1>
-        <p class="hero-para">Software & support to empower your mission</p>
-        <a href="http://google.lk">
-          <button class="hero-btn">Learn More</button>
-        </a>
-
-        <div class="hero-reviews">
-          <img src="images/home-stars.svg" alt="nav-dropdown-icon" />
-          Based on stellar reviews on
-        </div>
-        <div>
-          <img
-            src="images/crowd.svg"
-            class="hero-company-logo"
-            alt="nav-dropdown-icon"
-          />
-          <img
-            src="images/Trustpilot_brandmark_gr-blk_RGB-320x132px 1.svg"
-            class="hero-company-logo"
-            alt="nav-dropdown-icon"
-          />
-          <img
-            src="images/capterra.svg"
-            class="hero-company-logo"
-            alt="nav-dropdown-icon"
-          />
-        </div>
-      </div>
-    </section>
-
-    <section class="grow-your-programs">
-      <div class="container grow-your-programs-contents">
-        <h2 class="h2-headding">
-          <span>Grow your programs</span> without the migraines
-        </h2>
-        <p>
-          Application & Review Software to help you get better applicants,
-          dazzle judges and grow your programs. Designed for Awards, Abstracts,
-          Scholarship, Grants and more..
-        </p>
-
-        <h5>All in one Powerful, Easy-to-Use Platform</h5>
-        <img
-          src="images/grow-your-programs-image.svg"
-          class="grow-your-programs-image"
-          alt="image"
-        />
-        <div class="watch-btn-wapper">
-          <img src="images/watch-btn-icon.svg" class="watch-btn-icon" alt="" />
-          Watch the video
-        </div>
-      </div>
-    </section>
-
-    <section class="the-open-water-platform">
-      <div class="container the-open-water-platform-contents">
-        <h2 class="h2-headding-the-open-water-platform">
-          <span>The OpenWater Platform.</span> Powerful Alone.
-          <span>Better Together.</span>
-        </h2>
-
-        <!-- take export form all the image in one group and add here -->
-        <img
-          src="images/box-for-brackets.svg"
-          alt=""
-          style="margin-top: 94px"
-        />
-        <img src="images/brackets.svg" alt="" />
-
-        <div class="the-open-water-platform-row-wrapper">
-          <div class="row">
-            <div class="col open-water-platform-box">
-              <hr class="blue" />
-
-              <div class="better-platform-heading-wrapper">
-                <img
-                  src="images/Abstract-Software.svg"
-                  class="platform-icon"
-                  alt=""
-                />
-                <h4 class="better-platform-heading">Abstract Software</h4>
-              </div>
-              <p>
-                Robust abstracts software that can power your conference
-                management. Abstract collection, peer review, session scheduling
-                and mobile app integration -- all made easy in OpenWater.
-              </p>
-            </div>
-            <div class="col open-water-platform-box">
-              <hr class="orange" />
-              <div class="better-platform-heading-wrapper">
-                <img
-                  src="images/Awards-Software.svg"
-                  class="platform-icon"
-                  alt=""
-                />
-                <h4 class="better-platform-heading">Awards Software</h4>
-              </div>
-              <p>
-                All-in-one awards management platform designed to streamline and
-                simplify your entire awards program. Forget manila folders.
-                Ditch the spreadsheets. OpenWater Awards does it all.
-              </p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col open-water-platform-box">
-              <hr class="orange" />
-              <div class="better-platform-heading-wrapper">
-                <img src="images/Grants.svg" class="platform-icon" alt="" />
-                <h4 class="better-platform-heading">Grants</h4>
-              </div>
-              <p>
-                Create the impact you want with streamlined grants applications,
-                a user friendly reviewer portal, and powerful features for
-                program administrators.
-              </p>
-            </div>
-            <div class="col open-water-platform-box">
-              <hr class="blue" />
-              <div class="better-platform-heading-wrapper">
-                <img
-                  src="images/Scholarships.svg"
-                  class="platform-icon"
-                  alt=""
-                />
-                <h4 class="better-platform-heading">Scholarships</h4>
-              </div>
-              <p>
-                Our all-in-one scholarship software manages the entire
-                multi-step, multi-review process smoothly, moving applicants to
-                scholarship recipients.
-              </p>
-            </div>
-            <div class="col open-water-platform-box">
-              <hr class="blue" />
-              <div class="better-platform-heading-wrapper">
-                <img
-                  src="images/Fellowships.svg"
-                  class="platform-icon"
-                  alt=""
-                />
-                <h4 class="better-platform-heading">Fellowships</h4>
-              </div>
-              <p>
-                Create a memorable fellowship website, promote your fellows and
-                alumni, and control the entire process, all in one system.
-              </p>
-            </div>
+        <div class="row">
+          <div class="co1 about-dropdown-small-box">
+            <p>Who we are?</p>
+            <p>Why OpenWater?</p>
+            <p>Careers</p>
+            <p>Press</p>
+            <p>Blog</p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section class="the-power-of-open-water">
-      <div class="container the-power-of-open-water-container">
-        <div class="the-open-water-platform-heading-contents">
-          <h6>GROW WITH US</h6>
-          <h2>The Power of <span>Openwater</span></h2>
-          <p class="the-power-of-open-water-container-p">
-            These metrics demonstrates the impact Getopenwater has on
-            productivity and consumer satisfaction.
-          </p>
-        </div>
 
-        <div class="power-of-open-water-box-wrapper">
-          <div class="row">
-            <div class="col the-power-of-open-water-box">
-              <img src="images/power-of-open-water-arrow.svg" alt="" />
+  </header>
+  <!-- navigation end -->
 
-              <div class="power-box-heading-wrapper">
-                <h4>5,403,435+</h4>
-                <p>Submissions seamlessly collected through OpenWater</p>
-              </div>
-            </div>
+  <section class="hero-section">
+    <div class="container hero-contents">
+      <h1 class="h1-headding">We’ll help you Navigate</h1>
+      <p class="hero-para">Software & support to empower your mission</p>
+      <a href="http://google.lk">
+        <button class="hero-btn">Learn More</button>
+      </a>
 
-            <div class="col the-power-of-open-water-box">
-              <img src="images/power-of-open-water-arrow.svg" alt="" />
-
-              <div class="power-box-heading-wrapper">
-                <h4>10,000,000+</h4>
-                <p>Hours of content Streamed using Openwater globally</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col the-power-of-open-water-box">
-              <img src="images/power-of-open-water-arrow.svg" alt="" />
-
-              <div class="power-box-heading-wrapper">
-                <h4>10 minutes</h4>
-                <p>Average response time from our US customer support team</p>
-              </div>
-            </div>
-
-            <div class="col the-power-of-open-water-box">
-              <img src="images/power-of-open-water-arrow.svg" alt="" />
-
-              <div class="power-box-heading-wrapper">
-                <h4>750+</h4>
-                <p>Organizations trust OpenWater to power their programs</p>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="hero-reviews">
+        <img src="images/home-stars.svg" alt="nav-dropdown-icon" />
+        Based on stellar reviews on
       </div>
-    </section>
-
-    <section class="industry-leaders">
-      <h2>Trusted by the Industry Leaders</h2>
-
-      <div class="swiper industry-swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="images/ford-foundation.svg" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="images/prsa.svg" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="images/james.svg" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="images/oracal.svg" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="images/asae.svg" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="images/texas.svg" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="images/ford-foundation.svg" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="images/prsa.svg" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="images/james.svg" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="images/oracal.svg" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="images/asae.svg" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="images/texas.svg" alt="" />
-          </div>
-        </div>
+      <div>
+        <img src="images/crowd.svg" class="hero-company-logo" alt="nav-dropdown-icon" />
+        <img src="images/Trustpilot_brandmark_gr-blk_RGB-320x132px 1.svg" class="hero-company-logo"
+          alt="nav-dropdown-icon" />
+        <img src="images/capterra.svg" class="hero-company-logo" alt="nav-dropdown-icon" />
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="home-page-cta">
-      <div class="container">
-        <div class="cta-background">
-          <img src="images/home-page-cta-background.svg" alt="" />
-          <div class="cta-headding">
-            "We are what we repeatedly do. Excellence, then, is not an act, but
-            a habit"
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="at-glance">
-      <div class="container at-glance-container">
-        <h2 class="at-glance-title"><span>OpenWater</span> At-A-Glance</h2>
-        <p class="at-glance-para">
-          Features purposely designed to make your life easier and remove
-          friction from the review process.
-        </p>
-        <div class="at-glance-boxes">
-          <div class="row at-glance-row">
-            <div class="col">
-              <img src="images/Secure Portal Website.svg" alt="" />
-              <h4 class="at-glance-box-title">Secure Portal Website</h4>
-              <p class="at-glance-box-para">
-                Content management for your program that's flexible for
-                marketers, powerful for developers, and gives a secure
-                experience.
-              </p>
-            </div>
-
-            <div class="col">
-              <img src="images/collect-submitions.svg" alt="" />
-              <h4 class="at-glance-box-title">Collect Submissions</h4>
-              <p class="at-glance-box-para">
-                Collect large files, set conditional logic, accept letters of
-                recommendation -- all using our drag and drop form builder.
-              </p>
-            </div>
-            <div class="col">
-              <img src="images/multy-round-review.svg" alt="" />
-              <h4 class="at-glance-box-title">Multi-Round Review</h4>
-              <p class="at-glance-box-para">
-                OpenWater makes judging fun and easy. Reviewers log in, see
-                their assigned submissions and submit their scores right in the
-                system. Easy.
-              </p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col">
-              <img src="images/automated-emails.svg" alt="" />
-              <h4 class="at-glance-box-title">Automated Emails</h4>
-              <p class="at-glance-box-para">
-                Everyone stays in the loop with our Email Wizard. Create
-                mobile-optimized email campaigns that look great — all by
-                yourself.
-              </p>
-            </div>
-
-            <div class="col">
-              <img src="images/robust-reporting.svg" alt="" />
-              <h4 class="at-glance-box-title">Robust Reporting</h4>
-              <p class="at-glance-box-para">
-                Make smarter, data-backed decisions with powerful custom
-                reporting and built-in analytics.
-              </p>
-            </div>
-            <div class="col">
-              <img src="images/crmams.svg" alt="" />
-              <h4 class="at-glance-box-title">CRM/AMS Integrations</h4>
-              <p class="at-glance-box-para">
-                Connect OpenWater to system for a fast, reliable, sign-in
-                process and bi-directional sync.
-              </p>
-            </div>
-          </div>
-        </div>
-        <button class="at-glance-btn">Learn More</button>
-      </div>
-    </section>
-
-    <section class="testimonials">
-      <div class="container testimonials-container">
-        <h6 class="testimonials-short-heading">TESTIMONIALS</h6>
-        <h2 class="testimonials-heading">What our clients say</h2>
-        <div class="hero-reviews testimonials-reviews">
-          <img src="images/home-stars.svg" alt="nav-dropdown-icon" />
-          Based on stellar reviews on
-        </div>
-        <div>
-          <img
-            src="images/crowd.svg"
-            class="hero-company-logo"
-            alt="nav-dropdown-icon"
-          />
-          <img
-            src="images/Trustpilot_brandmark_gr-blk_RGB-320x132px 1.svg"
-            class="hero-company-logo"
-            alt="nav-dropdown-icon"
-          />
-          <img
-            src="images/capterra.svg"
-            class="hero-company-logo"
-            alt="nav-dropdown-icon"
-          />
-        </div>
-      </div>
-      <div class="swiper testimonial-slider">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide testimonial-slider-card">
-            <img src="images/aps-testi.png" alt="" />
-            <img
-              src="images/aps-logo.svg"
-              alt=""
-              class="testimonial-company-logo"
-            />
-            <p class="testimonial-para">
-              Our team deals with over 80 different programs that are reviewed
-              by 80 different committees who each have 3-12 volunteers.
-              OpenWater makes it easy for us to collect the information that
-              needs to be reviewed and enforce unique and diverse applicant
-              requirements. This year, OpenWater has allowed our team to process
-              over 1,200 applications reviewed by around 320+ volunteers.
-            </p>
-            <h6 class="testimonial-name">Delia Cruz N</h6>
-            <h6 class="testimonial-designation">
-              Honors Nomination Coordinator
-            </h6>
-            <h6 class="testimonial-name">The American Physical Society</h6>
-          </div>
-          <div class="swiper-slide testimonial-slider-card">
-            <img src="images/asae.png" alt="" />
-            <img
-              src="images/asae-logo.svg"
-              alt=""
-              class="testimonial-company-logo"
-            />
-            <p class="testimonial-para">
-              We use OpenWater not only for our awards programs, but also for
-              grants, fellowships and generally anything that requires an
-              application or judging process. All of this in one central system
-              that integrates nicely with our association management system.
-            </p>
-
-            <h6 class="testimonial-name">Reggie Henry, CAE</h6>
-            <h6 class="testimonial-designation">
-              Chief Information & Engagement Officer
-            </h6>
-            <h6 class="testimonial-name">ASAE</h6>
-          </div>
-
-          <div class="swiper-slide testimonial-slider-card">
-            <img src="images/asl.png" alt="" />
-            <img
-              src="images/asl-logo.svg"
-              alt=""
-              class="testimonial-company-logo"
-            />
-            <p class="testimonial-para">
-              ASHA uses the OpenWater platform for awards programs, grant and
-              scholarship applications, mentoring enrollment, course
-              registration, volunteer applications and leadership programs. The
-              flexibility of the OpenWater platform functionality is crucial to
-              efficiently and successfully manage these various types of
-              programs, each with unique requirements.
-            </p>
-
-            <h6 class="testimonial-name">Jill Straniero</h6>
-            <h6 class="testimonial-designation">Digital Product Manager</h6>
-            <h6 class="testimonial-name">
-              American Speech-Language Hearing Association (ASHA)
-            </h6>
-          </div>
-
-          <div class="swiper-slide testimonial-slider-card">
-            <img src="images/aaf.png" alt="" />
-            <img
-              src="images/aaf-logo.svg"
-              alt=""
-              class="testimonial-company-logo"
-            />
-            <p class="testimonial-para">
-              OpenWater is a company that treats you with a personal touch and
-              we find that of great value. We have enjoyed the relationship we
-              have built with them and have come to rely on them for the support
-              that we need to continue to grow our program.
-            </p>
-            <h6 class="testimonial-name">Joanne Schecter</h6>
-            <h6 class="testimonial-designation">Chapter Relations</h6>
-            <h6 class="testimonial-name">American Advertising Federation</h6>
-          </div>
-
-          <div class="swiper-slide testimonial-slider-card">
-            <img src="images/iet.png" alt="" />
-            <img
-              src="images/iet-logo.svg"
-              alt=""
-              class="testimonial-company-logo"
-            />
-            <p class="testimonial-para">
-              The Awards and Prizes team at the Institution of Engineering and
-              Technology operates several awards, prizes and scholarship
-              schemes, all with different entry and reporting requirements. The
-              flexibility and functionality of the platform has led to many
-              improvements and efficiencies in how IET awards are run. The
-              support from the OpenWater team has been excellent.
-            </p>
-            <h6 class="testimonial-name">Linda Deleay</h6>
-            <h6 class="testimonial-designation">Awards & Prizes Manager</h6>
-            <h6 class="testimonial-name">
-              The Institution of Engineering and Technology
-            </h6>
-          </div>
-
-          <div class="swiper-slide testimonial-slider-card">
-            <img src="images/direct-worman.png" alt="" />
-            <img
-              src="images/direct-woman.svg"
-              alt=""
-              class="testimonial-company-logo"
-            />
-            <p class="testimonial-para">
-              Applications are very intuitive and easy to build (even with
-              layers of complexity and if/then processes, and judging options
-              are very customizable, reporting options are extensive and
-              detailed. I did not have any experience building an application
-              and do not come from a technical background, but I was able to
-              build our application without issues due to the ease of using the
-              program and the prompt and helpful assistance of customer support.
-            </p>
-            <h6 class="testimonial-name">Laura Beth Hooper</h6>
-            <h6 class="testimonial-designation">
-              Operations and Development Specialist
-            </h6>
-            <h6 class="testimonial-name">DirectWomen</h6>
-          </div>
-
-          <div class="swiper-slide testimonial-slider-card">
-            <img src="images/aps-testi.png" alt="" />
-            <img
-              src="images/aps-logo.svg"
-              alt=""
-              class="testimonial-company-logo"
-            />
-            <p class="testimonial-para">
-              Our team deals with over 80 different programs that are reviewed
-              by 80 different committees who each have 3-12 volunteers.
-              OpenWater makes it easy for us to collect the information that
-              needs to be reviewed and enforce unique and diverse applicant
-              requirements. This year, OpenWater has allowed our team to process
-              over 1,200 applications reviewed by around 320+ volunteers.
-            </p>
-
-            <h6 class="testimonial-name">Joanne Schecter</h6>
-            <h6 class="testimonial-designation">Chapter Relations</h6>
-            <h6 class="testimonial-name">American Advertising Federation</h6>
-          </div>
-          <div class="swiper-slide testimonial-slider-card">
-            <img src="images/aps-testi.png" alt="" />
-            <img
-              src="images/aps-logo.svg"
-              alt=""
-              class="testimonial-company-logo"
-            />
-            <p class="testimonial-para">
-              Our team deals with over 80 different programs that are reviewed
-              by 80 different committees who each have 3-12 volunteers.
-              OpenWater makes it easy for us to collect the information that
-              needs to be reviewed and enforce unique and diverse applicant
-              requirements. This year, OpenWater has allowed our team to process
-              over 1,200 applications reviewed by around 320+ volunteers.
-            </p>
-
-            <h6 class="testimonial-name">Joanne Schecter</h6>
-            <h6 class="testimonial-designation">Chapter Relations</h6>
-            <h6 class="testimonial-name">American Advertising Federation</h6>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="integrations">
-      <div class="integrations-content">
-        <h2 class="testimonials-heading">Tons of Integrations</h2>
-        <p class="at-glance-para">
-          OpenWater has taken an integration first approach since the beginning.
-          We integrate will all major CRMs and Association Software. Have a
-          system we haven't integrated with yet? Let us know and we'll add it!
-        </p>
-        <button class="at-glance-btn">Learn More</button>
-      </div>
-
-      <div class="swiper tons-of-integrations-slider">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/ims.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/sales-force.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/personify.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/zapier.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/fonteve.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/nimble.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/member-suite.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/ims.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/sales-force.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/personify.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/zapier.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/fonteve.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/nimble.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/member-suite.svg" alt="" />
-          </div>
-        </div>
-      </div>
-
-      <div class="swiper tons-of-integrations-slider-right">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/nova.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/you-member-ship.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/acgi.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/micorsoft-dynamics.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/netforum.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/impexium.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/guide-star.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/nova.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/you-member-ship.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/acgi.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/micorsoft-dynamics.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/netforum.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/impexium.svg" alt="" />
-          </div>
-          <div class="swiper-slide tons-of-integrations-logo-box">
-            <img src="images/guide-star.svg" alt="" />
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="faq-section">
-      <div class="container faq-container">
-        <h2 class="faq-header">FAQs</h2>
-        <div class="accordion" id="accordionExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingOne">
-              <button
-                class="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
-              >
-                What does Application & Review mean?
-              </button>
-            </h2>
-            <div
-              id="collapseOne"
-              class="accordion-collapse collapse show"
-              aria-labelledby="headingOne"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                OpenWater works best with any type of program that involves
-                users submitting content that needs to be evaluated by a formal
-                review committee. Many softwares out there can handle the
-                submission aspect, but few can do the review well.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingTwo">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
-              >
-                What kind of support can I expect?
-              </button>
-            </h2>
-            <div
-              id="collapseTwo"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingTwo"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth
-                noting that just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingThree">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseThree"
-                aria-expanded="false"
-                aria-controls="collapseThree"
-              >
-                How is OpenWater different from other softwares?
-              </button>
-            </h2>
-            <div
-              id="collapseThree"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingThree"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth
-                noting that just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
-              </div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="headingFour">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseFour"
-                aria-expanded="false"
-                aria-controls="collapseThree"
-              >
-                What kind of reporting capabilities can I expect?
-              </button>
-            </h2>
-            <div
-              id="collapseFour"
-              class="accordion-collapse collapse"
-              aria-labelledby="headingFour"
-              data-bs-parent="#accordionExample"
-            >
-              <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth
-                noting that just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="footer-cta">
-      <h2 class="testimonials-heading">Get in touch with an Expert</h2>
-      <p class="at-glance-para">
-        Lorem Ipsum is simply dummy text of the printing and typesetting
-        industry. Lorem Ipsum has been the industry's standard dummy text ever
-        since.
+  <section class="grow-your-programs">
+    <div class="container grow-your-programs-contents">
+      <h2 class="h2-headding">
+        <span>Grow your programs</span> without the migraines
+      </h2>
+      <p>
+        Application & Review Software to help you get better applicants,
+        dazzle judges and grow your programs. Designed for Awards, Abstracts,
+        Scholarship, Grants and more..
       </p>
-      <button class="at-glance-btn">Request a Demo</button>
-    </section>
 
-    <footer>
-      <section class="content-section">
-        <div class="container">
-          <div class="row">
-            <div class="col-7">
-              <h5 class="footer-headings">follow us</h5>
-              <img src="images/facebook.svg" alt="" class="social-icons" />
-              <img src="images/twitter.svg" alt="" class="social-icons" />
-              <img src="images/linkedin.svg" alt="" class="social-icons" />
-              <img src="images/instagram.svg" alt="" class="social-icons" />
+      <h5>All in one Powerful, Easy-to-Use Platform</h5>
+      <!-- <img src="images/grow-your-programs-image.svg" class="grow-your-programs-image" alt="image" /> -->
 
-              <div class="row footer-3col-row">
-                <div class="col">
-                  <h5 class="footer-headings">Software</h5>
-                  <div class="footer-links">
-                    <a href="http://">Awards</a>
-                    <a href="http://">Fellowships</a>
-                    <a href="http://">Scholarships</a>
-                    <a href="http://">Grants</a>
-                    <a href="http://">Applications</a>
-                    <a href="http://">Abstracts</a>
-                  </div>
-                </div>
-                <div class="col">
-                  <h5 class="footer-headings">Support</h5>
-                  <div class="footer-links">
-                    <a href="http://">Help Center</a>
-                    <a href="http://">API Documentation</a>
-                    <a href="http://">GDPR + Privacy</a>
-                  </div>
-                </div>
-                <div class="col">
-                  <h5 class="footer-headings">About us</h5>
-                  <div class="footer-links">
-                    <a href="http://">The Team</a>
-                    <a href="http://">Careers</a>
-                    <a href="http://">News</a>
-                    <a href="http://">Security</a>
-                    <a href="http://">Privacy Policy</a>
-                  </div>
-                </div>
+      <div id="grow-your-programs-lottie"></div>
+
+      
+
+      <script>
+        // Load the animation
+        var animation = lottie.loadAnimation({
+          container: document.getElementById('grow-your-programs-lottie'),
+          renderer: 'svg',
+          loop: true,
+          autoplay: true,
+          path: 'lottie/yoga_test.json' // Replace with the path to your animation JSON file
+        });
+      </script>
+      
+
+
+      <div class="watch-btn-wrapper" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        <img src="images/watch-btn-icon.svg" class="watch-btn-icon" alt=""  />
+        Watch the video
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-            </div>
-
-            <div class="col-5">
-              <h5 class="footer-headings footer-contat-us">Contact us</h5>
-              <img src="images/open-water-footer-logo.svg" alt="" />
-              <h6 class="footer-location">HQ</h6>
-              <p class="footer-address">
-                1800 Diagonal Road Suite 600 Alexandria, VA 22314
-              </p>
-              <p class="footer-email">info@getopenwater.com</p>
-              <p class="footer-email">202-765-0247</p>
-
-              <div class="row">
-                <div class="col">
-                  <div class="inc-wrapper">
-                    <img src="images/Capa_1.svg" alt="" />
-                    <div class="inc-para-wrapper">
-                      <p>
-                        OpenWater has been named to the Inc5000 List of the
-                        Fastest Growing Private Companies in America for four
-                        years in a row since 2017.
-                      </p>
-                      <p class="read-the-press">READ THE PRESS RELEASE</p>
-                    </div>
-                  </div>
-                  
-                  </div>
-                  <div class="col">
-                    <div class="inc-wrapper">
-                      <img src="images/Alliance-Partner_EVENTS-Partner_Seal_BLK.png.svg" alt="" />
-                      <div class="inc-para-wrapper">
-                        <p>
-                          OpenWater is a proud ASAE Alliance Partner
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                
+              <div class="modal-body">
+                ...
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
               </div>
             </div>
           </div>
         </div>
-      </section>
 
-      <section class="copyright">
-        <div>Copyright © 2023 <span>Openwater.</span> All Rights Reserved.</div>
-      </section>
-    </footer>
-  </body>
+      </div>
+    </div>
+  </section>
 
-  <!-- industry-swiper -->
-  <script>
-    var swiper = new Swiper(".industry-swiper", {
-      freeMode: true,
-      loop: true,
-      autoplay: {
-        delay: 1,
-        disableOnInteraction: false,
-      },
-      speed: 8000,
-      breakpoints: {
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 10,
-        },
-        768: {
-          slidesPerView: 3,
-          spaceBetween: 10,
-        },
-        1024: {
-          slidesPerView: 6,
-          spaceBetween: 20,
-        },
-      },
-    });
-  </script>
+  <section class="the-open-water-platform">
+    <div class="container the-open-water-platform-contents">
+      <h2 class="h2-headding-the-open-water-platform">
+        <span>The OpenWater Platform.</span> Powerful Alone.
+        <span>Better Together.</span>
+      </h2>
 
-  <!-- testimonial slider -->
-  <script>
-    var swiper = new Swiper(".testimonial-slider", {
-      loop: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      breakpoints: {
-        640: {
-          slidesPerView: 1,
-          spaceBetween: 10,
-        },
-        768: {
-          slidesPerView: 3,
-          spaceBetween: 10,
-        },
-        1024: {
-          slidesPerView: 4,
-          spaceBetween: 30,
-        },
-      },
-    });
-  </script>
+      <!-- take export form all the image in one group and add here -->
+      <img src="images/box-for-brackets.svg" alt="" style="margin-top: 94px" />
+      <img src="images/brackets.svg" alt="" />
 
-  <!-- tons of integration slider one -->
-  <script>
-    var swiper = new Swiper(".tons-of-integrations-slider", {
-      freeMode: true,
-      loop: true,
-      autoplay: {
-        delay: 1,
-        disableOnInteraction: false,
-      },
-      speed: 8000,
-      breakpoints: {
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 10,
-        },
-        768: {
-          slidesPerView: 3,
-          spaceBetween: 10,
-        },
-        1024: {
-          slidesPerView: 7,
-          spaceBetween: 30,
-        },
-      },
-    });
-  </script>
+      <div class="the-open-water-platform-row-wrapper">
+        <div class="row">
+          <div class="col open-water-platform-box">
+            <hr class="blue" />
 
-  <!-- tons of integration slider two -->
-  <script>
-    var swiper = new Swiper(".tons-of-integrations-slider-right", {
-      freeMode: true,
-      loop: true,
-      autoplay: {
-        delay: 1,
-        disableOnInteraction: false,
-        reverseDirection: true,
+            <div class="better-platform-heading-wrapper">
+              <img src="images/Abstract-Software.svg" class="platform-icon" alt="" />
+              <h4 class="better-platform-heading">Abstract Software</h4>
+            </div>
+            <p>
+              Robust abstracts software that can power your conference
+              management. Abstract collection, peer review, session scheduling
+              and mobile app integration -- all made easy in OpenWater.
+            </p>
+          </div>
+          <div class="col open-water-platform-box">
+            <hr class="orange" />
+            <div class="better-platform-heading-wrapper">
+              <img src="images/Awards-Software.svg" class="platform-icon" alt="" />
+              <h4 class="better-platform-heading">Awards Software</h4>
+            </div>
+            <p>
+              All-in-one awards management platform designed to streamline and
+              simplify your entire awards program. Forget manila folders.
+              Ditch the spreadsheets. OpenWater Awards does it all.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col open-water-platform-box">
+            <hr class="orange" />
+            <div class="better-platform-heading-wrapper">
+              <img src="images/Grants.svg" class="platform-icon" alt="" />
+              <h4 class="better-platform-heading">Grants</h4>
+            </div>
+            <p>
+              Create the impact you want with streamlined grants applications,
+              a user friendly reviewer portal, and powerful features for
+              program administrators.
+            </p>
+          </div>
+          <div class="col open-water-platform-box">
+            <hr class="blue" />
+            <div class="better-platform-heading-wrapper">
+              <img src="images/Scholarships.svg" class="platform-icon" alt="" />
+              <h4 class="better-platform-heading">Scholarships</h4>
+            </div>
+            <p>
+              Our all-in-one scholarship software manages the entire
+              multi-step, multi-review process smoothly, moving applicants to
+              scholarship recipients.
+            </p>
+          </div>
+          <div class="col open-water-platform-box">
+            <hr class="blue" />
+            <div class="better-platform-heading-wrapper">
+              <img src="images/Fellowships.svg" class="platform-icon" alt="" />
+              <h4 class="better-platform-heading">Fellowships</h4>
+            </div>
+            <p>
+              Create a memorable fellowship website, promote your fellows and
+              alumni, and control the entire process, all in one system.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="the-power-of-open-water">
+    <div class="container the-power-of-open-water-container">
+      <div class="the-open-water-platform-heading-contents">
+        <h6>GROW WITH US</h6>
+        <h2>The Power of <span>Openwater</span></h2>
+        <p class="the-power-of-open-water-container-p">
+          These metrics demonstrates the impact Getopenwater has on
+          productivity and consumer satisfaction.
+        </p>
+      </div>
+
+      <div class="power-of-open-water-box-wrapper">
+        <div class="row">
+          <div class="col the-power-of-open-water-box">
+            <img src="images/power-of-open-water-arrow.svg" alt="" />
+
+            <div class="power-box-heading-wrapper">
+              <h4>5,403,435+</h4>
+              <p>Submissions seamlessly collected through OpenWater</p>
+            </div>
+          </div>
+
+          <div class="col the-power-of-open-water-box">
+            <img src="images/power-of-open-water-arrow.svg" alt="" />
+
+            <div class="power-box-heading-wrapper">
+              <h4>10,000,000+</h4>
+              <p>Hours of content Streamed using Openwater globally</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col the-power-of-open-water-box">
+            <img src="images/power-of-open-water-arrow.svg" alt="" />
+
+            <div class="power-box-heading-wrapper">
+              <h4>10 minutes</h4>
+              <p>Average response time from our US customer support team</p>
+            </div>
+          </div>
+
+          <div class="col the-power-of-open-water-box">
+            <img src="images/power-of-open-water-arrow.svg" alt="" />
+
+            <div class="power-box-heading-wrapper">
+              <h4>750+</h4>
+              <p>Organizations trust OpenWater to power their programs</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="industry-leaders">
+    <h2>Trusted by the Industry Leaders</h2>
+
+    <div class="swiper industry-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="images/ford-foundation.svg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/prsa.svg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/james.svg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/oracal.svg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/asae.svg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/texas.svg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/ford-foundation.svg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/prsa.svg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/james.svg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/oracal.svg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/asae.svg" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/texas.svg" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="home-page-cta">
+    <div class="container">
+      <div class="cta-background">
+        <img src="images/home-page-cta-background.svg" alt="" />
+        <div class="cta-headding">
+          "We are what we repeatedly do. Excellence, then, is not an act, but
+          a habit"
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="at-glance">
+    <div class="container at-glance-container">
+      <h2 class="at-glance-title"><span>OpenWater</span> At-A-Glance</h2>
+      <p class="at-glance-para">
+        Features purposely designed to make your life easier and remove
+        friction from the review process.
+      </p>
+      <div class="at-glance-boxes">
+        <div class="row at-glance-row">
+          <div class="col">
+            <img src="images/Secure Portal Website.svg" alt="" />
+            <h4 class="at-glance-box-title">Secure Portal Website</h4>
+            <p class="at-glance-box-para">
+              Content management for your program that's flexible for
+              marketers, powerful for developers, and gives a secure
+              experience.
+            </p>
+          </div>
+
+          <div class="col">
+            <img src="images/collect-submitions.svg" alt="" />
+            <h4 class="at-glance-box-title">Collect Submissions</h4>
+            <p class="at-glance-box-para">
+              Collect large files, set conditional logic, accept letters of
+              recommendation -- all using our drag and drop form builder.
+            </p>
+          </div>
+          <div class="col">
+            <img src="images/multy-round-review.svg" alt="" />
+            <h4 class="at-glance-box-title">Multi-Round Review</h4>
+            <p class="at-glance-box-para">
+              OpenWater makes judging fun and easy. Reviewers log in, see
+              their assigned submissions and submit their scores right in the
+              system. Easy.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <img src="images/automated-emails.svg" alt="" />
+            <h4 class="at-glance-box-title">Automated Emails</h4>
+            <p class="at-glance-box-para">
+              Everyone stays in the loop with our Email Wizard. Create
+              mobile-optimized email campaigns that look great — all by
+              yourself.
+            </p>
+          </div>
+
+          <div class="col">
+            <img src="images/robust-reporting.svg" alt="" />
+            <h4 class="at-glance-box-title">Robust Reporting</h4>
+            <p class="at-glance-box-para">
+              Make smarter, data-backed decisions with powerful custom
+              reporting and built-in analytics.
+            </p>
+          </div>
+          <div class="col">
+            <img src="images/crmams.svg" alt="" />
+            <h4 class="at-glance-box-title">CRM/AMS Integrations</h4>
+            <p class="at-glance-box-para">
+              Connect OpenWater to system for a fast, reliable, sign-in
+              process and bi-directional sync.
+            </p>
+          </div>
+        </div>
+      </div>
+      <button class="at-glance-btn">Learn More</button>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <div class="container testimonials-container">
+      <h6 class="testimonials-short-heading">TESTIMONIALS</h6>
+      <h2 class="testimonials-heading">What our clients say</h2>
+      <div class="hero-reviews testimonials-reviews">
+        <img src="images/home-stars.svg" alt="nav-dropdown-icon" />
+        Based on stellar reviews on
+      </div>
+      <div>
+        <img src="images/crowd.svg" class="hero-company-logo" alt="nav-dropdown-icon" />
+        <img src="images/Trustpilot_brandmark_gr-blk_RGB-320x132px 1.svg" class="hero-company-logo"
+          alt="nav-dropdown-icon" />
+        <img src="images/capterra.svg" class="hero-company-logo" alt="nav-dropdown-icon" />
+      </div>
+    </div>
+    <div class="swiper testimonial-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide testimonial-slider-card">
+          <img src="images/aps-testi.png" alt="" />
+          <img src="images/aps-logo.svg" alt="" class="testimonial-company-logo" />
+          <p class="testimonial-para">
+            Our team deals with over 80 different programs that are reviewed
+            by 80 different committees who each have 3-12 volunteers.
+            OpenWater makes it easy for us to collect the information that
+            needs to be reviewed and enforce unique and diverse applicant
+            requirements. This year, OpenWater has allowed our team to process
+            over 1,200 applications reviewed by around 320+ volunteers.
+          </p>
+          <h6 class="testimonial-name">Delia Cruz N</h6>
+          <h6 class="testimonial-designation">
+            Honors Nomination Coordinator
+          </h6>
+          <h6 class="testimonial-name">The American Physical Society</h6>
+        </div>
+        <div class="swiper-slide testimonial-slider-card">
+          <img src="images/asae.png" alt="" />
+          <img src="images/asae-logo.svg" alt="" class="testimonial-company-logo" />
+          <p class="testimonial-para">
+            We use OpenWater not only for our awards programs, but also for
+            grants, fellowships and generally anything that requires an
+            application or judging process. All of this in one central system
+            that integrates nicely with our association management system.
+          </p>
+
+          <h6 class="testimonial-name">Reggie Henry, CAE</h6>
+          <h6 class="testimonial-designation">
+            Chief Information & Engagement Officer
+          </h6>
+          <h6 class="testimonial-name">ASAE</h6>
+        </div>
+
+        <div class="swiper-slide testimonial-slider-card">
+          <img src="images/asl.png" alt="" />
+          <img src="images/asl-logo.svg" alt="" class="testimonial-company-logo" />
+          <p class="testimonial-para">
+            ASHA uses the OpenWater platform for awards programs, grant and
+            scholarship applications, mentoring enrollment, course
+            registration, volunteer applications and leadership programs. The
+            flexibility of the OpenWater platform functionality is crucial to
+            efficiently and successfully manage these various types of
+            programs, each with unique requirements.
+          </p>
+
+          <h6 class="testimonial-name">Jill Straniero</h6>
+          <h6 class="testimonial-designation">Digital Product Manager</h6>
+          <h6 class="testimonial-name">
+            American Speech-Language Hearing Association (ASHA)
+          </h6>
+        </div>
+
+        <div class="swiper-slide testimonial-slider-card">
+          <img src="images/aaf.png" alt="" />
+          <img src="images/aaf-logo.svg" alt="" class="testimonial-company-logo" />
+          <p class="testimonial-para">
+            OpenWater is a company that treats you with a personal touch and
+            we find that of great value. We have enjoyed the relationship we
+            have built with them and have come to rely on them for the support
+            that we need to continue to grow our program.
+          </p>
+          <h6 class="testimonial-name">Joanne Schecter</h6>
+          <h6 class="testimonial-designation">Chapter Relations</h6>
+          <h6 class="testimonial-name">American Advertising Federation</h6>
+        </div>
+
+        <div class="swiper-slide testimonial-slider-card">
+          <img src="images/iet.png" alt="" />
+          <img src="images/iet-logo.svg" alt="" class="testimonial-company-logo" />
+          <p class="testimonial-para">
+            The Awards and Prizes team at the Institution of Engineering and
+            Technology operates several awards, prizes and scholarship
+            schemes, all with different entry and reporting requirements. The
+            flexibility and functionality of the platform has led to many
+            improvements and efficiencies in how IET awards are run. The
+            support from the OpenWater team has been excellent.
+          </p>
+          <h6 class="testimonial-name">Linda Deleay</h6>
+          <h6 class="testimonial-designation">Awards & Prizes Manager</h6>
+          <h6 class="testimonial-name">
+            The Institution of Engineering and Technology
+          </h6>
+        </div>
+
+        <div class="swiper-slide testimonial-slider-card">
+          <img src="images/direct-worman.png" alt="" />
+          <img src="images/direct-woman.svg" alt="" class="testimonial-company-logo" />
+          <p class="testimonial-para">
+            Applications are very intuitive and easy to build (even with
+            layers of complexity and if/then processes, and judging options
+            are very customizable, reporting options are extensive and
+            detailed. I did not have any experience building an application
+            and do not come from a technical background, but I was able to
+            build our application without issues due to the ease of using the
+            program and the prompt and helpful assistance of customer support.
+          </p>
+          <h6 class="testimonial-name">Laura Beth Hooper</h6>
+          <h6 class="testimonial-designation">
+            Operations and Development Specialist
+          </h6>
+          <h6 class="testimonial-name">DirectWomen</h6>
+        </div>
+
+        <div class="swiper-slide testimonial-slider-card">
+          <img src="images/aps-testi.png" alt="" />
+          <img src="images/aps-logo.svg" alt="" class="testimonial-company-logo" />
+          <p class="testimonial-para">
+            Our team deals with over 80 different programs that are reviewed
+            by 80 different committees who each have 3-12 volunteers.
+            OpenWater makes it easy for us to collect the information that
+            needs to be reviewed and enforce unique and diverse applicant
+            requirements. This year, OpenWater has allowed our team to process
+            over 1,200 applications reviewed by around 320+ volunteers.
+          </p>
+
+          <h6 class="testimonial-name">Joanne Schecter</h6>
+          <h6 class="testimonial-designation">Chapter Relations</h6>
+          <h6 class="testimonial-name">American Advertising Federation</h6>
+        </div>
+        <div class="swiper-slide testimonial-slider-card">
+          <img src="images/aps-testi.png" alt="" />
+          <img src="images/aps-logo.svg" alt="" class="testimonial-company-logo" />
+          <p class="testimonial-para">
+            Our team deals with over 80 different programs that are reviewed
+            by 80 different committees who each have 3-12 volunteers.
+            OpenWater makes it easy for us to collect the information that
+            needs to be reviewed and enforce unique and diverse applicant
+            requirements. This year, OpenWater has allowed our team to process
+            over 1,200 applications reviewed by around 320+ volunteers.
+          </p>
+
+          <h6 class="testimonial-name">Joanne Schecter</h6>
+          <h6 class="testimonial-designation">Chapter Relations</h6>
+          <h6 class="testimonial-name">American Advertising Federation</h6>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="integrations">
+    <div class="integrations-content">
+      <h2 class="testimonials-heading">Tons of Integrations</h2>
+      <p class="at-glance-para">
+        OpenWater has taken an integration first approach since the beginning.
+        We integrate will all major CRMs and Association Software. Have a
+        system we haven't integrated with yet? Let us know and we'll add it!
+      </p>
+      <button class="at-glance-btn">Learn More</button>
+    </div>
+
+    <div class="swiper tons-of-integrations-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide tons-of-integrations-logo-box">
+          <img src="images/ims.svg" alt="" />
+        </div>
+        <div class="swiper-slide tons-of-integrations-logo-box">
+          <img src="images/sales-force.svg" alt="" />
+        </div>
+        <div class="swiper-slide tons-of-integrations-logo-box">
+          <img src="images/personify.svg" alt="" />
+        </div>
+        <div class="swiper-slide tons-of-integrations-logo-box">
+          <img src="images/zapier.svg" alt="" />
+        </div>
+        <div class="swiper-slide tons-of-integrations-logo-box">
+          <img src="images/fonteve.svg" alt="" />
+        </div>
+        <div class="swiper-slide tons-of-integrations-logo-box">
+          <img src="images/nimble.svg" alt="" />
+        </div>
+        <div class="swiper-slide tons-of-integrations-logo-box">
+          <img src="images/member-suite.svg" alt="" />
+        </div>
+        <div class="swiper-slide tons-of-integrations-logo-box">
+          <img src="images/ims.svg" alt="" />
+        </div>
+        <div class="swiper-slide tons-of-integrations-logo-box">
+          <img src="images/sales-force.svg" alt="" />
+        </div>
+        <div class="swiper-slide tons-of-integrations-logo-box">
+          <img src="images/personify.svg" alt="" />
+        </div>
+        <div class="swiper-slide tons-of-integrations-logo-box">
+          <img src="images/zapier.svg" alt="" />
+        </div>
+        <div class="swiper-slide tons-of-integrations-logo-box">
+          <img src="images/fonteve.svg" alt="" />
+        </div>
+        <div class="swiper-slide tons-of-integrations-logo-box">
+          <img src="images/nimble.svg" alt="" />
+        </div>
+        <div class="swiper-slide tons-of-integrations-logo-box">
+          <img src="images/member-suite.svg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper tons-of-integrations-slider-right">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide tons-of-integrations-logo-box">
+          <img src="images/nova.svg" alt="" />
+        </div>
+        <div class="swiper-slide tons-of-integrations-logo-box">
+          <img src="images/you-member-ship.svg" alt="" />
+        </div>
+        <div class="swiper-slide tons-of-integrations-logo-box">
+          <img src="images/acgi.svg" alt="" />
+        </div>
+        <div class="swiper-slide tons-of-integrations-logo-box">
+          <img src="images/micorsoft-dynamics.svg" alt="" />
+        </div>
+        <div class="swiper-slide tons-of-integrations-logo-box">
+          <img src="images/netforum.svg" alt="" />
+        </div>
+        <div class="swiper-slide tons-of-integrations-logo-box">
+          <img src="images/impexium.svg" alt="" />
+        </div>
+        <div class="swiper-slide tons-of-integrations-logo-box">
+          <img src="images/guide-star.svg" alt="" />
+        </div>
+        <div class="swiper-slide tons-of-integrations-logo-box">
+          <img src="images/nova.svg" alt="" />
+        </div>
+        <div class="swiper-slide tons-of-integrations-logo-box">
+          <img src="images/you-member-ship.svg" alt="" />
+        </div>
+        <div class="swiper-slide tons-of-integrations-logo-box">
+          <img src="images/acgi.svg" alt="" />
+        </div>
+        <div class="swiper-slide tons-of-integrations-logo-box">
+          <img src="images/micorsoft-dynamics.svg" alt="" />
+        </div>
+        <div class="swiper-slide tons-of-integrations-logo-box">
+          <img src="images/netforum.svg" alt="" />
+        </div>
+        <div class="swiper-slide tons-of-integrations-logo-box">
+          <img src="images/impexium.svg" alt="" />
+        </div>
+        <div class="swiper-slide tons-of-integrations-logo-box">
+          <img src="images/guide-star.svg" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section">
+    <div class="container faq-container">
+      <h2 class="faq-header">FAQs</h2>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              What does Application & Review mean?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              OpenWater works best with any type of program that involves
+              users submitting content that needs to be evaluated by a formal
+              review committee. Many softwares out there can handle the
+              submission aspect, but few can do the review well.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              What kind of support can I expect?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the second item's accordion body.</strong> It is
+              hidden by default, until the collapse plugin adds the
+              appropriate classes that we use to style each element. These
+              classes control the overall appearance, as well as the showing
+              and hiding via CSS transitions. You can modify any of this with
+              custom CSS or overriding our default variables. It's also worth
+              noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit
+              overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              How is OpenWater different from other softwares?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is
+              hidden by default, until the collapse plugin adds the
+              appropriate classes that we use to style each element. These
+              classes control the overall appearance, as well as the showing
+              and hiding via CSS transitions. You can modify any of this with
+              custom CSS or overriding our default variables. It's also worth
+              noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit
+              overflow.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+              What kind of reporting capabilities can I expect?
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+            data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>This is the third item's accordion body.</strong> It is
+              hidden by default, until the collapse plugin adds the
+              appropriate classes that we use to style each element. These
+              classes control the overall appearance, as well as the showing
+              and hiding via CSS transitions. You can modify any of this with
+              custom CSS or overriding our default variables. It's also worth
+              noting that just about any HTML can go within the
+              <code>.accordion-body</code>, though the transition does limit
+              overflow.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer-cta">
+    <h2 class="testimonials-heading">Get in touch with an Expert</h2>
+    <p class="at-glance-para">
+      Lorem Ipsum is simply dummy text of the printing and typesetting
+      industry. Lorem Ipsum has been the industry's standard dummy text ever
+      since.
+    </p>
+    <button class="at-glance-btn">Request a Demo</button>
+  </section>
+
+  <footer>
+    <section class="content-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-7">
+            <h5 class="footer-headings">follow us</h5>
+            <img src="images/facebook.svg" alt="" class="social-icons" />
+            <img src="images/twitter.svg" alt="" class="social-icons" />
+            <img src="images/linkedin.svg" alt="" class="social-icons" />
+            <img src="images/instagram.svg" alt="" class="social-icons" />
+
+            <div class="row footer-3col-row">
+              <div class="col">
+                <h5 class="footer-headings">Software</h5>
+                <div class="footer-links">
+                  <a href="http://">Awards</a>
+                  <a href="http://">Fellowships</a>
+                  <a href="http://">Scholarships</a>
+                  <a href="http://">Grants</a>
+                  <a href="http://">Applications</a>
+                  <a href="http://">Abstracts</a>
+                </div>
+              </div>
+              <div class="col">
+                <h5 class="footer-headings">Support</h5>
+                <div class="footer-links">
+                  <a href="http://">Help Center</a>
+                  <a href="http://">API Documentation</a>
+                  <a href="http://">GDPR + Privacy</a>
+                </div>
+              </div>
+              <div class="col">
+                <h5 class="footer-headings">About us</h5>
+                <div class="footer-links">
+                  <a href="http://">The Team</a>
+                  <a href="http://">Careers</a>
+                  <a href="http://">News</a>
+                  <a href="http://">Security</a>
+                  <a href="http://">Privacy Policy</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-5">
+            <h5 class="footer-headings footer-contat-us">Contact us</h5>
+            <img src="images/open-water-footer-logo.svg" alt="" />
+            <h6 class="footer-location">HQ</h6>
+            <p class="footer-address">
+              1800 Diagonal Road Suite 600 Alexandria, VA 22314
+            </p>
+            <p class="footer-email">info@getopenwater.com</p>
+            <p class="footer-email">202-765-0247</p>
+
+            <div class="row">
+              <div class="col">
+                <div class="inc-wrapper">
+                  <img src="images/Capa_1.svg" alt="" />
+                  <div class="inc-para-wrapper">
+                    <p>
+                      OpenWater has been named to the Inc5000 List of the
+                      Fastest Growing Private Companies in America for four
+                      years in a row since 2017.
+                    </p>
+                    <p class="read-the-press">READ THE PRESS RELEASE</p>
+                  </div>
+                </div>
+
+              </div>
+              <div class="col">
+                <div class="inc-wrapper">
+                  <img src="images/Alliance-Partner_EVENTS-Partner_Seal_BLK.png.svg" alt="" />
+                  <div class="inc-para-wrapper">
+                    <p>
+                      OpenWater is a proud ASAE Alliance Partner
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="copyright">
+      <div>Copyright © 2023 <span>Openwater.</span> All Rights Reserved.</div>
+    </section>
+  </footer>
+</body>
+
+<!-- industry-swiper -->
+<script>
+  var swiper = new Swiper(".industry-swiper", {
+    freeMode: true,
+    loop: true,
+    autoplay: {
+      delay: 1,
+      disableOnInteraction: false,
+    },
+    speed: 8000,
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 10,
       },
-      speed: 8000,
-      breakpoints: {
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 10,
-        },
-        768: {
-          slidesPerView: 3,
-          spaceBetween: 10,
-        },
-        1024: {
-          slidesPerView: 7,
-          spaceBetween: 30,
-        },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 10,
       },
-    });
-  </script>
+      1024: {
+        slidesPerView: 6,
+        spaceBetween: 20,
+      },
+    },
+  });
+</script>
+
+<!-- testimonial slider -->
+<script>
+  var swiper = new Swiper(".testimonial-slider", {
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+    },
+  });
+</script>
+
+<!-- tons of integration slider one -->
+<script>
+  var swiper = new Swiper(".tons-of-integrations-slider", {
+    freeMode: true,
+    loop: true,
+    autoplay: {
+      delay: 1,
+      disableOnInteraction: false,
+    },
+    speed: 8000,
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+      },
+      1024: {
+        slidesPerView: 7,
+        spaceBetween: 30,
+      },
+    },
+  });
+</script>
+
+<!-- tons of integration slider two -->
+<script>
+  var swiper = new Swiper(".tons-of-integrations-slider-right", {
+    freeMode: true,
+    loop: true,
+    autoplay: {
+      delay: 1,
+      disableOnInteraction: false,
+      reverseDirection: true,
+    },
+    speed: 8000,
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+      },
+      1024: {
+        slidesPerView: 7,
+        spaceBetween: 30,
+      },
+    },
+  });
+</script>
+
 </html>

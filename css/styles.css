@@ -175,7 +175,7 @@ header {
   padding-bottom: 21px;
 }
 
-.watch-btn-wapper {
+.watch-btn-wrapper {
   background: #ff6332;
   border: 12px solid #fff5f1;
   border-radius: 35px;
@@ -191,6 +191,7 @@ header {
   font-size: 20px;
   line-height: 22px;
   letter-spacing: 0.5px;
+  cursor: pointer;
 }
 
 .watch-btn-icon {
