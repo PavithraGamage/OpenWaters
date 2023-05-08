@@ -61,6 +61,9 @@ function mobile_menu_hide() {
 
   var box = document.getElementById("mobile-logo");
   box.style.display = "block";
+
+  var platform_expan = document.getElementById('mobile-platform-expan');
+  platform_expan.style.display = "none";
 }
 // mobile main drop down end -----------------------------------------
 
@@ -71,4 +74,10 @@ function platform_mobile_menu_show() {
 
   var platform_mobile_menu = document.getElementById('mobile-platform');
   platform_mobile_menu.style.display = "block";
+
+  var main_drop_down = document.getElementById("main-drop-down");
+  main_drop_down.style.display = "none";
+
+  var platform_expan = document.getElementById('mobile-platform-expan');
+  platform_expan.style.display = "block";
 }

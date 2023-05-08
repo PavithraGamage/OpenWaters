@@ -1093,6 +1093,10 @@ img.better-together-img {
     height: 750px;
   }
 }
+
+
+
+
 @media (max-width: 1024px) {
   .the-open-water-platform-row-wrapper {
     width: auto;
@@ -1115,9 +1119,10 @@ img.better-together-img {
   }
 
   .mobile-nav {
-    display: block;
-    padding: 20px 0px;
+    display: flex;
     box-shadow: 0px 4px 4px rgba(23, 21, 45, 0.06);
+    height: 60px;
+    align-items: center;
   }
 
   .toggle-btn-wrapper {
@@ -1157,6 +1162,19 @@ img.better-together-img {
     backdrop-filter: blur(20px);
     position: absolute;
     width: 100%;
+  }
+
+  .mobile-nav-logo-wrapper h5{
+    margin-bottom: 0px;
+  }
+
+  #mobile-platform-expan{
+    position: absolute;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.83);
+    filter: drop-shadow(0px 23px 16px rgba(79, 79, 104, 0.25));
+    backdrop-filter: blur(20px);
+
   }
 }
 
