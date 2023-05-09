@@ -1182,6 +1182,7 @@ img.better-together-img {
     background: rgba(255, 255, 255, 0.83);
     filter: drop-shadow(0px 23px 16px rgba(79, 79, 104, 0.25));
     backdrop-filter: blur(20px);
+    z-index: 99;
 
   }
 }
