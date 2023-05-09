@@ -165,6 +165,10 @@ header {
   margin-bottom: 25px;
 }
 
+.row.inc-row {
+  margin-bottom: 20px;
+}
+
 .grow-your-programs-contents h5 {
   font-style: normal;
   font-weight: 600;
@@ -381,9 +385,9 @@ header {
   padding-left: 48px !important;
 }
 
-.drop-down-items-center {
+/* .drop-down-items-center {
   align-items: center;
-}
+} */
 
 .menu-integration-btn {
   font-style: normal;
@@ -931,6 +935,10 @@ header {
   height: 415px;
 }
 
+.mobile-software-col{
+  display: none;
+}
+
 .footer-cta .at-glance-btn {
   width: 210px;
   height: 50px;
@@ -1003,7 +1011,7 @@ img.better-together-img {
   text-decoration: none;
 }
 
-.footer-contat-us {
+.footer-contact-us {
   margin-bottom: 34px;
 }
 
@@ -1309,7 +1317,7 @@ img.better-together-img {
   .inc-wrapper {
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
+    margin-top: 40px;
   }
 
   .inc-para-wrapper {
@@ -1317,8 +1325,8 @@ img.better-together-img {
     margin-top: 20px;
   }
 
-  .footer-contat-us {
-    margin-top: 34px;
+  .footer-contact-us {
+    margin-top: 56px;
   }
 
   img.better-together-img {
@@ -1329,6 +1337,35 @@ img.better-together-img {
   .the-power-of-open-water-box h4{
     font-size: 35px;
   }
+
+  .desktop-software-col{
+    display: none;
+  }
+
+  .mobile-software-col{
+    display: block;
+    width: 50% !important;
+  }
+
+  .footer-about-us{
+    margin-top: 56px;
+  }
+
+  .inc-row{
+    flex-direction: column;
+  }
+
+  .inc-wrapper-last{
+    margin-top: 20px;
+  }
+
+  .inc-wrapper p {
+    width: 175px;
+  }
+
+  .content-section {
+    background-position-y: 400px;
+}
 }
 
 /* home page css end */
