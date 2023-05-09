@@ -152,32 +152,37 @@
             margin-bottom: 40px;
         }
 
-        .as-grow-your-programs-swiper .swiper-button-prev {
+        .as-grow-your-programs-slider-btn {
+            position: relative;
+            top:-25px
+        }
+
+        .as-grow-your-programs-slider-btn .swiper-button-prev {
             background-image: url('../images/slider_navigation_left.svg');
         }
 
-        .as-grow-your-programs-swiper .swiper-button-next {
+        .as-grow-your-programs-slider-btn .swiper-button-next {
             background-image: url('../images/slider_navigation-right.svg');
         }
 
-        .as-grow-your-programs-swiper .swiper-button-next,
+        .as-grow-your-programs-slider-btn .swiper-button-next,
         .swiper-button-prev {
             width: 52px;
             height: 52px;
-            top: 10%
+            top: 0%
         }
 
-        .as-grow-your-programs-swiper .swiper-button-prev:after,
+        .as-grow-your-programs-slider-btn .swiper-button-prev:after,
         .swiper-rtl .swiper-button-next:after {
             content: none;
         }
 
-        .as-grow-your-programs-swiper .swiper-button-next:after,
+        .as-grow-your-programs-slider-btn .swiper-button-next:after,
         .swiper-rtl .swiper-button-prev:after {
             content: none;
         }
 
-        .as-grow-your-programs-swiper .swiper-button-prev,
+        .as-grow-your-programs-slider-btn .swiper-button-prev,
         .swiper-rtl .swiper-button-next {
             left: 90%;
             right: auto;
@@ -197,7 +202,7 @@
 
         @media (max-width: 1400px) {
 
-            .as-grow-your-programs-swiper .swiper-button-prev,
+            .as-grow-your-programs-slider-btn .swiper-button-prev,
             .swiper-rtl .swiper-button-next {
                 left: 88%;
             }
@@ -205,16 +210,20 @@
 
         @media (max-width: 1200px) {
 
-            .as-grow-your-programs-swiper .swiper-button-prev,
+            .as-grow-your-programs-slider-btn .swiper-button-prev,
             .swiper-rtl .swiper-button-next {
                 left: 86%;
+            }
+
+            .as-grow-your-programs-slider-btn {
+                top: 155px;
             }
 
         }
 
         @media (max-width: 991px) {
 
-            .as-grow-your-programs-swiper .swiper-button-prev,
+            .as-grow-your-programs-slider-btn .swiper-button-prev,
             .swiper-rtl .swiper-button-next {
                 left: 80%;
             }
@@ -226,13 +235,17 @@
 
             }
 
-            .as-grow-your-programs-swiper .swiper-button-next,
+            .as-grow-your-programs-slider-btn .swiper-button-next,
             .swiper-button-prev {
                 top: 5%
             }
 
             .as-grow-your-programs-btn button {
                 font-size: 14.7489px;
+            }
+
+            .as-grow-your-programs-slider-btn {
+                top: 875px;
             }
 
         }
@@ -251,7 +264,7 @@
                 display: none;
             }
 
-            .as-grow-your-programs-swiper .swiper-button-next,
+            .as-grow-your-programs-slider-btn .swiper-button-next,
             .swiper-button-prev {
                 top: 92%;
             }
@@ -267,7 +280,7 @@
                 width: auto;
             }
 
-            .as-grow-your-programs-swiper .swiper-button-prev,
+            .as-grow-your-programs-slider-btn .swiper-button-prev,
             .swiper-rtl .swiper-button-next {
                 left: 62%;
             }
@@ -278,6 +291,10 @@
 
             .as-grow-your-programs-swiper .swiper-wrapper .swiper-slide h4 {
                 font-size: 23px;
+            }
+
+            .as-grow-your-programs-slider-btn {
+                top: 470px;
             }
         }
     </style>
@@ -774,11 +791,19 @@
                     submission and review process for awards, abstracts, grants, scholarships, and more.</p>
             </div>
 
+
+
+
             <div class="as-grow-your-programs-btn">
                 <button id="email_wizard">Email Wizard</button>
                 <button id="website_builder">Website Builder</button>
                 <button id="deep_integrations">Deep Integrations</button>
                 <button id="efficient_multi">Efficient Multi-Round Review</button>
+            </div>
+
+            <div class="as-grow-your-programs-slider-btn">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
 
             <div class="as-grow-your-programs-btn as-grow-your-programs-btn-2">
@@ -795,7 +820,8 @@
             </div>
 
 
-            <div class="as-grow-your-programs-slider-background-1"></div>
+
+
             <div class="swiper as-grow-your-programs-swiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -855,8 +881,7 @@
                     </div>
                 </div>
 
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
+
 
             </div>
 
