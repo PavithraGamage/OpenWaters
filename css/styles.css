@@ -456,6 +456,11 @@ header {
   padding-left: 42px !important;
 }
 
+.accordion-button:focus{
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
 .resources-dropdown-links {
   font-style: normal;
   font-weight: 500;
