@@ -516,11 +516,8 @@ header {
   background: #e8f4fe;
 }
 
-.about-dropdown-small-box p:first-child {
-  border-radius: 5px 5px 0px 0px;
-}
 
-.about-dropdown-small-box p:last-child {
+.about-dropdown-small-box-l-child{
   border-radius: 0px 0px 5px 5px;
 }
 
@@ -1093,6 +1090,10 @@ img.better-together-img {
 
 .main-drop-down {
   display: none;
+}
+
+.about-dropdown-small-box-f-child{
+  border-radius: 5px 5px 0px 0px;
 }
 
 /* home page responsive -------------------------------------------- */
