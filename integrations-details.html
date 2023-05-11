@@ -55,8 +55,7 @@
             opacity: 1;
         }
 
-        /* add perent class */
-        .swiper-slide img {
+        .integrations-details-yt-video-thumbs-slider .swiper-slide img {
             display: block;
             width: 100%;
             height: 100%;
@@ -64,8 +63,7 @@
 
         }
 
-        /* add perent class */
-        .swiper-slide iframe {
+        .integrations-details-yt-video-slider .swiper-slide iframe {
             display: block;
             width: 100%;
             height: 100%;
@@ -98,6 +96,13 @@
         .id-slider-navigation .swiper-button-next:after,
         .swiper-rtl .swiper-button-prev:after {
             content: none;
+        }
+
+        @media (max-width: 1200px) {
+            .integrations-details-yt-video-slider .swiper-wrapper {
+                
+                height: 310px;
+            }
         }
     </style>
 
@@ -740,145 +745,459 @@
 
     <div class="container">
 
-        <section class="id-hedding">
+        <section class="id-heading">
             <div class="id-bc">
                 <div class="ic-bc-home">
                     Home
                 </div>
-
+                <img src="images/bc-icon.svg" alt="">
                 <div class="ic-last-page">
                     Resources
                 </div>
+
             </div>
-            <h1>Harness the full power of OpenWater and iMIS</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+
+            <div class="id-h1-wrapper">
+                <h1>Harness the full power of OpenWater and iMIS</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+
         </section>
 
-        <div class="row">
-            <div class="col-md-9">
+        <section class="video-and-resource-section">
+            <div class="row">
+                <div class="col-md-9">
 
-                <section class="integrations-details-video-slider">
+                    <section class="integrations-details-video-slider">
 
-                    <!-- slider btn -->
-                    <div class="id-slider-navigation">
+                        <!-- slider btn -->
+                        <div class="id-slider-navigation">
 
-                        <div class="swiper-button-next"></div>
-                        <div class="swiper-button-prev"></div>
-                    </div>
-                    <!-- video slider -->
-                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
-                        class="swiper integrations-details-yt-video-slider">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                        <!-- video slider -->
+                        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                            class="swiper integrations-details-yt-video-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
 
-                                <iframe src="https://www.youtube.com/embed/u5sZ75XGoMw"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
+                                    <iframe src="https://www.youtube.com/embed/u5sZ75XGoMw" title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen></iframe>
+                                </div>
+                                <div class="swiper-slide">
+                                    <iframe src="https://www.youtube.com/embed/2PfniMqnqRI" title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen></iframe>
+                                </div>
+                                <div class="swiper-slide">
+                                    <iframe src="https://www.youtube.com/embed/mGhLWmRSKIY" title="YouTube video player"
+                                        frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen></iframe>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                                </div>
                             </div>
-                            <div class="swiper-slide">
-                                <iframe src="https://www.youtube.com/embed/2PfniMqnqRI" title="YouTube video player"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
-                            </div>
-                            <div class="swiper-slide">
-                                <iframe src="https://www.youtube.com/embed/mGhLWmRSKIY" title="YouTube video player"
-                                    frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    allowfullscreen></iframe>
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+
+                        </div>
+
+
+
+
+
+                        <!-- thumbs slider -->
+                        <div thumbsSlider="" class="swiper integrations-details-yt-video-thumbs-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="images/id-slider-tumb.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/id-slider-tumb.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/id-slider-tumb.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/id-slider-tumb.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="images/id-slider-tumb.png" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                                </div>
                             </div>
                         </div>
 
-                    </div>
+                    </section>
+
+                    <section class="id-ow-overview">
+                        <h2>OpenWater Overview</h2>
+                        <p>OpenWater is a battle tested platform used by hundreds of organizations including ASAE to
+                            streamline and simplify your sub mission and review process for awards, abstracts, grants,
+                            scholarships, and more.</p>
+                    </section>
 
 
 
+                    <section class="id-ow-overview id-ow-imis-overview">
+                        <h2>iMIS & OpenWater Overview</h2>
+
+                        <img src="images/imis&ow-overview.svg" alt="">
+
+                        <p>With OpenWater integrating with iMIS, no data slips through the cracks. Start by quickly
+                            connecting your iMIS instance with OpenWater. We can help. From there, leverage OpenWater to
+                            create your awards/grants/abstracts and automatically sync with iMIS. All with no coding
+                            skills
+                            required. Report on the success of your application/review program directly from iMIS. No
+                            more
+                            siloed data!</p>
+                    </section>
 
 
-                    <!-- thumbs slider -->
-                    <div thumbsSlider="" class="swiper integrations-details-yt-video-thumbs-slider">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img src="images/id-slider-tumb.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/id-slider-tumb.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/id-slider-tumb.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/id-slider-tumb.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="images/id-slider-tumb.png" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
-                            </div>
-                            <div class="swiper-slide">
-                                <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
-                            </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="id-right-bar">
+
+                        <div>
+                            <h4>Resources</h4>
+
+                            <ul>
+                                <li>
+                                    <a href="https://www.getopenwater.com/online-training/" target="_blank">
+                                        <img src="images/OpenWater Certification Course.svg">
+                                        OpenWater Certification Course
+                                    </a>
+                                </li>
+
+
+                                <li>
+                                    <a href="https://help.getopenwater.com/" target="_blank">
+                                        <img src="images/help center link.svg">
+                                        Help Center Link
+                                    </a>
+                                </li>
+
+
+                                <li>
+                                    <a href="https://demo.secure-platform.com/ " target="_blank">
+                                        <img src="images/One-Click Templates.svg">
+                                        One-Click Templates
+                                    </a>
+                                </li>
+
+
+                                <li><a href="https://docs.google.com/document/d/1xKcocjE7GVvLlQfmixTbC84XEvEYfjkIPftm7VRw4NY/edit#"
+                                        target="_blank">
+                                        <img src="images/iMIS Forms Comparison.svg">
+                                        iMIS Forms Comparison
+                                    </a>
+                                </li>
+
+
+                                <li>
+                                    <a href="https://help.getopenwater.com/en/collections/59217-api-and-developer-documentation"
+                                        target="_blank">
+                                        <img src="images/Developer API.svg">
+                                        Developer API
+                                    </a>
+                                </li>
+
+
+
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h4>Videos & Webinars</h4>
+                            <ul>
+                                <li><a href="https://www.youtube.com/watch?v=DrupBrXJyyY" target="_blank"><img
+                                            src="images/Application  Review Overview.svg">
+                                        Application &amp; Review Overview</a></li>
+
+                                <li><a href="https://www.youtube.com/watch?v=0OGa2mnl-sk " target="_blank"><img
+                                            src="images/Abstracts.svg">
+                                        Abstracts</a></li>
+
+                                <li><a href="https://www.youtube.com/watch?v=L8Sccf7vsPo&amp;t=226s"
+                                        target="_blank"><img src="images/Scholarship.svg">
+                                        Scholarship</a></li>
+
+                                <li><a href="https://www.youtube.com/watch?v=oTgPHSBHLXk" target="_blank"><img
+                                            src="images/Integration.svg"> iMIS
+                                        Integration</a></li>
+
+                                <li><a href="https://www.youtube.com/watch?v=UkiteS4CZOE" target="_blank"><img
+                                            src="images/mobile app.svg"> Mobile
+                                        App</a></li>
+
+                                <li><a href="https://www.youtube.com/watch?v=zbn6UylpSiA" target="_blank"><img
+                                            src="images/DigitalTransformation.svg"> Digital
+                                        Transformation</a></li>
+
+                                <li><a href="https://www.youtube.com/watch?v=rQn6HHweCrU" target="_blank"><img
+                                            src="images/Customer Support.svg"> Our
+                                        Customer Support</a></li>
+
+                            </ul>
+
+                        </div>
+
+
+
+                        <div class="clients_logos">
+                            <h4>Happy OpenWater + IMIS Clients</h4>
+                            <ul>
+                                <li><img src="images/aaf-logo.webp"></li>
+                                <li><img src="images/icsc.png"></li>
+                                <li><img src="images/boma_international.png"></li>
+                                <li><img src="images/tesol.png"></li>
+                                <li><img src="images/logo-21978.webp"></li>
+                            </ul>
                         </div>
                     </div>
 
-
-
-
-
-                    <h1>Harness the full power of OpenWater and iMIS</h1>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <h1>Harness the full power of OpenWater and iMIS</h1>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <h1>Harness the full power of OpenWater and iMIS</h1>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                    <h1>Harness the full power of OpenWater and iMIS</h1>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-
-
-
-                </section>
-
-
-
+                </div>
             </div>
+        </section>
 
-            <div class="col-md-3">
-                <h4>Resources</h4>
+    </div>
+    <section class="id-integration-features">
+        <h2>Integration features</h2>
+        <h4>APPLICATION & REVIEW CLOUD</h4>
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="id-integration-features-wrapper">
+
+
+
+
+                        <div class="id-integration-features-content-wrapper">
+
+                            <div class="col-md-5">
+
+                                <h3>Single-Sign-On</h3>
+                                <hr>
+                                <p>Your members login using the credentials they already have with your
+                                    organization. After being validated, they will be sent over to OpenWater with
+                                    their information pre-populated.</p>
+
+
+                            </div>
+                            <div class="col-md-7">
+
+                                <div class="id-integration-features-content-img-wrapper">
+                                    <img src="images/Single-Sign-On.png" alt="">
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+                        <div class="id-integration-features-content-wrapper">
+
+                            <div class="col-md-5">
+
+                                <h3>Person Lookups and Other Queries</h3>
+                                <hr>
+                                <p>We can harness the power of IQA right inside an Open Water application. One of the
+                                    most common uses of lookups are to ensure authors associated with a conference
+                                    abstract are correctly identified.</p>
+
+
+                            </div>
+                            <div class="col-md-7">
+
+                                <div class="id-integration-features-content-img-wrapper">
+                                    <img src="images/Person Lookups and Other Queries.png" alt="">
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="id-integration-features-content-wrapper">
+
+                            <div class="col-md-5">
+
+                                <h3>Data Push Back</h3>
+                                <hr>
+                                <p>Our integration creates panels in iMIS for each workflow you have in OpenWater and
+                                    maps the data to each iMIS user who submitted (Party Id). All of the data captured
+                                    in OpenWater can be queried in IQA. You can build custom website widgets and display
+                                    the data.</p>
+
+
+                            </div>
+                            <div class="col-md-7">
+
+                                <div class="id-integration-features-content-img-wrapper">
+                                    <img src="images/Data Push Back.png" alt="">
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+
+
+
+
+
+
+
+
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+
+    </section>
+
+
+    <section class="faq-section id-faq-section">
+        <div class="container faq-container">
+            <h2 class="faq-header">Frequently Asked Questions</h2>
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            What does Application & Review mean?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            OpenWater works best with any type of program that involves
+                            users submitting content that needs to be evaluated by a formal
+                            review committee. Many softwares out there can handle the
+                            submission aspect, but few can do the review well.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            What kind of support can I expect?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the second item's accordion body.</strong> It is
+                            hidden by default, until the collapse plugin adds the
+                            appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing
+                            and hiding via CSS transitions. You can modify any of this with
+                            custom CSS or overriding our default variables. It's also worth
+                            noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit
+                            overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            How is OpenWater different from other softwares?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is
+                            hidden by default, until the collapse plugin adds the
+                            appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing
+                            and hiding via CSS transitions. You can modify any of this with
+                            custom CSS or overriding our default variables. It's also worth
+                            noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit
+                            overflow.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                            What kind of reporting capabilities can I expect?
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is
+                            hidden by default, until the collapse plugin adds the
+                            appropriate classes that we use to style each element. These
+                            classes control the overall appearance, as well as the showing
+                            and hiding via CSS transitions. You can modify any of this with
+                            custom CSS or overriding our default variables. It's also worth
+                            noting that just about any HTML can go within the
+                            <code>.accordion-body</code>, though the transition does limit
+                            overflow.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer-cta id-footer-cta">
+        <h2 class="testimonials-heading">Get in touch with an Expert</h2>
+        <p class="at-glance-para">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text ever
+            since.
+        </p>
+        <button class="at-glance-btn">Request a Demo</button>
+    </section>
 
 
 
