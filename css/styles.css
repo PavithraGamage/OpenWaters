@@ -1941,16 +1941,28 @@ img.better-together-img {
   margin-top: 23px;
 }
 
-.additional-soft-heading-logo-wrapper{
+.additional-soft-heading-logo-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.aw-faq-header{
-
-  color: #3196F5;
+.aw-faq-header {
+  color: #3196f5;
 }
+
+.additional-soft-heading-logo-wrapper-mobile {
+  display: none;
+}
+
+.additional-soft-heading-wrapper-mobile {
+  display: none;
+}
+
+.as-traditional-awards-card-col-right-mobile{
+  display: none;
+}
+
 /* awards-software responsive  -------------------- */
 
 @media (max-width: 1400px) {
@@ -1972,6 +1984,14 @@ img.better-together-img {
 
   .as-grow-your-programs-slider-btn {
     top: 155px;
+  }
+
+  .as-traditional-awards-card-col-left {
+    height: auto;
+  }
+
+  .as-traditional-awards-card-col-right {
+    height: auto;
   }
 }
 
@@ -1998,6 +2018,44 @@ img.better-together-img {
 
   .as-grow-your-programs-slider-btn {
     top: 875px;
+  }
+
+  .aw-video-wrapper iframe {
+    width: 640px;
+    height: 370px;
+  }
+
+  .aw-video {
+    margin-top: -60px;
+  }
+
+  .aw-hero-wrapper h1 {
+    text-align: center;
+  }
+
+  .aw-clients {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .additional-soft-heading-wrapper h4 {
+    font-size: 26px;
+    width: auto;
+    line-height: 35px;
+  }
+
+  .as-traditional-awards-card-col-left {
+    padding: 30px 35px;
+  }
+
+  .as-traditional-awards-card-col-right {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 35px;
+    padding-left: 105px;
+  }
+
+  .aw-traditional-awards {
+    top: -135px;
   }
 }
 
@@ -2053,6 +2111,97 @@ img.better-together-img {
   .as-grow-your-programs-slider-background-2 {
     top: 36%;
     left: 10%;
+  }
+
+  .aw-hero-wrapper p {
+    width: auto;
+  }
+
+  .aw-video-wrapper iframe {
+    width: 320px;
+    height: 190px;
+  }
+
+  .aw-video {
+    margin-top: 0px;
+  }
+
+  .aw-industry-leaders-wrapper h6 {
+    text-align: center;
+    line-height: normal;
+  }
+
+  .aw-awards {
+    grid-template-columns: 1fr;
+    width: auto;
+  }
+
+  .aw-industry-leaders-wrapper p {
+    width: auto;
+  }
+
+  .aw-clients {
+    grid-template-columns: 1fr;
+    row-gap: 45px;
+  }
+
+  .additional-soft-heading-wrapper {
+    display: none;
+  }
+
+  .additional-soft-heading-logo-wrapper {
+    display: none;
+  }
+
+  .additional-soft-heading-logo-wrapper-mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .additional-soft-heading-wrapper-mobile {
+    display: block;
+    margin-top: 60px;
+  }
+
+  .additional-soft-heading-wrapper-mobile h4 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    color: #0d2943;
+  }
+
+  .as-traditional-awards-card-wrapper{
+    flex-direction: column;
+  }
+
+  .as-traditional-awards-card-col-left{
+    width: 100%;
+    margin: auto;
+  }
+
+  .as-traditional-awards-card-col-right{
+    display: none;
+  }
+
+  .as-traditional-awards-card-col-right-mobile{
+    display: block;
+  }
+
+  .as-traditional-awards-card-col-right{
+    padding-left: 35px;
+    width: 100%;
+    margin: auto;
+  }
+
+  .as-traditional-wrapper{
+    padding-top: 85px;
+  }
+
+  .aw-traditional-awards{
+    top: -180px;
+    padding-bottom: 100px;
   }
 }
 
