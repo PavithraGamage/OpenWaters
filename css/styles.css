@@ -1846,7 +1846,7 @@ img.better-together-img {
 .aw-traditional-awards {
   background: #a8dff8;
   border-radius: 28px;
-  margin-bottom: -225px;
+  margin-bottom: -165px;
   padding-bottom: 150px;
   position: relative;
   top: -180px;
@@ -1874,7 +1874,6 @@ img.better-together-img {
   padding-bottom: 30px;
 }
 
-
 .as-traditional-awards-card-wrapper {
   display: flex;
   position: relative;
@@ -1888,6 +1887,26 @@ img.better-together-img {
   background: #0d2943;
   border-radius: 19px;
   z-index: 5;
+  padding: 48px 58px;
+}
+
+.as-traditional-awards-card-col-left h5 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  letter-spacing: 0.25px;
+  color: #ffffff;
+}
+
+.as-traditional-awards-card-col-left p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0.3px;
+  color: #ffffff;
+  margin-top: 23px;
 }
 
 .as-traditional-awards-card-col-right {
@@ -1896,10 +1915,42 @@ img.better-together-img {
   background: #ffffff;
   border-radius: 19px;
   z-index: 4;
-  margin-left: -64px; 
-  
+  margin-left: -64px;
+  padding-left: 130px;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  padding-right: 58px;
 }
 
+.as-traditional-awards-card-col-right h5 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31px;
+  letter-spacing: 0.25px;
+  color: #0d2943;
+}
+
+.as-traditional-awards-card-col-right p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0.3px;
+  color: #0d2943;
+  margin-top: 23px;
+}
+
+.additional-soft-heading-logo-wrapper{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aw-faq-header{
+
+  color: #3196F5;
+}
 /* awards-software responsive  -------------------- */
 
 @media (max-width: 1400px) {
