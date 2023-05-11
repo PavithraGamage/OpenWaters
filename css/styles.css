@@ -1498,7 +1498,7 @@ img.better-together-img {
 
 .as-grow-your-programs {
   background: #041d34;
-  padding-bottom: 131px;
+  padding-bottom: 300px;
 }
 
 .as-grow-your-programs-header {
@@ -1757,7 +1757,6 @@ img.better-together-img {
   padding-right: 12px;
 }
 
-
 .aw-video {
   margin-bottom: -20px;
   background-image: url("../images/as-vidoe-subtract.svg");
@@ -1785,7 +1784,7 @@ img.better-together-img {
   padding: 10px;
 }
 
-.aw-industry-leaders{
+.aw-industry-leaders {
   margin-bottom: 70px;
 }
 
@@ -1825,7 +1824,7 @@ img.better-together-img {
   margin-bottom: 72px;
 }
 
-.aw-clients{
+.aw-clients {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: center;
@@ -1833,16 +1832,72 @@ img.better-together-img {
   margin-bottom: 100px;
 }
 
-.aw-industry-leaders-wrapper button{
-  background: #FF6332;
-border-radius: 24px;
-padding: 13.5862px 22.6613px 13.5862px 22.6436px;
-border: none;
-font-weight: 700;
-font-size: 19.2471px;
-line-height: 23px;
-color: #FFFFFF;
+.aw-industry-leaders-wrapper button {
+  background: #ff6332;
+  border-radius: 24px;
+  padding: 13.5862px 22.6613px 13.5862px 22.6436px;
+  border: none;
+  font-weight: 700;
+  font-size: 19.2471px;
+  line-height: 23px;
+  color: #ffffff;
+}
 
+.aw-traditional-awards {
+  background: #a8dff8;
+  border-radius: 28px;
+  margin-bottom: -225px;
+  padding-bottom: 150px;
+  position: relative;
+  top: -180px;
+}
+
+.additional-soft-heading-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.additional-soft-heading-wrapper h4 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  width: 441px;
+}
+
+.additional-soft-heading-wrapper-margin {
+  justify-content: flex-end;
+}
+
+.as-traditional-wrapper {
+  padding-top: 113px;
+  padding-bottom: 30px;
+}
+
+
+.as-traditional-awards-card-wrapper {
+  display: flex;
+  position: relative;
+  filter: drop-shadow(0px 16px 10px rgba(28, 22, 95, 0.06));
+  margin-bottom: 44px;
+}
+
+.as-traditional-awards-card-col-left {
+  width: 50%;
+  height: 276px;
+  background: #0d2943;
+  border-radius: 19px;
+  z-index: 5;
+}
+
+.as-traditional-awards-card-col-right {
+  width: 55%;
+  height: 276px;
+  background: #ffffff;
+  border-radius: 19px;
+  z-index: 4;
+  margin-left: -64px; 
+  
 }
 
 /* awards-software responsive  -------------------- */
