@@ -1757,14 +1757,13 @@ img.better-together-img {
   padding-right: 12px;
 }
 
+
 .aw-video {
-  margin-bottom: -95px;
-  /* background-image: url("../images/footer-botom.svg");
-  background-position-y: -380px;
+  margin-bottom: -20px;
+  background-image: url("../images/as-vidoe-subtract.svg");
   background-repeat: no-repeat;
-  background-size: cover;
-  z-index: 4;
-  margin-top: -60px; */
+  margin-top: -125px;
+  background-size: contain;
 }
 
 .aw-video-wrapper {
@@ -1773,7 +1772,7 @@ img.better-together-img {
   align-items: center;
   z-index: 5;
   position: relative;
-  top: -180px;
+  top: -100px;
 }
 
 .aw-video-wrapper iframe {
@@ -1820,6 +1819,14 @@ img.better-together-img {
   text-align: center;
   color: #15293f;
   margin-bottom: 72px;
+}
+
+.aw-clients{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 100px;
 }
 
 /* awards-software responsive  -------------------- */
