@@ -67,7 +67,7 @@ header {
 }
 
 .hero-section {
-  height: 80vh;
+  height: 70vh;
   background-image: url("../images/Hero-Banner-image.svg");
   background-repeat: no-repeat;
   background-size: cover;
