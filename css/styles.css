@@ -186,7 +186,7 @@ header {
 .watch-btn-wrapper {
   background: #ff6332;
   border: 12px solid #fff5f1;
-  border-radius: 35px;
+  border-radius: 100px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -206,6 +206,7 @@ header {
   width: 496px;
   margin-top: 46px;
   margin-bottom: 21px;
+  margin-left: -7px;
 }
 
 .watch-btn-icon {
