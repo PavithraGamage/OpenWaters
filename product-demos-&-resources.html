@@ -28,10 +28,10 @@
     <script src="https://cdn.jsdelivr.net/npm/lottie-web@5.7.8/build/player/lottie.min.js"></script>
 
     <style>
-
-        .application-review-slider-wrapper{
+        .application-review-slider-wrapper {
             margin-bottom: 70px;
         }
+
         .pd-videos-and-resources .swiper {
             width: 100%;
             height: 305px;
@@ -111,6 +111,53 @@
         .swiper-rtl .swiper-button-next {
             left: var(--swiper-navigation-sides-offset, -90px);
             right: auto;
+        }
+
+        /* slider responsive */
+
+        @media (max-width: 1200px) {
+            .pd-videos-and-resources .swiper-slide img {
+                height: 115px;
+            }
+        }
+
+        @media (max-width: 900px) {
+
+            .pd-videos-and-resources .col-md-9 {
+                width: 100%;
+            }
+
+            .pd-videos-and-resources .col-md-3 {
+                width: 100%;
+                padding-left: 20px;
+            }
+
+            .pd-videos-and-resources .id-right-bar {
+                margin-top: 0px;
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .pd-videos-and-resources .id-right-bar {
+                grid-template-columns: 1fr;
+            }
+
+            .pd-videos-and-resources .swiper-slide img {
+                height: 200px;
+            }
+
+            .pd-videos-and-resources .swiper {
+                height: 355px;
+            }
+
+            .product-demos-header {
+                height: 385px;
+            }
+
+            .pd-videos-and-resources .navigation-btn-wrapper {
+                top: 405px;
+            }
         }
     </style>
 </head>
@@ -1206,7 +1253,7 @@
 
 <script>
     var application_review_1 = new Swiper(".application-review-1", {
-        slidesPerView: 3,
+        slidesPerView: 1,
         spaceBetween: 30,
         pagination: {
             el: ".swiper-pagination",
@@ -1216,10 +1263,28 @@
             nextEl: ".swiper-button-next-1",
             prevEl: ".swiper-button-prev-1",
         },
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            1400: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            }
+        },
     });
 
     var application_review_2 = new Swiper(".application-review-2", {
-        slidesPerView: 3,
+        slidesPerView: 1,
         spaceBetween: 30,
         pagination: {
             el: ".swiper-pagination",
@@ -1229,11 +1294,29 @@
             nextEl: ".swiper-button-next-2",
             prevEl: ".swiper-button-prev-2",
         },
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            1400: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            }
+        },
     });
 
 
     var application_review_3 = new Swiper(".application-review-3", {
-        slidesPerView: 3,
+        slidesPerView: 1,
         spaceBetween: 30,
         pagination: {
             el: ".swiper-pagination",
@@ -1242,6 +1325,27 @@
         navigation: {
             nextEl: ".swiper-button-next-3",
             prevEl: ".swiper-button-prev-3",
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+
+            },
+            1200: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+
+            },
+            1400: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+
+            }
         },
     });
 </script>
