@@ -100,8 +100,20 @@
 
         @media (max-width: 1200px) {
             .integrations-details-yt-video-slider .swiper-wrapper {
-                
+
                 height: 310px;
+            }
+
+            .integrations-details-yt-video-thumbs-slider .swiper-wrapper {
+                height: 80px;
+            }
+
+            .id-slider-navigation {
+                top: 195px;
+            }
+
+            .integrations-details-video-slider .swiper {
+                margin-bottom: 20px;
             }
         }
     </style>
@@ -1349,9 +1361,27 @@
     var swiper = new Swiper(".integrations-details-yt-video-thumbs-slider", {
         loop: true,
         spaceBetween: 48,
-        slidesPerView: 4,
+        slidesPerView: 2,
         freeMode: true,
         watchSlidesProgress: true,
+        breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+        1200: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+        1400: {
+            slidesPerView: 4,
+          spaceBetween: 48,
+        }
+      },
     });
     var swiper2 = new Swiper(".integrations-details-yt-video-slider", {
         loop: true,
