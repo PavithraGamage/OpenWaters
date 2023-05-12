@@ -958,13 +958,13 @@ header {
   align-items: center;
   height: 415px;
   position: relative;
-  background-color: #b0b0b0;
+  background-color: #ececec;
 }
 
 #lightHouse {
   position: absolute;
   top: 0;
-  left: 60%;
+  left: 0;
   height: 100%;
   z-index: 2;
 }
