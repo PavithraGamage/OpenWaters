@@ -5,6 +5,19 @@ itagration  left padding add dubble
 menu button color old color add hover current color
 best on stellar aline with stars
 3x crowd logo change
-watch the video btn boarder radius 100x
+
+
+
 The OpenWater Platform. Powerful Alone. Better Together.
 box padding equl with all edges / boardr redues increes
+The Power of Openwater gap equl
+equl height with elements 
+trasperent border add
+counter 
+
+What our clients say
+logo change
+
+ton of intergarain 
+hedding margin botomu increce
+paragraph 3 rows
