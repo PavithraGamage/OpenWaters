@@ -123,8 +123,6 @@ header {
 }
 
 .hero-company-logo {
-  margin-left: 14px;
-  margin-right: 14px;
   margin-top: 16px;
 }
 
@@ -249,7 +247,7 @@ header {
   box-shadow: 0px 26px 4px rgba(14, 12, 71, 0.04);
   border-radius: 10px;
   padding: 30px !important;
-  margin-top: 15px !important;
+  margin-top: 18px !important;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -286,6 +284,7 @@ header {
   font-size: 16px;
   line-height: 27px;
   color: #ffffff;
+  margin: 0px;
 }
 
 .better-platform-heading-wrapper {
@@ -325,7 +324,7 @@ header {
   font-weight: 600;
   font-size: 20px;
   color: #15293f;
-  padding-left: 7px;
+  padding-left: 14px;
 }
 
 .menu-links {
@@ -365,12 +364,12 @@ header {
 
 .menu-links-integrations {
   margin-top: 3px;
-  padding: 7px;
+  padding: 7px 7px 7px 14px;
   border-radius: 5px;
 }
 
 .menu-links-integrations:hover {
-  background: rgba(232, 244, 254, 0.48);
+  background: #E8F4FE;
 }
 
 .menu-links-integrations h4 {
@@ -401,24 +400,35 @@ header {
 }
 
 .integration-padding {
-  padding-left: 48px !important;
+  padding-left: 40px !important;
 }
 
-/* .drop-down-items-center {
+.hero-reviews{
+  display: flex;
   align-items: center;
-} */
+}
+
+.hero-reviews p {
+  margin: 3px 0px 0px 10px;
+}
 
 .menu-integration-btn {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  color: #3196f5;
+  color: #93949C;
   width: 87.2px;
   height: 28.17px;
-  background: #e8f4fe;
+  background: #F4F4F6;
   border-radius: 3px;
   margin-top: 26px;
   border: none;
+  margin-left: 14px;
+}
+
+.menu-integration-btn:hover{
+  color: #3196f5;
+  background: #e8f4fe;
 }
 
 .menu-dropdown-image {
@@ -452,6 +462,7 @@ header {
   align-items: center;
   flex-direction: row;
   margin-bottom: 31px;
+  margin-left: 14px;
 }
 
 .resources-dropdown-heading-wrapper h4 {
@@ -488,13 +499,13 @@ header {
   line-height: 27px;
   letter-spacing: 0.324004px;
   color: #15293f;
-  padding: 7px;
+  padding: 7px 7px 7px 14px;
   border-radius: 5px;
   margin-bottom: 7px;
 }
 
 .resources-dropdown-links:hover {
-  background: rgba(232, 244, 254, 0.48);
+  background: #e8f4fe;
 }
 
 .about-dropdown-wrapper {
@@ -597,15 +608,18 @@ header {
   border: 11px solid rgba(255, 255, 255, 0.24);
   box-shadow: 0px 34px 8px rgba(33, 56, 138, 0.07);
   border-radius: 10px;
-  margin-bottom: 25px;
-  margin-left: 15px;
-  margin-right: 15px;
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 40px 18px;
+  padding: 26px;
 }
 
+
+.the-open-water-border-box{
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.24);
+  border-radius: 15px;
+}
 .the-open-water-platform-heading-contents {
   display: flex;
   flex-direction: column;
@@ -627,18 +641,43 @@ header {
   font-size: 17.2903px;
   line-height: 24px;
   color: #15293f;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.grow-your-programs .modal-dialog{
+  min-width: 750px;
+}
+
+.grow-your-programs .modal-content{
+  height: 445px;
+  border-radius: 15px;
+}
+
+
+.grow-your-programs iframe{
+  border-radius: 10px;
 }
 
 .power-box-heading-wrapper {
   margin-left: 18px;
 }
 
-.power-box-heading-wrapper p {
-  margin-top: 20px;
+
+.integrations .testimonials-heading{
+  margin-bottom: 20px;
 }
+
+.integrations .at-glance-para{
+  width: 684.44px;
+}
+
 
 .power-of-open-water-box-wrapper {
   width: 898px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
 }
 
 .industry-leaders {
@@ -1377,6 +1416,10 @@ img.better-together-img {
   .mobile-main-menu-links img {
     left: 15%;
   }
+
+  .the-power-of-open-water-box h4{
+    font-size: 37px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -1410,6 +1453,7 @@ img.better-together-img {
 
   #grow-your-programs-lottie {
     width: auto;
+    margin-left: 0px;
   }
 
   .h2-headding-the-open-water-platform {
@@ -1544,6 +1588,14 @@ img.better-together-img {
 
   .resources-dropdown-border-last {
     padding-left: calc(var(--bs-gutter-x) * 0.5) !important;
+  }
+
+  .power-of-open-water-box-wrapper{
+    grid-template-columns: 1fr;
+  }
+
+  .integrations .at-glance-para{
+    width: auto;
   }
 }
 
@@ -2403,7 +2455,7 @@ img.better-together-img {
 
 .id-integration-features {
   background: #041d34;
-  margin-top: 90px;
+  margin-top: 50px;
   padding-top: 100px;
   padding-bottom: 127px;
 }
