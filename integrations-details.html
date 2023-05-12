@@ -41,10 +41,6 @@
             height: 450px;
         }
 
-        .integrations-details-yt-video-thumbs-slider .swiper-wrapper {
-            height: 100px;
-        }
-
         .integrations-details-yt-video-thumbs-slider .swiper-slide {
             width: 25%;
             height: 100%;
@@ -104,9 +100,6 @@
                 height: 310px;
             }
 
-            .integrations-details-yt-video-thumbs-slider .swiper-wrapper {
-                height: 80px;
-            }
 
             .id-slider-navigation {
                 top: 195px;
@@ -115,6 +108,30 @@
             .integrations-details-video-slider .swiper {
                 margin-bottom: 20px;
             }
+        }
+
+        @media (max-width: 500px) {
+
+            .integrations-details-video-slider .swiper {
+                width: 100%;
+                height: 25%;
+                margin-bottom: 20px;
+            }
+
+            .integrations-details-yt-video-slider .swiper-wrapper {
+                height: 245px;
+            }
+
+            .id-slider-navigation {
+                top: 440px;
+            }
+
+            .swiper-button-prev,
+            .swiper-rtl .swiper-button-next {
+                left: 70% !important;
+            }
+
+
         }
     </style>
 
@@ -859,26 +876,26 @@
                                     <img src="images/id-slider-tumb.png" />
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+                                    <img src="images/id-slider-tumb.png" />
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+                                    <img src="images/id-slider-tumb.png" />
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+                                    <img src="images/id-slider-tumb.png" />
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+                                    <img src="images/id-slider-tumb.png" />
                                 </div>
                                 <div class="swiper-slide">
-                                    <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+                                    <img src="images/id-slider-tumb.png" />
                                 </div>
                             </div>
                         </div>
 
                     </section>
 
-                    <section class="id-ow-overview">
+                    <section class="id-ow-overview id-ow-overview-mobile">
                         <h2>OpenWater Overview</h2>
                         <p>OpenWater is a battle tested platform used by hundreds of organizations including ASAE to
                             streamline and simplify your sub mission and review process for awards, abstracts, grants,
@@ -1360,28 +1377,28 @@
 <script>
     var swiper = new Swiper(".integrations-details-yt-video-thumbs-slider", {
         loop: true,
-        spaceBetween: 48,
+        spaceBetween: 20,
         slidesPerView: 2,
         freeMode: true,
         watchSlidesProgress: true,
         breakpoints: {
-        640: {
-          slidesPerView: 2,
-          spaceBetween: 20,
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+            },
+            1200: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+            },
+            1400: {
+                slidesPerView: 4,
+                spaceBetween: 48,
+            }
         },
-        768: {
-          slidesPerView: 4,
-          spaceBetween: 20,
-        },
-        1200: {
-          slidesPerView: 4,
-          spaceBetween: 20,
-        },
-        1400: {
-            slidesPerView: 4,
-          spaceBetween: 48,
-        }
-      },
     });
     var swiper2 = new Swiper(".integrations-details-yt-video-slider", {
         loop: true,
