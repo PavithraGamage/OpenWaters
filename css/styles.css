@@ -1452,9 +1452,9 @@ img.better-together-img {
     margin-right: var(--bs-gutter-x, 0.75rem) !important;
   }
 
-  .tons-of-integrations-logo-box {
+  /* .tons-of-integrations-logo-box {
     margin: 10px;
-  }
+  } */
 
   .footer-cta .at-glance-para {
     width: auto;
