@@ -1344,6 +1344,7 @@ img.better-together-img {
 
 @media (max-width: 500px) {
   .hero-section {
+    background-image: url("../images/ow-home-mobile-hero-image.svg");
     height: 90vh;
   }
 
@@ -1730,7 +1731,7 @@ img.better-together-img {
 }
 
 .aw-hero {
-  background-image: url("../images/aw-hero-banner.svg");
+  background-image: url("../images/Awards-Management-Software-new-backlground.svg");
   background-repeat: no-repeat;
   height: 665px;
   background-size: cover;
@@ -2013,6 +2014,14 @@ img.better-together-img {
 
   .as-traditional-awards-card-col-right {
     height: auto;
+  }
+
+  .aw-video{
+    margin-top: -80px;
+  }
+
+  .aw-video-wrapper{
+    top: -130px;
   }
 }
 
