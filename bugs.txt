@@ -6,4 +6,5 @@ menu button color old color add hover current color
 best on stellar aline with stars
 3x crowd logo change
 watch the video btn boarder radius 100x
-lottie move 
+The OpenWater Platform. Powerful Alone. Better Together.
+box  top padding redues

@@ -209,6 +209,10 @@ header {
   margin-left: -14px;
 }
 
+.the-open-water-platform hr {
+  margin: 0;
+}
+
 .watch-btn-icon {
   margin-right: 17px;
 }
