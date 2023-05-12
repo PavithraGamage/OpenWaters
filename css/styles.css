@@ -203,7 +203,7 @@ header {
 }
 
 #grow-your-programs-lottie {
-  width: 496px;
+  width: 600px;
   margin-top: 46px;
   margin-bottom: 21px;
   margin-left: -14px;
@@ -247,7 +247,7 @@ header {
 .open-water-platform-box {
   background: #112d44;
   box-shadow: 0px 26px 4px rgba(14, 12, 71, 0.04);
-  border-radius: 7px;
+  border-radius: 10px;
   padding: 30px !important;
   margin-top: 15px !important;
   margin-left: 10px;
@@ -292,7 +292,7 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: 34px;
+  margin-top: 28px;
   margin-bottom: 20px;
 }
 

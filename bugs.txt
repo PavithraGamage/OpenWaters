@@ -7,4 +7,4 @@ best on stellar aline with stars
 3x crowd logo change
 watch the video btn boarder radius 100x
 The OpenWater Platform. Powerful Alone. Better Together.
-box  top padding redues
+box padding equl with all edges / boardr redues increes
