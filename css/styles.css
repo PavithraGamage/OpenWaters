@@ -308,8 +308,8 @@ header {
   margin-top: 6px;
   box-shadow: 0px 48px 34px rgba(97, 114, 141, 0.25);
   border-radius: 5px;
-  padding-left: 68px !important;
-  padding-right: 68px !important;
+  padding-left: 50px !important;
+  padding-right: 50px !important;
   padding-top: 48px;
   padding-bottom: 39px;
   z-index: 99;
@@ -320,13 +320,20 @@ header {
   font-weight: 600;
   font-size: 20px;
   color: #15293f;
+  padding-left: 7px;
 }
 
 .menu-links {
   display: flex;
   align-items: center;
   flex-direction: row;
-  margin-top: 20px;
+  padding: 7px;
+  border-radius: 5px;
+  margin-bottom: 3px;
+}
+
+.menu-links:hover{
+  background: rgba(232, 244, 254, 0.48);
 }
 
 .menu-links h4 {
@@ -352,7 +359,13 @@ header {
 }
 
 .menu-links-integrations {
-  margin-top: 20px;
+  margin-top: 3px;
+  padding: 7px;
+  border-radius: 5px;
+}
+
+.menu-links-integrations:hover{
+  background: rgba(232, 244, 254, 0.48);
 }
 
 .menu-links-integrations h4 {
@@ -394,10 +407,10 @@ header {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  color: #93949c;
+  color: #3196F5;
   width: 87.2px;
   height: 28.17px;
-  background: #f4f4f6;
+  background: #E8F4FE;
   border-radius: 3px;
   margin-top: 26px;
   border: none;
@@ -422,8 +435,8 @@ header {
   margin-top: 6px;
   box-shadow: 0px 48px 34px rgba(97, 114, 141, 0.25);
   border-radius: 5px;
-  padding-left: 68px !important;
-  padding-right: 68px !important;
+  padding-left: 50px !important;
+  padding-right: 50px !important;
   padding-top: 48px;
   padding-bottom: 39px;
   z-index: 99;
@@ -470,6 +483,13 @@ header {
   line-height: 27px;
   letter-spacing: 0.324004px;
   color: #15293f;
+  padding: 7px;
+  border-radius: 5px;
+  margin-bottom: 7px;
+}
+
+.resources-dropdown-links:hover{
+  background: rgba(232, 244, 254, 0.48);
 }
 
 .about-dropdown-wrapper {
