@@ -337,7 +337,7 @@ header {
 }
 
 .menu-links:hover {
-  background: #E8F4FE;
+  background: #e8f4fe;
 }
 
 .menu-links h4 {
@@ -369,7 +369,7 @@ header {
 }
 
 .menu-links-integrations:hover {
-  background: #E8F4FE;
+  background: #e8f4fe;
 }
 
 .menu-links-integrations h4 {
@@ -403,7 +403,7 @@ header {
   padding-left: 40px !important;
 }
 
-.hero-reviews{
+.hero-reviews {
   display: flex;
   align-items: center;
 }
@@ -416,17 +416,17 @@ header {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  color: #93949C;
+  color: #93949c;
   width: 87.2px;
   height: 28.17px;
-  background: #F4F4F6;
+  background: #f4f4f6;
   border-radius: 3px;
   margin-top: 26px;
   border: none;
   margin-left: 14px;
 }
 
-.menu-integration-btn:hover{
+.menu-integration-btn:hover {
   color: #3196f5;
   background: #e8f4fe;
 }
@@ -614,8 +614,7 @@ header {
   padding: 26px;
 }
 
-
-.the-open-water-border-box{
+.the-open-water-border-box {
   padding: 10px;
   background: rgba(255, 255, 255, 0.24);
   border-radius: 15px;
@@ -645,17 +644,16 @@ header {
   margin-bottom: 0px;
 }
 
-.grow-your-programs .modal-dialog{
+.grow-your-programs .modal-dialog {
   min-width: 750px;
 }
 
-.grow-your-programs .modal-content{
+.grow-your-programs .modal-content {
   height: 445px;
   border-radius: 15px;
 }
 
-
-.grow-your-programs iframe{
+.grow-your-programs iframe {
   border-radius: 10px;
 }
 
@@ -663,15 +661,13 @@ header {
   margin-left: 18px;
 }
 
-
-.integrations .testimonials-heading{
+.integrations .testimonials-heading {
   margin-bottom: 20px;
 }
 
-.integrations .at-glance-para{
+.integrations .at-glance-para {
   width: 684.44px;
 }
-
 
 .power-of-open-water-box-wrapper {
   width: 898px;
@@ -1002,7 +998,7 @@ header {
   align-items: center;
   height: 415px;
   position: relative;
-  background-color: #F6F7FC;
+  background-color: #f6f7fc;
 }
 
 #lightHouse {
@@ -1417,7 +1413,7 @@ img.better-together-img {
     left: 15%;
   }
 
-  .the-power-of-open-water-box h4{
+  .the-power-of-open-water-box h4 {
     font-size: 37px;
   }
 }
@@ -1590,11 +1586,11 @@ img.better-together-img {
     padding-left: calc(var(--bs-gutter-x) * 0.5) !important;
   }
 
-  .power-of-open-water-box-wrapper{
+  .power-of-open-water-box-wrapper {
     grid-template-columns: 1fr;
   }
 
-  .integrations .at-glance-para{
+  .integrations .at-glance-para {
     width: auto;
   }
 }
@@ -2069,7 +2065,7 @@ img.better-together-img {
   display: none;
 }
 
-.aw-testimonials{
+.aw-testimonials {
   padding-top: 100px;
 }
 
@@ -2708,3 +2704,66 @@ img.better-together-img {
 }
 
 /* Product Demos & Resources CSS end -------------------------- */
+
+/* The OpenWater Blog CSS start --------------------------------- */
+
+.blog-content-section {
+  margin-top: 92px;
+  margin-bottom: 106px;
+}
+
+.blog-card-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.blog-card-content-wrapper {
+  padding: 16px;
+  box-shadow: 0px 12px 7.78633px rgba(22, 22, 22, 0.08);
+  border-radius: 8px;
+}
+
+.blog-card-content-wrapper img {
+  width: 100%;
+  border-radius: 3px;
+}
+
+.blog-card-content-wrapper h5 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #15293f;
+  margin-top: 22px;
+  margin-bottom: 15px;
+}
+
+.blog-card-content-wrapper p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: #15293f;
+  margin: 0px;
+}
+
+
+.blog-card-read-more-btn-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+
+.blog-card-read-more-btn {
+  display: flex;
+  align-items: center;
+}
+
+.blog-card-read-more-btn-wrapper img{
+  width: 12px;
+  margin-left: 7px;
+}
+
+/* The OpenWater Blog CSS end --------------------------------- */
