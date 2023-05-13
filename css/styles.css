@@ -2748,22 +2748,101 @@ img.better-together-img {
   margin: 0px;
 }
 
-
 .blog-card-read-more-btn-wrapper {
   display: flex;
   justify-content: flex-end;
   margin-top: 10px;
 }
 
-
 .blog-card-read-more-btn {
   display: flex;
   align-items: center;
 }
 
-.blog-card-read-more-btn-wrapper img{
+.blog-card-read-more-btn-wrapper img {
   width: 12px;
   margin-left: 7px;
+}
+
+.pagination {
+  margin-top: 150px;
+  justify-content: flex-end;
+}
+
+.pagination-content {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #3196f5;
+  border-radius: 4px;
+  padding: 10px 15px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+.pagination-content-pre:hover {
+  color: #3196f5;
+  cursor: pointer;
+}
+
+.pagination-content:hover {
+  background: #cef2f2;
+  border: 1px solid rgba(49, 150, 245, 0.28);
+  cursor: pointer;
+}
+
+.pagination-content-pre {
+  color: #99afc4;
+}
+
+.pagination-content-dots {
+  color: #2e475d;
+}
+
+.pagination-content-dots:hover {
+  background: unset;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+}
+
+.blog-content-section h6 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #2d3436;
+}
+
+.search-box {
+  position: relative;
+}
+
+.blog-content-section input {
+  background: #ffffff;
+  border: 1px solid #ebecf0;
+  box-shadow: 0px 4px 4px rgba(88, 88, 128, 0.07);
+  border-radius: 6px;
+  padding: 15px 22px;
+  color: #959bab;
+  width: 85%;
+}
+
+.blog-content-section input::placeholder {
+  color: #959bab;
+}
+
+.blog-content-section input:focus {
+  outline: none;
+}
+
+.search-box img {
+  position: absolute;
+  top: 35%;
+  right: 20%;
+  cursor: pointer;
+}
+
+.blog-content-section .explore-posts{
+  margin-top: 40px;
 }
 
 /* The OpenWater Blog CSS end --------------------------------- */
