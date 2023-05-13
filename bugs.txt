@@ -12,4 +12,7 @@ Watch the video modal video playing when close
 counter 1000 separators and + and contents
 counter
 
+Product Demos & Resources --------------------
+Add bottom CTA
+
 responsive check all completed pages ********-------------
