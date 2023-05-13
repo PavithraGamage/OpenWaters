@@ -838,7 +838,7 @@
             <img src="images/power-of-open-water-arrow.svg" alt="" />
 
             <div class="power-box-heading-wrapper">
-              <h4 class="count" data-target="10000">0</h4>
+              <h4 class="count" data-target="10">0</h4>
               <p>Average response time from our US customer support team</p>
             </div>
           </div>
@@ -1670,7 +1670,7 @@
 <script>
   function counter() {
     const counters = document.querySelectorAll(".count");
-    const speed = 200;
+    const speed = 10;
 
     // loop through the .count class and get all the valuse set in the data-target
     counters.forEach((counter) => {
@@ -1691,7 +1691,7 @@
           counter.innerText = count + increment;
 
           // 1 is set the time out duration and if need more time to count incriment the value of 1
-          setTimeout(updateCount, 1);
+          setTimeout(updateCount, 5);
         } else {
           count.innerText = target;
         }

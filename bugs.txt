@@ -1,35 +1,15 @@
-add new home background image whatsapp
-menu icons change - Done
-itagration hove color change to platform hover color - Done
-itagration  left padding add dubble  - Done
-menu button color old color add hover current color -Done
-best on stellar aline with stars - Done
-3x crowd logo change - Done
+add new home background image whatsapp - not received
+
+award software -----------------
+
+watch now button
 
 
+Home--------------------
 
-The OpenWater Platform. Powerful Alone. Better Together.
-box padding equl with all edges - done
-The Power of Openwater gap equl - done
+Footer mobile CTA
+Watch the video modal video playing when close
+counter 1000 separators and + and contents
+counter
 
-
-equl height with elements -done
-trasperent border add -done
-counter 
-
-What our clients say
-logo change -done
-
-ton of intergarain 
-hedding margin botomu increce - done
-paragraph 3 rows - done
-
-home page poup video https://www.getopenwater.com/application-review-cloud/ - Done
-
-award software 
-testomonial top padding 100px
-Grow your programs images high resalution
-
-
-intergatin details 
-faq padding redues
+responsive check all completed pages ********-------------
