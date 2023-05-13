@@ -2841,8 +2841,144 @@ img.better-together-img {
   cursor: pointer;
 }
 
-.blog-content-section .explore-posts{
+.blog-content-section .explore-posts {
   margin-top: 40px;
+}
+
+.blog-card-wrapper a {
+  text-decoration: none;
+}
+
+.blog-content-section .dropdown button {
+  width: 85%;
+  text-align: left;
+  background: #ffffff;
+  border: 1px solid #ebecf0;
+  box-shadow: 0px 4px 4px rgba(88, 88, 128, 0.07);
+  border-radius: 6px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 15px 22px;
+  color: #959bab;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blog-content-section .dropdown-toggle::after {
+  content: none;
+}
+
+.blog-content-section .dropdown-menu {
+  width: 85%;
+  background: rgba(255, 255, 255, 0.66);
+  box-shadow: 0px 15px 16px rgba(89, 90, 118, 0.09);
+  backdrop-filter: blur(18px);
+  border-radius: 5px;
+  border: none;
+  margin-top: 6px;
+}
+
+.blog-content-section .dropdown a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  font-feature-settings: "liga" off;
+  color: #2d3436;
+}
+
+.blog-content-section .dropdown a:hover {
+  color: #3196f5;
+  background-color: #fff;
+}
+
+/* The OpenWater Blog responsive */
+@media (max-width: 1200px) {
+  .blog-content-section input {
+    width: 95%;
+  }
+
+  .search-box img {
+    right: 11%;
+  }
+
+  .blog-content-section .dropdown button {
+    width: 95%;
+  }
+
+  .blog-content-section .dropdown-menu {
+    width: 95%;
+  }
+}
+
+@media (max-width: 900px) {
+  .blog-content-section .col-md-3 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .blog-content-section .explore-posts {
+    margin-top: 0px;
+  }
+
+  .blog-content-section input {
+    width: 100%;
+  }
+
+  .blog-content-section .dropdown button {
+    width: 100%;
+  }
+
+  .blog-content-section .dropdown-menu {
+    width: 100%;
+  }
+
+  .search-box img {
+    right: 7%;
+  }
+
+  .blog-content-section .col-md-9 {
+    width: 100%;
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .blog-card-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-content-section .col-md-3 {
+    flex-direction: column;
+  }
+
+  .blog-content-section .explore-posts {
+    margin-top: 40px;
+  }
+
+  .search-box img {
+    right: 6%;
+  }
+
+  .pagination{
+    justify-content: center;
+  }
+
+  /* id footer mobile fix */
+  .footer-cta {
+    height: auto;
+    padding: 80px 0px;
+  }
+
+  /* pd mobile header padding add */
+  .product-demos-header {
+    padding: 20px;
+  }
 }
 
 /* The OpenWater Blog CSS end --------------------------------- */
