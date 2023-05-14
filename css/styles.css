@@ -3472,7 +3472,7 @@ img.better-together-img {
 }
 
 .register-section img {
-  width: 303.41px;
+  width: 100%;
   border: 11px solid #ffffff;
   filter: drop-shadow(-20px 23px 30px rgba(2, 19, 80, 0.15));
   border-radius: 6px;
@@ -3631,8 +3631,8 @@ img.better-together-img {
   color: #2d3436;
 }
 
-.speaker-details span{
-  color: #3196F5;
+.speaker-details span {
+  color: #3196f5;
 }
 
 .speaker-details .sd-details {
@@ -3643,6 +3643,97 @@ img.better-together-img {
   line-height: 34px;
   letter-spacing: 0.25px;
   color: #2d3436;
+}
+
+/* 3 Reasons Integrations Details responsive ------------------------------------ */
+@media (max-width: 900px) {
+  .three-reasons-main-section .col-md-9 {
+    width: 70%;
+  }
+
+  .three-reasons-main-section .col-md-3 {
+    width: 30%;
+  }
+
+  .three-reasons-main-section-content {
+    width: 90%;
+  }
+
+  .speakers-box {
+    width: auto;
+  }
+
+  .speaker-details-wrapper {
+    padding: 100px 40px 36px 40px;
+  }
+
+  .speaker-details .sd-title {
+    width: 25%;
+  }
+
+  .speaker-details .sd-details {
+    width: 75%;
+  }
+}
+
+@media (max-width: 500px) {
+  .three-reasons-main-section .col-md-9 {
+    width: 100%;
+  }
+
+  .three-reasons-main-section .col-md-3 {
+    width: 100%;
+  }
+
+  .three-reasons-main-section-content {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .three-reasons-intro-section h2 {
+    margin-top: 60px;
+  }
+
+  .openwater-reasons h4 {
+    font-size: 24px;
+  }
+
+  .speaker-details {
+    flex-direction: column;
+  }
+
+  .speaker-details .sd-title {
+    width: 100%;
+  }
+
+  .speaker-details .sd-details {
+    width: 100%;
+  }
+
+  .event-og-box-details p {
+    font-size: 14px;
+  }
+
+  .event-details-box p {
+    font-size: 18px;
+    line-height: 31px;
+  }
+
+  .openwater-reasons p {
+    font-size: 18px;
+    line-height: 31px;
+  }
+
+  .speaker-details .sd-details {
+    font-size: 18px;
+    line-height: 31px;
+  }
+
+  .register-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /* 3 Reasons Integrations Details CSS end -------------------------- */
