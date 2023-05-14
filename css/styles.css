@@ -3442,3 +3442,207 @@ img.better-together-img {
 }
 
 /* Integrations listing CSS end --------------------------- */
+
+/* 3 Reasons Integrations Details CSS start -------------------------- */
+
+.three-reasons-bc-section {
+  margin-top: 40px;
+  margin-bottom: 78px;
+}
+
+.three-reasons-main-section-content {
+  width: 80%;
+  margin-bottom: 85px;
+}
+
+.three-reasons-main-section-content h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  color: #15293f;
+  margin-bottom: 30px;
+}
+
+.three-reasons-main-section-content p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.register-section img {
+  width: 303.41px;
+  border: 11px solid #ffffff;
+  filter: drop-shadow(-20px 23px 30px rgba(2, 19, 80, 0.15));
+  border-radius: 6px;
+  margin-bottom: 50px;
+}
+
+.event-og-box {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.event-og-box-details {
+  margin-left: 13px;
+}
+
+.event-og-box-details p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 8px;
+}
+
+.event-og-box img {
+  width: 56.85px;
+}
+
+.event-og-box-details p span {
+  color: #f27e44;
+}
+
+.event-details-box p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  letter-spacing: 0.25px;
+  color: #2d3436;
+}
+
+.event-details-box a {
+  color: #f27e44;
+  text-decoration: none;
+}
+
+.register-section p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: #15293f;
+  margin-bottom: 27px;
+}
+
+.three-reasons-intro-section h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 43px;
+  color: #15293f;
+  margin-bottom: 50px;
+}
+
+.openwater-reasons {
+  margin-bottom: 80px;
+}
+
+.openwater-reasons h4 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 34px;
+  letter-spacing: 0.25px;
+  color: #2d3436;
+  margin-bottom: 38px;
+}
+
+.openwater-reasons img {
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.openwater-reasons p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  letter-spacing: 0.25px;
+  color: #2d3436;
+}
+
+.three-reasons-intro-section {
+  margin-bottom: 92px;
+}
+
+.ow-sessions-speakers {
+  background: #f6f7f9;
+  padding-top: 140px;
+  padding-bottom: 217px;
+}
+
+.ow-sessions-speakers h2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 43px;
+  text-align: center;
+  color: #15293f;
+}
+
+.speakers-box-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.speakers-box {
+  background: #ffffff;
+  box-shadow: 0px 13.0549px 8.47085px rgba(22, 22, 22, 0.08);
+  border-radius: 11px;
+  width: 895.2px;
+  margin-top: 110px;
+}
+
+.speakers-box-img {
+  text-align: center;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.speakers-box-img img {
+  width: 132px;
+  position: absolute;
+  top: -61px;
+}
+
+.speaker-details {
+  display: flex;
+}
+
+.speaker-details-wrapper {
+  padding: 100px 105px 36px 105px;
+}
+
+.speaker-details .sd-title {
+  width: 20%;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 34px;
+  letter-spacing: 0.25px;
+  color: #2d3436;
+}
+
+.speaker-details span{
+  color: #3196F5;
+}
+
+.speaker-details .sd-details {
+  width: 80%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  letter-spacing: 0.25px;
+  color: #2d3436;
+}
+
+/* 3 Reasons Integrations Details CSS end -------------------------- */
