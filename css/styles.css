@@ -3182,5 +3182,140 @@ img.better-together-img {
     right: 6%;
   }
 }
-
 /* Award Management Guides CSS end -------------------------- */
+
+/* Blog Detail CSS start ------------------------------------- */
+.blog-details-content-section {
+  margin-top: 63px;
+  margin-bottom: 183px;
+}
+
+.blog-detail-main-image img {
+  width: 100%;
+  height: 475px;
+  margin-top: 17px;
+  margin-bottom: 50px;
+}
+
+.blog-detail-author-card {
+  background: #ffffff;
+  box-shadow: 0px 12px 7.78633px rgba(22, 22, 22, 0.08);
+  border-radius: 8px;
+  /* height: 283.26px; */
+  padding: 34px;
+  margin-top: 50px;
+}
+
+.blog-details-main-content {
+  width: 85%;
+}
+
+.blog-details-main-content h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 52px;
+  color: #2d3436;
+  margin-bottom: 40px;
+}
+
+.blog-details-main-content p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 34px;
+  letter-spacing: 0.25px;
+  color: #15293f;
+}
+
+.blog-details-main-content img {
+  margin-bottom: 25px;
+}
+
+.card-author-details-wrapper {
+  display: flex;
+  margin-bottom: 35px;
+}
+
+.card-author-img img {
+  width: 86px;
+}
+
+.card-author-details {
+  margin-left: 27px;
+}
+
+.card-author-details h5 {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 25px;
+  color: #f27e44;
+}
+
+.blog-detail-author-card .card-author-details p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #15293f;
+}
+
+.blog-detail-author-card p {
+  margin: 0px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 30px;
+  color: #15293f;
+}
+
+.intro-author-details p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #2d3436;
+  margin: 0px;
+}
+
+.intro-author-details span{
+  font-weight: 700;
+  color: #3196f5;
+}
+
+
+
+.blog-detail-author-intro {
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 90px;
+}
+
+.blog-detail-author-intro img {
+  width: 65px;
+}
+
+.blog-detail-author-intro-details {
+  margin-left: 18px;
+}
+
+.intro-author-details .blog-detail-author-intro-details h5 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 19px;
+  color: #f27e44;
+}
+
+.intro-author-details .blog-detail-author-intro-details p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #2d3436;
+}
+
+/* Blog Detail CSS end ------------------------------------- */
