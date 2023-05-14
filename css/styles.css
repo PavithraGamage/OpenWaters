@@ -3281,12 +3281,10 @@ img.better-together-img {
   margin: 0px;
 }
 
-.intro-author-details span{
+.intro-author-details span {
   font-weight: 700;
   color: #3196f5;
 }
-
-
 
 .blog-detail-author-intro {
   display: flex;
@@ -3316,6 +3314,70 @@ img.better-together-img {
   font-size: 16px;
   line-height: 19px;
   color: #2d3436;
+}
+
+.intro-author-details-mobile {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .intro-author-details {
+    display: none;
+  }
+
+  .intro-author-details-mobile {
+    display: block;
+  }
+
+  .blog-detail-author-intro {
+    margin-bottom: 0px;
+  }
+
+  .blog-details-main-content {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .blog-detail-main-image img {
+    height: auto;
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 500px) {
+  .blog-details-main-content img {
+    width: 100%;
+  }
+
+  .intro-author-details-mobile img {
+    width: 65px;
+  }
+
+  .blog-details-main-content .intro-author-details-mobile p {
+    font-size: 12px;
+  }
+
+  .blog-details-main-content h2 {
+    font-size: 38px;
+    line-height: 43px;
+  }
+
+  .blog-details-main-content p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+
+  .card-author-details-wrapper {
+    flex-direction: column;
+  }
+
+  .card-author-img img {
+    width: 50%;
+  }
+
+  .card-author-details {
+    margin-left: 0px;
+  }
 }
 
 /* Blog Detail CSS end ------------------------------------- */
