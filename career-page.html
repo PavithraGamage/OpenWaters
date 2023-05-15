@@ -2,796 +2,1090 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OpenWater | Application and Event Software</title>
-  <!-- home page css -->
-  <link rel="stylesheet" href="css/styles.css" />
-  <!-- bootstrap ccs cdn -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-  <!-- swiper js css -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-  <!-- home js -->
-  <script src="js/main.js"></script>
-  <!-- bootstrap js cdn -->
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-    crossorigin="anonymous"></script>
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-  <!-- Lottie -->
-  <script src="https://cdn.jsdelivr.net/npm/lottie-web@5.7.8/build/player/lottie.min.js"></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OpenWater | Application and Event Software</title>
+    <!-- home page css -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- bootstrap ccs cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <!-- swiper js css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- home js -->
+    <script src="js/main.js"></script>
+    <!-- bootstrap js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Lottie -->
+    <script src="https://cdn.jsdelivr.net/npm/lottie-web@5.7.8/build/player/lottie.min.js"></script>
+
+
+    <style>
+        .career-slider {
+            margin-top: 100px;
+            margin-bottom: 100px;
+        }
+
+        .career-slider .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .career-slider .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .career-slider .swiper-slide p {
+            width: 80%;
+            margin-bottom: 60px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 51px;
+            color: #15293F;
+        }
+
+        .career-slider .swiper-slide img {
+            display: block;
+            width: 128px;
+            height: 128px;
+            object-fit: cover;
+            margin-bottom: 25px;
+            border-radius: 10px;
+        }
+
+        .career-slider .swiper-slide h5 {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 25px;
+            line-height: 28px;
+            color: #004F91;
+        }
+
+
+        .career-slider .swiper-slide h6 {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            color: #2D3436;
+            margin-bottom: 60px;
+        }
+
+
+        .career-slider .swiper-pagination-bullet-active {
+            background: #161616;
+        }
+
+        .career-slider .swiper-button-next,
+        .swiper-button-prev {
+            top: var(--swiper-navigation-top-offset, 70%);
+        }
+
+        .career-slider .swiper-button-next {
+            background-image: url("images/c-slider-right-arrow.svg");
+            background-repeat: no-repeat;
+            width: 40.25px;
+            background-position-x: -1px;
+            right: 35%;
+        }
+
+        .career-slider .swiper-button-prev {
+            background-image: url("images/c-slider-left-arrow.svg");
+            background-repeat: no-repeat;
+            rotate: 0deg;
+            left: 35%;
+        }
+
+
+        .career-slider .swiper-button-next:after,
+        .swiper-rtl .swiper-button-prev:after {
+            content: none;
+        }
+
+        .swiper-button-prev:after,
+        .swiper-rtl .swiper-button-next:after {
+            content: none;
+        }
+
+        /* slider responsive */
+
+        @media (max-width: 900px) {
+
+            .career-slider .swiper-slide p {
+                width: 100%;
+                font-size: 28px;
+            }
+
+            .career-slider .swiper-button-next,
+            .swiper-button-prev {
+                top: var(--swiper-navigation-top-offset, 68%);
+            }
+
+            .career-slider .swiper-button-next {
+                right: 25%;
+            }
+
+            .career-slider .swiper-button-prev {
+                left: 25%;
+            }
+
+        }
+
+
+        @media (max-width: 500px) {
+
+            .career-slider .swiper-slide p {
+                font-size: 20px;
+                line-height: 33px;
+            }
+
+            .career-slider .swiper-button-next {
+                right: 5%;
+            }
+
+            .career-slider .swiper-button-prev {
+                left: 5%;
+            }
+
+            .career-slider .swiper-button-next,
+            .swiper-button-prev {
+                top: var(--swiper-navigation-top-offset, 70%);
+            }
+
+        }
+    </style>
+
+
+
+
+
+
+
+
 </head>
 
 <body>
-  <!-- navigation start -->
-  <header>
-    <nav class="nav-bar">
-      <div class="container">
-        <div class="row">
-          <!-- logo -->
-          <div class="col-2">
-            <a href="/index.html" class="link-to">
-              <img src="images/nav-logo.svg" class="img-fluid" alt="Open Water Logo" />
-            </a>
+    <!-- navigation start -->
+    <header>
+        <nav class="nav-bar">
+            <div class="container">
+                <div class="row">
+                    <!-- logo -->
+                    <div class="col-2">
+                        <a href="/index.html" class="link-to">
+                            <img src="images/nav-logo.svg" class="img-fluid" alt="Open Water Logo" />
+                        </a>
 
-          </div>
-          <!-- menu items -->
-          <div class="col-8 menu-bar">
-            <div class="menu-btn"
-              onmousemove="platform_dropdown_show(), resources_dropdown_hide(), about_dropdown_hide()">
-              Platform
-              <img class="menu-btn-icon" src="images/nav-dropdown-icon.svg" alt="nav-dropdown-icon" />
+                    </div>
+                    <!-- menu items -->
+                    <div class="col-8 menu-bar">
+                        <div class="menu-btn"
+                            onmousemove="platform_dropdown_show(), resources_dropdown_hide(), about_dropdown_hide()">
+                            Platform
+                            <img class="menu-btn-icon" src="images/nav-dropdown-icon.svg" alt="nav-dropdown-icon" />
+                        </div>
+
+                        <div class="menu-btn"
+                            onmousemove="resources_dropdown_show(), platform_dropdown_hide(), about_dropdown_hide()">
+                            Resources
+                            <img class="menu-btn-icon" src="images/nav-dropdown-icon.svg" alt="nav-dropdown-icon" />
+                        </div>
+
+                        <div class="menu-btn"
+                            onmousemove="about_dropdown_show(), platform_dropdown_hide(), resources_dropdown_hide()">
+                            About Us
+                            <img class="menu-btn-icon" src="images/nav-dropdown-icon.svg" alt="nav-dropdown-icon" />
+                        </div>
+                    </div>
+                    <!-- nav btn -->
+                    <div class="col-2 menu-demo-btn">
+                        <a href="contact-us.html">
+                            <button class="demo-btn">Request a Demo</button>
+                        </a>
+                    </div>
+                </div>
             </div>
+        </nav>
 
-            <div class="menu-btn"
-              onmousemove="resources_dropdown_show(), platform_dropdown_hide(), about_dropdown_hide()">
-              Resources
-              <img class="menu-btn-icon" src="images/nav-dropdown-icon.svg" alt="nav-dropdown-icon" />
+        <!-- nav drop downs -->
+        <div class="platform-dropdown-wrapper" id="platform-dropdown" onmouseleave="platform_dropdown_hide()">
+            <div class="container platform-dropdown">
+                <div class="row drop-down-items-center">
+                    <div class="col-3 platform-border">
+                        <h2 class="platform-menu-headding">Platform</h2>
+
+
+                        <a href="http://" class="link-to">
+                            <div class="menu-links">
+                                <img src="images/Frame 427321077.svg" alt="">
+                                <div class="menu-dropdown-text">
+                                    <h4>Abstract Software</h4>
+                                    <p>Visual project management</p>
+                                </div>
+                            </div>
+
+                        </a>
+
+
+
+                        <a href="/awards-software.html" class="link-to">
+                            <div class="menu-links">
+                                <img src="images/Frame 427320988.svg" alt="">
+                                <div class="menu-dropdown-text">
+                                    <h4>Awards Software</h4>
+                                    <p>Project and issue tracking</p>
+                                </div>
+                            </div>
+
+                        </a>
+
+
+                        <a href="http://" class="link-to">
+
+                            <div class="menu-links">
+                                <img src="images/Frame 427321078.svg" alt="">
+                                <div class="menu-dropdown-text">
+                                    <h4>Grants </h4>
+                                    <p>Project and issue tracking</p>
+                                </div>
+                            </div>
+                        </a>
+
+
+                        <a href="http://" class="link-to">
+                            <div class="menu-links">
+                                <img src="images/Frame 427321079.svg" alt="">
+                                <div class="menu-dropdown-text">
+                                    <h4>Scholarships</h4>
+                                    <p>Project and issue tracking</p>
+                                </div>
+                            </div>
+
+                        </a>
+
+
+                        <a href="http://" class="link-to">
+                            <div class="menu-links">
+                                <img src="images/Frame 427321080.svg" alt="">
+                                <div class="menu-dropdown-text">
+                                    <h4>Fellowships</h4>
+                                    <p>Project and issue tracking</p>
+                                </div>
+                            </div>
+
+                        </a>
+
+
+
+
+                    </div>
+
+
+                    <div class="col-4 integration-padding">
+                        <h2 class="platform-menu-headding">Integrations</h2>
+
+                        <a href="integrations-details.html" class="link-to">
+                            <div class="menu-links-integrations">
+                                <div class="menu-dropdown-text">
+                                    <h4>iMis</h4>
+                                    <p>iMIS is the world's only Engagement Management System (EMS)</p>
+                                </div>
+                            </div>
+                        </a>
+
+
+                        <a href="http://" class="link-to">
+                            <div class="menu-links-integrations">
+                                <div class="menu-dropdown-text">
+                                    <h4>Salesforce</h4>
+                                    <p>Unify marketing, sales, service, commerce, and IT on the world's #1 CRM.</p>
+                                </div>
+                            </div>
+                        </a>
+
+
+                        <a href="http://" class="link-to">
+                            <div class="menu-links-integrations">
+                                <div class="menu-dropdown-text">
+                                    <h4>Airtable</h4>
+                                    <p>Airtable is the spreadsheet system that does wonders. </p>
+                                </div>
+                            </div>
+
+                        </a>
+
+
+                        <a href="http://" class="link-to">
+                            <div class="menu-links-integrations">
+                                <div class="menu-dropdown-text">
+                                    <h4>Airtable</h4>
+                                    <p>Airtable is the spreadsheet system that does wonders. </p>
+                                </div>
+                            </div>
+
+                        </a>
+
+                        <a href="integrations-listing.html">
+                            <button class="menu-integration-btn">Browse All</button>
+                        </a>
+
+
+
+                    </div>
+                    <div class="col-5">
+                        <img src="images/platform-menu-image.svg" alt="" class="menu-dropdown-image">
+                    </div>
+                </div>
+
+
             </div>
-
-            <div class="menu-btn"
-              onmousemove="about_dropdown_show(), platform_dropdown_hide(), resources_dropdown_hide()">
-              About Us
-              <img class="menu-btn-icon" src="images/nav-dropdown-icon.svg" alt="nav-dropdown-icon" />
-            </div>
-          </div>
-          <!-- nav btn -->
-          <div class="col-2 menu-demo-btn">
-            <a href="contact-us.html">
-              <button class="demo-btn">Request a Demo</button>
-            </a>
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <!-- nav drop downs -->
-    <div class="platform-dropdown-wrapper" id="platform-dropdown" onmouseleave="platform_dropdown_hide()">
-      <div class="container platform-dropdown">
-        <div class="row drop-down-items-center">
-          <div class="col-3 platform-border">
-            <h2 class="platform-menu-headding">Platform</h2>
-
-
-            <a href="http://" class="link-to">
-              <div class="menu-links">
-                <img src="images/Frame 427321077.svg" alt="">
-                <div class="menu-dropdown-text">
-                  <h4>Abstract Software</h4>
-                  <p>Visual project management</p>
-                </div>
-              </div>
-
-            </a>
-
-
-
-            <a href="/awards-software.html" class="link-to">
-              <div class="menu-links">
-                <img src="images/Frame 427320988.svg" alt="">
-                <div class="menu-dropdown-text">
-                  <h4>Awards Software</h4>
-                  <p>Project and issue tracking</p>
-                </div>
-              </div>
-
-            </a>
-
-
-            <a href="http://" class="link-to">
-
-              <div class="menu-links">
-                <img src="images/Frame 427321078.svg" alt="">
-                <div class="menu-dropdown-text">
-                  <h4>Grants </h4>
-                  <p>Project and issue tracking</p>
-                </div>
-              </div>
-            </a>
-
-
-            <a href="http://" class="link-to">
-              <div class="menu-links">
-                <img src="images/Frame 427321079.svg" alt="">
-                <div class="menu-dropdown-text">
-                  <h4>Scholarships</h4>
-                  <p>Project and issue tracking</p>
-                </div>
-              </div>
-
-            </a>
-
-
-            <a href="http://" class="link-to">
-              <div class="menu-links">
-                <img src="images/Frame 427321080.svg" alt="">
-                <div class="menu-dropdown-text">
-                  <h4>Fellowships</h4>
-                  <p>Project and issue tracking</p>
-                </div>
-              </div>
-
-            </a>
-
-
-
-
-          </div>
-
-
-          <div class="col-4 integration-padding">
-            <h2 class="platform-menu-headding">Integrations</h2>
-
-            <a href="integrations-details.html" class="link-to">
-              <div class="menu-links-integrations">
-                <div class="menu-dropdown-text">
-                  <h4>iMis</h4>
-                  <p>iMIS is the world's only Engagement Management System (EMS)</p>
-                </div>
-              </div>
-            </a>
-
-
-            <a href="http://" class="link-to">
-              <div class="menu-links-integrations">
-                <div class="menu-dropdown-text">
-                  <h4>Salesforce</h4>
-                  <p>Unify marketing, sales, service, commerce, and IT on the world's #1 CRM.</p>
-                </div>
-              </div>
-            </a>
-
-
-            <a href="http://" class="link-to">
-              <div class="menu-links-integrations">
-                <div class="menu-dropdown-text">
-                  <h4>Airtable</h4>
-                  <p>Airtable is the spreadsheet system that does wonders. </p>
-                </div>
-              </div>
-
-            </a>
-
-
-            <a href="http://" class="link-to">
-              <div class="menu-links-integrations">
-                <div class="menu-dropdown-text">
-                  <h4>Airtable</h4>
-                  <p>Airtable is the spreadsheet system that does wonders. </p>
-                </div>
-              </div>
-
-            </a>
-
-            <a href="integrations-listing.html">
-              <button class="menu-integration-btn">Browse All</button>
-            </a>
-
-          
-
-          </div>
-          <div class="col-5">
-            <img src="images/platform-menu-image.svg" alt="" class="menu-dropdown-image">
-          </div>
-        </div>
-
-
-      </div>
-    </div>
-
-    <div class="resources-dropdown-wrapper" id="resources-dropdown" onmouseleave="resources_dropdown_hide()">
-
-      <div class="container resources-dropdown">
-
-        <div class="row">
-          <div class="col resources-dropdown-border-first">
-            <div class="resources-dropdown-heading-wrapper">
-              <img src="images/menu-education.svg" alt="">
-              <h4>Education</h4>
-            </div>
-
-            <a href="award-management-guides.html" class="link-to">
-              <p class="resources-dropdown-links">Ebooks, Guides & More</p>
-            </a>
-            <a href="http://" class="link-to">
-              <p class="resources-dropdown-links">Become OpenWater Certified</p>
-            </a>
-            <a href="http://" class="link-to">
-              <p class="resources-dropdown-links">Awards 101 Books</p>
-            </a>
-
-
-
-
-          </div>
-
-          <div class="col resources-dropdown-border">
-            <div class="resources-dropdown-heading-wrapper">
-              <img src="images/menu-education.svg" alt="">
-              <h4>Why OpenWater?</h4>
-            </div>
-            <a href="http://" class="link-to">
-              <p class="resources-dropdown-links">Case Studies</p>
-            </a>
-            <a href="product-demos-&-resources.html" class="link-to">
-              <p class="resources-dropdown-links">Product Demos</p>
-            </a>
-            <a href="http://" class="link-to">
-              <p class="resources-dropdown-links">Why Choose OpenWater?</p>
-            </a>
-
-            <button class="menu-integration-btn">Browse All</button>
-
-          </div>
-
-          <div class="col resources-dropdown-border-last">
-            <div class="resources-dropdown-heading-wrapper">
-              <img src="images/menu-education.svg" alt="">
-              <h4>User resources</h4>
-            </div>
-
-            <a href="http://" class="link-to">
-              <p class="resources-dropdown-links">Help Center</p>
-            </a>
-
-            <a href="http://" class="link-to">
-              <p class="resources-dropdown-links">API Docs</p>
-            </a>
-
-            <a href="http://" class="link-to">
-              <p class="resources-dropdown-links">Online Training</p>
-            </a>
-
-            <button class="menu-integration-btn">Browse All</button>
-          </div>
         </div>
 
+        <div class="resources-dropdown-wrapper" id="resources-dropdown" onmouseleave="resources_dropdown_hide()">
+
+            <div class="container resources-dropdown">
+
+                <div class="row">
+                    <div class="col resources-dropdown-border-first">
+                        <div class="resources-dropdown-heading-wrapper">
+                            <img src="images/menu-education.svg" alt="">
+                            <h4>Education</h4>
+                        </div>
+
+                        <a href="award-management-guides.html" class="link-to">
+                            <p class="resources-dropdown-links">Ebooks, Guides & More</p>
+                        </a>
+                        <a href="http://" class="link-to">
+                            <p class="resources-dropdown-links">Become OpenWater Certified</p>
+                        </a>
+                        <a href="http://" class="link-to">
+                            <p class="resources-dropdown-links">Awards 101 Books</p>
+                        </a>
 
 
-      </div>
 
-    </div>
 
-    <div class="about-dropdown-wrapper" id="about-dropdown">
-      <div class="container about-dropdown">
-        <div class="row">
-          <div class="co1 about-dropdown-small-box" onmouseleave="about_dropdown_hide()">
+                    </div>
 
-            <a href="http://" class="link-to">
-              <p class="about-dropdown-small-box-f-child">Who we are?</p>
-            </a>
-            <a href="http://" class="link-to">
-              <p>Why OpenWater?</p>
-            </a>
+                    <div class="col resources-dropdown-border">
+                        <div class="resources-dropdown-heading-wrapper">
+                            <img src="images/menu-education.svg" alt="">
+                            <h4>Why OpenWater?</h4>
+                        </div>
+                        <a href="http://" class="link-to">
+                            <p class="resources-dropdown-links">Case Studies</p>
+                        </a>
+                        <a href="product-demos-&-resources.html" class="link-to">
+                            <p class="resources-dropdown-links">Product Demos</p>
+                        </a>
+                        <a href="http://" class="link-to">
+                            <p class="resources-dropdown-links">Why Choose OpenWater?</p>
+                        </a>
 
-            <a href="career-page.html" class="link-to">
-              <p>Careers</p>
-            </a>
+                        <button class="menu-integration-btn">Browse All</button>
 
-            <a href="http://" class="link-to">
-              <p>Press</p>
-            </a>
-            <a href="blog.html" class="link-to">
-              <p class="about-dropdown-small-box-l-child">Blog</p>
-            </a>
+                    </div>
 
-          </div>
-        </div>
-      </div>
-    </div>
+                    <div class="col resources-dropdown-border-last">
+                        <div class="resources-dropdown-heading-wrapper">
+                            <img src="images/menu-education.svg" alt="">
+                            <h4>User resources</h4>
+                        </div>
 
-    <!-- mobile nav -->
-    <nav class="mobile-nav">
-      <div class="container">
-        <div class="row">
-          <div class="col mobile-nav-logo-wrapper">
-            <a href="/index.html" class="link-to">
-              <img src="images/nav-logo.svg" alt="" id="mobile-logo">
-            </a>
+                        <a href="http://" class="link-to">
+                            <p class="resources-dropdown-links">Help Center</p>
+                        </a>
 
-            <div style="display: none;" id="mobile-platform" onclick="show_mobile_main_menu_platform()">
+                        <a href="http://" class="link-to">
+                            <p class="resources-dropdown-links">API Docs</p>
+                        </a>
 
-              <img src="images/mobile_mnu-back.svg" alt="">
-              <h5>Platform</h5>
+                        <a href="http://" class="link-to">
+                            <p class="resources-dropdown-links">Online Training</p>
+                        </a>
+
+                        <button class="menu-integration-btn">Browse All</button>
+                    </div>
+                </div>
+
+
 
             </div>
 
-            <div style="display: none;" id="mobile-resource" onclick="show_mobile_main_menu_resources()">
+        </div>
 
-              <img src="images/mobile_mnu-back.svg" alt="">
-              <h5>Resources</h5>
+        <div class="about-dropdown-wrapper" id="about-dropdown">
+            <div class="container about-dropdown">
+                <div class="row">
+                    <div class="co1 about-dropdown-small-box" onmouseleave="about_dropdown_hide()">
+
+                        <a href="http://" class="link-to">
+                            <p class="about-dropdown-small-box-f-child">Who we are?</p>
+                        </a>
+                        <a href="http://" class="link-to">
+                            <p>Why OpenWater?</p>
+                        </a>
+
+                        <a href="career-page.html" class="link-to">
+                            <p>Careers</p>
+                        </a>
+
+                        <a href="http://" class="link-to">
+                            <p>Press</p>
+                        </a>
+                        <a href="blog.html" class="link-to">
+                            <p class="about-dropdown-small-box-l-child">Blog</p>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- mobile nav -->
+        <nav class="mobile-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col mobile-nav-logo-wrapper">
+                        <a href="/index.html" class="link-to">
+                            <img src="images/nav-logo.svg" alt="" id="mobile-logo">
+                        </a>
+
+                        <div style="display: none;" id="mobile-platform" onclick="show_mobile_main_menu_platform()">
+
+                            <img src="images/mobile_mnu-back.svg" alt="">
+                            <h5>Platform</h5>
+
+                        </div>
+
+                        <div style="display: none;" id="mobile-resource" onclick="show_mobile_main_menu_resources()">
+
+                            <img src="images/mobile_mnu-back.svg" alt="">
+                            <h5>Resources</h5>
+
+                        </div>
+
+
+                        <div style="display: none;" id="mobile-about" onclick="show_mobile_main_menu_about()">
+
+                            <img src="images/mobile_mnu-back.svg" alt="">
+                            <h5>About Us</h5>
+
+                        </div>
+
+
+                    </div>
+                    <div class="col toggle-btn-wrapper">
+
+                        <img src="images/mobile-nav-expan-btn.svg" alt="" onclick="mobile_menu_show()"
+                            id="mobile-nav-expan">
+                        <img src="images/mobile-menu-close.svg" alt="" onclick="mobile_menu_hide()"
+                            style="display:none;" id="mobile-nav-close-btn">
+
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- mobile main dropdown -->
+        <div class="main-drop-down" id="main-drop-down">
+            <div class="mobile-main-dropdown">
+
+                <div class="mobile-main-menu-links-wrapper" onclick="platform_mobile_menu_show()">
+                    <div class="mobile-main-menu-links">
+                        <p>Platform</p>
+                        <img src="images/mobile-menu-icon-new.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="mobile-main-menu-links-wrapper" onclick="resource_mobile_menu_show()">
+                    <div class="mobile-main-menu-links">
+                        <p>Resources</p>
+                        <img src="images/mobile-menu-icon-new.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="mobile-main-menu-links-wrapper" onclick="about_mobile_menu_show()">
+                    <div class="mobile-main-menu-links">
+                        <p>About Us</p>
+                        <img src="images/mobile-menu-icon-new.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="mobile-main-menu-links-wrapper" style="border-bottom: none;">
+                    <div class="mobile-main-menu-links">
+                        <a href="contact-us.html">
+                            <button class="demo-btn">Request a Demo</button>
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- mobile platform dropdown -->
+        <div style="display: none;" id="mobile-platform-expan">
+            <div class="container">
+
+                <div class="row mobile-platform-dropdown-row">
+                    <div class="col platform-border">
+
+
+
+                        <a href="http://" class="link-to">
+                            <div class="menu-links">
+                                <img src="images/abstract-soft-menu.svg" alt="">
+                                <div class="menu-dropdown-text">
+                                    <h4>Abstract Software</h4>
+                                    <p>Visual project management</p>
+                                </div>
+                            </div>
+
+                        </a>
+
+
+
+                        <a href="/awards-software.html" class="link-to">
+                            <div class="menu-links">
+                                <img src="images/awards-software-menu.svg" alt="">
+                                <div class="menu-dropdown-text">
+                                    <h4>Awards Software</h4>
+                                    <p>Project and issue tracking</p>
+                                </div>
+                            </div>
+
+                        </a>
+
+
+                        <a href="http://" class="link-to">
+
+                            <div class="menu-links">
+                                <img src="images/grants-menu.svg" alt="">
+                                <div class="menu-dropdown-text">
+                                    <h4>Grants </h4>
+                                    <p>Project and issue tracking</p>
+                                </div>
+                            </div>
+                        </a>
+
+
+                        <a href="http://" class="link-to">
+                            <div class="menu-links">
+                                <img src="images/scolaership-menu.svg" alt="">
+                                <div class="menu-dropdown-text">
+                                    <h4>Scholarships</h4>
+                                    <p>Project and issue tracking</p>
+                                </div>
+                            </div>
+
+                        </a>
+
+
+                        <a href="http://" class="link-to">
+                            <div class="menu-links">
+                                <img src="images/fellowships-menu.svg" alt="">
+                                <div class="menu-dropdown-text">
+                                    <h4>Fellowships</h4>
+                                    <p>Project and issue tracking</p>
+                                </div>
+                            </div>
+
+                        </a>
+
+
+
+
+                    </div>
+                    <div class="col integration-padding">
+                        <h2 class="platform-menu-headding">Integrations</h2>
+
+                        <a href="integrations-details.html" class="link-to">
+                            <div class="menu-links-integrations">
+                                <div class="menu-dropdown-text">
+                                    <h4>iMis</h4>
+                                    <p>iMIS is the world's only Engagement Management System (EMS)</p>
+                                </div>
+                            </div>
+                        </a>
+
+
+                        <a href="http://" class="link-to">
+                            <div class="menu-links-integrations">
+                                <div class="menu-dropdown-text">
+                                    <h4>Salesforce</h4>
+                                    <p>Unify marketing, sales, service, commerce, and IT on the world's #1 CRM.</p>
+                                </div>
+                            </div>
+                        </a>
+
+
+                        <a href="http://" class="link-to">
+                            <div class="menu-links-integrations">
+                                <div class="menu-dropdown-text">
+                                    <h4>Airtable</h4>
+                                    <p>Airtable is the spreadsheet system that does wonders. </p>
+                                </div>
+                            </div>
+
+                        </a>
+
+
+                        <a href="http://" class="link-to">
+                            <div class="menu-links-integrations">
+                                <div class="menu-dropdown-text">
+                                    <h4>Airtable</h4>
+                                    <p>Airtable is the spreadsheet system that does wonders. </p>
+                                </div>
+                            </div>
+
+                        </a>
+
+
+                        <a href="integrations-listing.html">
+                            <button class="menu-integration-btn">Browse All</button>
+                        </a>
+
+
+                    </div>
+
+
+
+                </div>
+
+                <div class="col-12">
+
+                    <div class="mobile-platform-image-wrapper">
+                        <div class="mobile-platform-image">
+                            <img src="images/platform-menu-image.svg" alt="" class="menu-dropdown-image">
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <!-- mobile resource dropdown -->
+        <div style="display: none;" id="mobile-resource-expan">
+
+            <div class="container">
+
+                <div class="row">
+                    <div class="col resources-dropdown-border-first">
+                        <div class="resources-dropdown-heading-wrapper">
+                            <img src="images/menu-education.svg" alt="">
+                            <h4>Education</h4>
+                        </div>
+
+                        <a href="award-management-guides.html" class="link-to">
+                            <p class="resources-dropdown-links">Ebooks, Guides & More</p>
+                        </a>
+                        <a href="http://" class="link-to">
+                            <p class="resources-dropdown-links">Become OpenWater Certified</p>
+                        </a>
+                        <a href="http://" class="link-to">
+                            <p class="resources-dropdown-links">Awards 101 Books</p>
+                        </a>
+
+
+
+
+                    </div>
+
+                    <div class="col resources-dropdown-border">
+                        <div class="resources-dropdown-heading-wrapper">
+                            <img src="images/menu-education.svg" alt="">
+                            <h4>Why OpenWater?</h4>
+                        </div>
+                        <a href="http://" class="link-to">
+                            <p class="resources-dropdown-links">Case Studies</p>
+                        </a>
+                        <a href="product-demos-&-resources.html" class="link-to">
+                            <p class="resources-dropdown-links">Product Demos</p>
+                        </a>
+                        <a href="http://" class="link-to">
+                            <p class="resources-dropdown-links">Why Choose OpenWater?</p>
+                        </a>
+
+                        <button class="menu-integration-btn">Browse All</button>
+
+                    </div>
+
+                    <div class="col resources-dropdown-border-last">
+                        <div class="resources-dropdown-heading-wrapper">
+                            <img src="images/menu-education.svg" alt="">
+                            <h4>User resources</h4>
+                        </div>
+
+                        <a href="http://" class="link-to">
+                            <p class="resources-dropdown-links">Help Center</p>
+                        </a>
+
+                        <a href="http://" class="link-to">
+                            <p class="resources-dropdown-links">API Docs</p>
+                        </a>
+
+                        <a href="http://" class="link-to">
+                            <p class="resources-dropdown-links">Online Training</p>
+                        </a>
+
+                        <button class="menu-integration-btn">Browse All</button>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+
+        <div style="display: none;" id="mobile-about-expan">
+            <div class="mobile-about-wrapper">
+
+                <div class="mobile-main-menu-links-wrapper">
+                    <a href="http://" class="link-to">
+                        <p>Who we are?</p>
+                    </a>
+
+                </div>
+
+                <div class="mobile-main-menu-links-wrapper">
+
+                    <a href="http://" class="link-to">
+                        <p>Why OpenWater?</p>
+                    </a>
+                </div>
+
+                <div class="mobile-main-menu-links-wrapper">
+                    <a href="career-page.html" class="link-to">
+                        <p>Careers</p>
+                    </a>
+                </div>
+
+                <div class="mobile-main-menu-links-wrapper">
+                    <a href="http://" class="link-to">
+                        <p>Press</p>
+                    </a>
+                </div>
+
+                <div class="mobile-main-menu-links-wrapper">
+                    <a href="blog.html" class="link-to">
+                        <p style="border-bottom: none;">Blog</p>
+                    </a>
+                </div>
 
             </div>
 
 
-            <div style="display: none;" id="mobile-about" onclick="show_mobile_main_menu_about()">
+        </div>
 
-              <img src="images/mobile_mnu-back.svg" alt="">
-              <h5>About Us</h5>
 
+
+
+
+
+
+
+    </header>
+    <!-- navigation end -->
+
+
+
+    <section class="career-page-hero-section">
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+                    <div class="career-page-hero-section-contents">
+                        <img src="images/cp-ow-logo.svg" alt="">
+                        <h1>Join us to shape the future </h1>
+                    </div>
+
+
+                </div>
             </div>
-
-
-          </div>
-          <div class="col toggle-btn-wrapper">
-
-            <img src="images/mobile-nav-expan-btn.svg" alt="" onclick="mobile_menu_show()" id="mobile-nav-expan">
-            <img src="images/mobile-menu-close.svg" alt="" onclick="mobile_menu_hide()" style="display:none;"
-              id="mobile-nav-close-btn">
-
-
-          </div>
-        </div>
-      </div>
-    </nav>
-
-    <!-- mobile main dropdown -->
-    <div class="main-drop-down" id="main-drop-down">
-      <div class="mobile-main-dropdown">
-
-        <div class="mobile-main-menu-links-wrapper" onclick="platform_mobile_menu_show()">
-          <div class="mobile-main-menu-links">
-            <p>Platform</p>
-            <img src="images/mobile-menu-icon-new.svg" alt="">
-          </div>
-        </div>
-
-        <div class="mobile-main-menu-links-wrapper" onclick="resource_mobile_menu_show()">
-          <div class="mobile-main-menu-links">
-            <p>Resources</p>
-            <img src="images/mobile-menu-icon-new.svg" alt="">
-          </div>
-        </div>
-
-        <div class="mobile-main-menu-links-wrapper" onclick="about_mobile_menu_show()">
-          <div class="mobile-main-menu-links">
-            <p>About Us</p>
-            <img src="images/mobile-menu-icon-new.svg" alt="">
-          </div>
-        </div>
-
-        <div class="mobile-main-menu-links-wrapper" style="border-bottom: none;">
-          <div class="mobile-main-menu-links">
-            <a href="contact-us.html">
-              <button class="demo-btn">Request a Demo</button>
-            </a>
-          </div>
         </div>
 
 
-      </div>
-    </div>
-
-    <!-- mobile platform dropdown -->
-    <div style="display: none;" id="mobile-platform-expan">
-      <div class="container">
-
-        <div class="row mobile-platform-dropdown-row">
-          <div class="col platform-border">
-
-
-
-            <a href="http://" class="link-to">
-              <div class="menu-links">
-                <img src="images/abstract-soft-menu.svg" alt="">
-                <div class="menu-dropdown-text">
-                  <h4>Abstract Software</h4>
-                  <p>Visual project management</p>
-                </div>
-              </div>
-
-            </a>
-
-
-
-            <a href="/awards-software.html" class="link-to">
-              <div class="menu-links">
-                <img src="images/awards-software-menu.svg" alt="">
-                <div class="menu-dropdown-text">
-                  <h4>Awards Software</h4>
-                  <p>Project and issue tracking</p>
-                </div>
-              </div>
-
-            </a>
-
-
-            <a href="http://" class="link-to">
-
-              <div class="menu-links">
-                <img src="images/grants-menu.svg" alt="">
-                <div class="menu-dropdown-text">
-                  <h4>Grants </h4>
-                  <p>Project and issue tracking</p>
-                </div>
-              </div>
-            </a>
-
-
-            <a href="http://" class="link-to">
-              <div class="menu-links">
-                <img src="images/scolaership-menu.svg" alt="">
-                <div class="menu-dropdown-text">
-                  <h4>Scholarships</h4>
-                  <p>Project and issue tracking</p>
-                </div>
-              </div>
-
-            </a>
-
-
-            <a href="http://" class="link-to">
-              <div class="menu-links">
-                <img src="images/fellowships-menu.svg" alt="">
-                <div class="menu-dropdown-text">
-                  <h4>Fellowships</h4>
-                  <p>Project and issue tracking</p>
-                </div>
-              </div>
-
-            </a>
-
-
-
-
-          </div>
-          <div class="col integration-padding">
-            <h2 class="platform-menu-headding">Integrations</h2>
-
-            <a href="integrations-details.html" class="link-to">
-              <div class="menu-links-integrations">
-                <div class="menu-dropdown-text">
-                  <h4>iMis</h4>
-                  <p>iMIS is the world's only Engagement Management System (EMS)</p>
-                </div>
-              </div>
-            </a>
-
-
-            <a href="http://" class="link-to">
-              <div class="menu-links-integrations">
-                <div class="menu-dropdown-text">
-                  <h4>Salesforce</h4>
-                  <p>Unify marketing, sales, service, commerce, and IT on the world's #1 CRM.</p>
-                </div>
-              </div>
-            </a>
-
-
-            <a href="http://" class="link-to">
-              <div class="menu-links-integrations">
-                <div class="menu-dropdown-text">
-                  <h4>Airtable</h4>
-                  <p>Airtable is the spreadsheet system that does wonders. </p>
-                </div>
-              </div>
-
-            </a>
-
-
-            <a href="http://" class="link-to">
-              <div class="menu-links-integrations">
-                <div class="menu-dropdown-text">
-                  <h4>Airtable</h4>
-                  <p>Airtable is the spreadsheet system that does wonders. </p>
-                </div>
-              </div>
-
-            </a>
-
-
-            <a href="integrations-listing.html">
-              <button class="menu-integration-btn">Browse All</button>
-            </a>
-           
-
-          </div>
-
-
-
-        </div>
-
-        <div class="col-12">
-
-          <div class="mobile-platform-image-wrapper">
-            <div class="mobile-platform-image">
-              <img src="images/platform-menu-image.svg" alt="" class="menu-dropdown-image">
-            </div>
-
-          </div>
-
-        </div>
-
-
-
-      </div>
-    </div>
-
-    <!-- mobile resource dropdown -->
-    <div style="display: none;" id="mobile-resource-expan">
-
-      <div class="container">
-
-        <div class="row">
-          <div class="col resources-dropdown-border-first">
-            <div class="resources-dropdown-heading-wrapper">
-              <img src="images/menu-education.svg" alt="">
-              <h4>Education</h4>
-            </div>
-
-            <a href="award-management-guides.html" class="link-to">
-              <p class="resources-dropdown-links">Ebooks, Guides & More</p>
-            </a>
-            <a href="http://" class="link-to">
-              <p class="resources-dropdown-links">Become OpenWater Certified</p>
-            </a>
-            <a href="http://" class="link-to">
-              <p class="resources-dropdown-links">Awards 101 Books</p>
-            </a>
-
-
-
-
-          </div>
-
-          <div class="col resources-dropdown-border">
-            <div class="resources-dropdown-heading-wrapper">
-              <img src="images/menu-education.svg" alt="">
-              <h4>Why OpenWater?</h4>
-            </div>
-            <a href="http://" class="link-to">
-              <p class="resources-dropdown-links">Case Studies</p>
-            </a>
-            <a href="product-demos-&-resources.html" class="link-to">
-              <p class="resources-dropdown-links">Product Demos</p>
-            </a>
-            <a href="http://" class="link-to">
-              <p class="resources-dropdown-links">Why Choose OpenWater?</p>
-            </a>
-
-            <button class="menu-integration-btn">Browse All</button>
-
-          </div>
-
-          <div class="col resources-dropdown-border-last">
-            <div class="resources-dropdown-heading-wrapper">
-              <img src="images/menu-education.svg" alt="">
-              <h4>User resources</h4>
-            </div>
-
-            <a href="http://" class="link-to">
-              <p class="resources-dropdown-links">Help Center</p>
-            </a>
-
-            <a href="http://" class="link-to">
-              <p class="resources-dropdown-links">API Docs</p>
-            </a>
-
-            <a href="http://" class="link-to">
-              <p class="resources-dropdown-links">Online Training</p>
-            </a>
-
-            <button class="menu-integration-btn">Browse All</button>
-          </div>
-        </div>
-
-
-
-      </div>
-
-    </div>
-
-
-    <div style="display: none;" id="mobile-about-expan">
-      <div class="mobile-about-wrapper">
-
-        <div class="mobile-main-menu-links-wrapper">
-          <a href="http://" class="link-to">
-            <p>Who we are?</p>
-          </a>
-
-        </div>
-
-        <div class="mobile-main-menu-links-wrapper">
-
-          <a href="http://" class="link-to">
-            <p>Why OpenWater?</p>
-          </a>
-        </div>
-
-        <div class="mobile-main-menu-links-wrapper">
-          <a href="career-page.html" class="link-to">
-            <p>Careers</p>
-          </a>
-        </div>
-
-        <div class="mobile-main-menu-links-wrapper">
-          <a href="http://" class="link-to">
-            <p>Press</p>
-          </a>
-        </div>
-
-        <div class="mobile-main-menu-links-wrapper">
-          <a href="blog.html" class="link-to">
-            <p style="border-bottom: none;">Blog</p>
-          </a>
-        </div>
-
-      </div>
-
-
-    </div>
-
-
-
-
-
-
-
-
-  </header>
-  <!-- navigation end -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-  <footer>
-    <section class="content-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-7">
-            <h5 class="footer-headings">follow us</h5>
-            <img src="images/facebook.svg" alt="" class="social-icons" />
-            <img src="images/twitter.svg" alt="" class="social-icons" />
-            <img src="images/linkedin.svg" alt="" class="social-icons" />
-            <img src="images/instagram.svg" alt="" class="social-icons" />
-
-            <div class="row footer-3col-row">
-              <div class="col desktop-software-col">
-                <h5 class="footer-headings">Software</h5>
-                <div class="footer-links">
-                  <a href="http://">Awards</a>
-                  <a href="http://">Fellowships</a>
-                  <a href="http://">Scholarships</a>
-                  <a href="http://">Grants</a>
-                  <a href="http://">Applications</a>
-                  <a href="http://">Abstracts</a>
-                </div>
-              </div>
-
-              <div class="mobile-software-col">
-                <h5 class="footer-headings">Software</h5>
-                <div class="footer-links">
-                  <a href="http://">Awards</a>
-                  <a href="http://">Fellowships</a>
-                  <a href="http://">Scholarships</a>
-                  <a href="http://">Grants</a>
-                  <a href="http://">Applications</a>
-                  <a href="http://">Abstracts</a>
-                </div>
-              </div>
-
-
-              <div class="col">
-                <h5 class="footer-headings">Support</h5>
-                <div class="footer-links">
-                  <a href="http://">Help Center</a>
-                  <a href="http://">API Documentation</a>
-                  <a href="http://">GDPR + Privacy</a>
-                </div>
-              </div>
-              <div class="col">
-                <h5 class="footer-headings footer-about-us">About us</h5>
-                <div class="footer-links">
-                  <a href="http://">The Team</a>
-                  <a href="career-page.html">Careers</a>
-                  <a href="http://">News</a>
-                  <a href="http://">Security</a>
-                  <a href="http://">Privacy Policy</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-5">
-            <h5 class="footer-headings footer-contact-us">Contact us</h5>
-            <img src="images/open-water-footer-logo.svg" alt="" />
-            <h6 class="footer-location">HQ</h6>
-            <p class="footer-address">
-              1800 Diagonal Road Suite 600 Alexandria, VA 22314
-            </p>
-            <p class="footer-email">info@getopenwater.com</p>
-            <p class="footer-email contact-number">202-765-0247</p>
-
-            <div class="row inc-row">
-              <div class="col">
-                <div class="inc-wrapper">
-                  <img src="images/Capa_1.svg" alt="" />
-                  <div class="inc-para-wrapper">
-                    <p>
-                      OpenWater has been named to the Inc5000 List of the
-                      Fastest Growing Private Companies in America for four
-                      years in a row since 2017.
-                    </p>
-                    <p class="read-the-press">READ THE PRESS RELEASE</p>
-                  </div>
-                </div>
-
-              </div>
-              <div class="col">
-                <div class="inc-wrapper inc-wrapper-last">
-                  <img src="images/Alliance-Partner_EVENTS-Partner_Seal_BLK.png.svg" alt="" />
-                  <div class="inc-para-wrapper">
-                    <p>
-                      OpenWater is a proud ASAE Alliance Partner
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </div>
-      </div>
     </section>
 
-    <section class="copyright">
-      <div>Copyright © 2023 <span>Openwater.</span> All Rights Reserved.</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="career-slider">
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+
+
+                    <div class="swiper career-slider-cp">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+
+                                <p>“The team is composed of highly intelligent and dedicated individuals who possess a
+                                    unique quality of being extremely kind. This combination is rare to find and
+                                    although I have had positive experiences working with other teams in the past, I
+                                    believe that this particular group is special in its own way.”
+                                </p>
+
+                                <img src="images/career-slider-imag.png" alt="">
+                                <h5>Jordan Dain 1</h6>
+                                    <h6>Enterprise Implementation Specialist</h6>
+
+                            </div>
+                            <div class="swiper-slide">
+
+                                <p>“The team is composed of highly intelligent and dedicated individuals who possess a
+                                    unique quality of being extremely kind. This combination is rare to find and
+                                    although I have had positive experiences working with other teams in the past, I
+                                    believe that this particular group is special in its own way.”
+                                </p>
+
+                                <img src="images/career-slider-imag.png" alt="">
+                                <h5>Jordan Dain 2</h6>
+                                    <h6>Enterprise Implementation Specialist</h6>
+
+                            </div>
+                            <div class="swiper-slide">
+
+                                <p>“The team is composed of highly intelligent and dedicated individuals who possess a
+                                    unique quality of being extremely kind. This combination is rare to find and
+                                    although I have had positive experiences working with other teams in the past, I
+                                    believe that this particular group is special in its own way.”
+                                </p>
+
+                                <img src="images/career-slider-imag.png" alt="">
+                                <h5>Jordan Dain 3</h6>
+                                    <h6>Enterprise Implementation Specialist</h6>
+
+                            </div>
+                            <div class="swiper-slide">
+
+                                <p>“The team is composed of highly intelligent and dedicated individuals who possess a
+                                    unique quality of being extremely kind. This combination is rare to find and
+                                    although I have had positive experiences working with other teams in the past, I
+                                    believe that this particular group is special in its own way.”
+                                </p>
+
+                                <img src="images/career-slider-imag.png" alt="">
+                                <h5>Jordan Dain 4</h6>
+                                    <h6>Enterprise Implementation Specialist</h6>
+
+                            </div>
+                            <div class="swiper-slide">
+
+                                <p>“The team is composed of highly intelligent and dedicated individuals who possess a
+                                    unique quality of being extremely kind. This combination is rare to find and
+                                    although I have had positive experiences working with other teams in the past, I
+                                    believe that this particular group is special in its own way.”
+                                </p>
+
+                                <img src="images/career-slider-imag.png" alt="">
+                                <h5>Jordan Dain 5</h6>
+                                    <h6>Enterprise Implementation Specialist</h6>
+
+                            </div>
+                            <div class="swiper-slide">
+
+                                <p>“The team is composed of highly intelligent and dedicated individuals who possess a
+                                    unique quality of being extremely kind. This combination is rare to find and
+                                    although I have had positive experiences working with other teams in the past, I
+                                    believe that this particular group is special in its own way.”
+                                </p>
+
+                                <img src="images/career-slider-imag.png" alt="">
+                                <h5>Jordan Dain 6</h6>
+                                    <h6>Enterprise Implementation Specialist</h6>
+
+                            </div>
+
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
     </section>
-  </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <section class="content-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7">
+                        <h5 class="footer-headings">follow us</h5>
+                        <img src="images/facebook.svg" alt="" class="social-icons" />
+                        <img src="images/twitter.svg" alt="" class="social-icons" />
+                        <img src="images/linkedin.svg" alt="" class="social-icons" />
+                        <img src="images/instagram.svg" alt="" class="social-icons" />
+
+                        <div class="row footer-3col-row">
+                            <div class="col desktop-software-col">
+                                <h5 class="footer-headings">Software</h5>
+                                <div class="footer-links">
+                                    <a href="http://">Awards</a>
+                                    <a href="http://">Fellowships</a>
+                                    <a href="http://">Scholarships</a>
+                                    <a href="http://">Grants</a>
+                                    <a href="http://">Applications</a>
+                                    <a href="http://">Abstracts</a>
+                                </div>
+                            </div>
+
+                            <div class="mobile-software-col">
+                                <h5 class="footer-headings">Software</h5>
+                                <div class="footer-links">
+                                    <a href="http://">Awards</a>
+                                    <a href="http://">Fellowships</a>
+                                    <a href="http://">Scholarships</a>
+                                    <a href="http://">Grants</a>
+                                    <a href="http://">Applications</a>
+                                    <a href="http://">Abstracts</a>
+                                </div>
+                            </div>
+
+
+                            <div class="col">
+                                <h5 class="footer-headings">Support</h5>
+                                <div class="footer-links">
+                                    <a href="http://">Help Center</a>
+                                    <a href="http://">API Documentation</a>
+                                    <a href="http://">GDPR + Privacy</a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <h5 class="footer-headings footer-about-us">About us</h5>
+                                <div class="footer-links">
+                                    <a href="http://">The Team</a>
+                                    <a href="career-page.html">Careers</a>
+                                    <a href="http://">News</a>
+                                    <a href="http://">Security</a>
+                                    <a href="http://">Privacy Policy</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5">
+                        <h5 class="footer-headings footer-contact-us">Contact us</h5>
+                        <img src="images/open-water-footer-logo.svg" alt="" />
+                        <h6 class="footer-location">HQ</h6>
+                        <p class="footer-address">
+                            1800 Diagonal Road Suite 600 Alexandria, VA 22314
+                        </p>
+                        <p class="footer-email">info@getopenwater.com</p>
+                        <p class="footer-email contact-number">202-765-0247</p>
+
+                        <div class="row inc-row">
+                            <div class="col">
+                                <div class="inc-wrapper">
+                                    <img src="images/Capa_1.svg" alt="" />
+                                    <div class="inc-para-wrapper">
+                                        <p>
+                                            OpenWater has been named to the Inc5000 List of the
+                                            Fastest Growing Private Companies in America for four
+                                            years in a row since 2017.
+                                        </p>
+                                        <p class="read-the-press">READ THE PRESS RELEASE</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col">
+                                <div class="inc-wrapper inc-wrapper-last">
+                                    <img src="images/Alliance-Partner_EVENTS-Partner_Seal_BLK.png.svg" alt="" />
+                                    <div class="inc-para-wrapper">
+                                        <p>
+                                            OpenWater is a proud ASAE Alliance Partner
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="copyright">
+            <div>Copyright © 2023 <span>Openwater.</span> All Rights Reserved.</div>
+        </section>
+    </footer>
 </body>
 
 
-
-
-
-
-
-
+<!-- career slider -->
+<script>
+    var swiper = new Swiper(".career-slider-cp", {
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+</script>
 
 
 

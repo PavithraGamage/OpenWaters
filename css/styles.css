@@ -3898,22 +3898,52 @@ img.better-together-img {
     padding: 25px;
   }
 
-  .form-f-row{
+  .form-f-row {
     flex-direction: column;
     margin-bottom: 8px;
   }
 
-  .input-2-col{
+  .input-2-col {
     width: auto;
   }
 
-  .form-f-row input{
+  .form-f-row input {
     margin-bottom: 8px;
   }
 
-  .contact-main-section{
+  .contact-main-section {
     background-position: 0% 100%;
   }
 }
 
 /* Contact Us CSS end ------------------------------------ */
+
+/* Career Page CSS start ---------------------------------- */
+
+.career-page-hero-section {
+  background: url("../images/as-vidoe-subtract.svg"),
+    linear-gradient(180deg, #212034 42.19%, #374e6d 65.1%, #d2efff 100%);
+  background-repeat: no-repeat;
+  background-position: 0% 101%;
+  background-size: contain;
+  padding-top: 112px;
+  height: 644.74px;
+}
+
+
+.career-page-hero-section-contents {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.career-page-hero-section-contents h1 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 50px;
+  color: #ffffff;
+  margin-top: 18px;
+}
+
+/* Career Page CSS end ---------------------------------- */
