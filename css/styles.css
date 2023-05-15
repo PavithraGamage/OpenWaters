@@ -3956,6 +3956,10 @@ img.better-together-img {
   justify-content: center;
 }
 
+.cp-main-image-wrapper img {
+  width: 965px;
+}
+
 .career-page-cta .cta-background {
   width: 965px;
 }
@@ -4111,4 +4115,142 @@ img.better-together-img {
   color: #15293f;
   margin-bottom: 27px;
 }
+
+.cp-current-openings-contents p {
+  width: 625px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #15293f;
+}
+
+.cp-current-openings-cat-btn {
+  font-weight: 500;
+  font-size: 15.625px;
+  line-height: 23px;
+  color: #2d3436;
+  background: rgba(18, 27, 58, 0.08);
+  border-radius: 31px;
+  width: 107px;
+  height: 30px;
+  border: none;
+  margin-bottom: 25px;
+  margin-top: 80px;
+}
+
+.cp-current-openings-job-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #d9d9d9;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+}
+
+.cp-current-openings-job-list h5 {
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 48px;
+  color: #15293f;
+}
+
+.cp-current-openings-job-list button {
+  background: #ff6332;
+  border-radius: 24px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  border: none;
+  color: #ffffff;
+  padding: 13px 24px;
+  /* transition: 2s; */
+}
+
+.cp-current-openings-job-list button:hover {
+  background: #15293f;
+}
+
+/* Career Page responsive ------------------------------------ */
+@media (max-width: 1200px) {
+  .cp-main-image-wrapper img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .cp-our-core-values-contents {
+    width: auto;
+  }
+
+  .cp-our-core-values-contents img {
+    width: 100%;
+  }
+
+  .cp-our-core-values {
+    padding-bottom: 115px;
+  }
+
+  .cp-perks-benefits-grid-wrapper {
+    width: auto;
+  }
+
+  .cp-current-openings-contents {
+    width: auto;
+  }
+
+  .cp-current-openings-job-list h5 {
+    padding-right: 25px;
+  }
+}
+
+@media (max-width: 500px) {
+  .career-page-hero-section-contents h1 {
+    text-align: center;
+  }
+
+  .cp-main-image-wrapper img {
+    margin-top: 50px;
+  }
+
+  .cp-our-mission-section-content {
+    width: auto;
+  }
+
+  .cp-our-core-values-contents p {
+    width: auto;
+    margin-bottom: 40px;
+  }
+
+  .cp-our-mission-section-content {
+    font-size: 23px;
+    line-height: 31px;
+  }
+
+  .cp-our-core-values {
+    padding-bottom: 75px;
+  }
+
+  .cp-perks-benefits-content {
+    width: auto;
+  }
+
+  .cp-perks-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cp-current-openings-contents p {
+    width: auto;
+  }
+
+  .cp-current-openings {
+    margin: 75px 0px;
+  }
+
+  .cp-current-openings-job-list h5 {
+    font-size: 25px;
+    line-height: 33px;
+  }
+}
+
 /* Career Page CSS end ---------------------------------- */
