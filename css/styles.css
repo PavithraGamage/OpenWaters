@@ -3930,7 +3930,6 @@ img.better-together-img {
   height: 644.74px;
 }
 
-
 .career-page-hero-section-contents {
   display: flex;
   flex-direction: column;
@@ -3946,4 +3945,170 @@ img.better-together-img {
   margin-top: 18px;
 }
 
+.image-section {
+  position: relative;
+  top: -325px;
+  margin-bottom: -290px;
+}
+
+.cp-main-image-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.career-page-cta .cta-background {
+  width: 965px;
+}
+
+.cp-our-mission-section-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cp-our-mission-section-content {
+  width: 698px;
+  text-align: center;
+  font-style: normal;
+  font-size: 29.4085px;
+  color: #15293f;
+  line-height: 35px;
+}
+
+.cp-our-mission-section-content span {
+  font-weight: 700;
+}
+
+.cp-our-core-values {
+  background: url("../images/as-vidoe-subtract.svg"),
+    linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #95c8f7 100%);
+  background-repeat: no-repeat;
+  background-position: 0% 101%;
+  background-size: contain;
+  padding-top: 112px;
+  padding-top: 125px;
+  padding-bottom: 250px;
+}
+
+.cp-our-core-values-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.cp-our-core-values-contents {
+  width: 965px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.cp-our-core-values-contents h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48.7195px;
+  line-height: 51px;
+  color: #15293f;
+  margin-bottom: 40px;
+}
+
+.cp-our-core-values-contents p {
+  width: 590.3px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 29px;
+  color: #15293f;
+  margin-bottom: 75px;
+}
+
+.cp-perks-benefits {
+  background: #f6f7f9;
+  padding: 83px 0px 120px 0px;
+}
+
+.cp-perks-benefits-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cp-perks-benefits-content {
+  width: 545px;
+  text-align: center;
+}
+
+.cp-perks-benefits-content h2 {
+  font-weight: 700;
+  font-size: 48.7195px;
+  line-height: 51px;
+  color: #15293f;
+  margin-bottom: 20px;
+}
+
+.cp-perks-benefits-content p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  color: #15293f;
+  padding-bottom: 45px;
+}
+
+.cp-perks-benefits-grid-wrapper {
+  width: 888px;
+}
+
+.cp-perks-benefits-grid-box {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0px 34px 8px rgba(68, 72, 112, 0.1);
+  border-radius: 9px;
+  padding: 30px;
+}
+
+.cp-perks-benefits-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.cp-perks-benefits-grid-box img {
+  width: 53.62px;
+  height: 53.62px;
+  margin-bottom: 20px;
+}
+
+.cp-perks-benefits-grid-box h4 {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 41px;
+  color: #2d3436;
+}
+
+.cp-perks-benefits-grid-box p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 23px;
+  color: #2d3436;
+}
+
+.cp-current-openings {
+  margin: 150px 0px;
+}
+
+.cp-current-openings-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cp-current-openings-contents {
+  width: 965px;
+}
+
+.cp-current-openings-contents h2 {
+  font-weight: 700;
+  font-size: 48.7195px;
+  line-height: 51px;
+  color: #15293f;
+  margin-bottom: 27px;
+}
 /* Career Page CSS end ---------------------------------- */
