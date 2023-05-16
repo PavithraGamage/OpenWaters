@@ -4438,9 +4438,6 @@ img.better-together-img {
   }
 }
 
-@media (max-width: 500px) {
-}
-
 /* Resources detail  CSS end ------------------------------ */
 
 /* Who we are? CSS start ----------------------------------- */
@@ -4648,6 +4645,70 @@ img.better-together-img {
 
 .wwa-we-are-hiring-img .s-image {
   margin-bottom: 40px;
+}
+
+/* Who we are? responsive ------------------------------------ */
+@media (max-width: 1200px) {
+  .wwa-meet-our-team-content {
+    width: auto;
+  }
+
+  .wwa-we-are-hiring-content {
+    width: auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .wwa-para-content-box {
+    width: auto;
+  }
+
+  .wwa-meet-our-team-leader-gird {
+    gap: 30px;
+  }
+
+  .wwa-we-are-hiring-img img {
+    width: 30%;
+  }
+}
+
+@media (max-width: 500px) {
+  .wwa-hero-section h1 {
+    width: auto;
+  }
+
+  .wwa-para-content-box {
+    padding: 30px;
+  }
+
+  .wwa-para-box-wrapper {
+    margin-top: -30xp;
+  }
+
+  .wwa-meet-our-team-content p {
+    width: auto;
+  }
+
+  .wwa-meet-our-team-leader-gird {
+    grid-template-columns: 1fr;
+    row-gap: 120px;
+  }
+
+  .wwa-we-are-hiring-content p {
+    width: auto;
+  }
+
+  .wwa-we-are-hiring-img{
+    margin-top: 60px;
+  }
+
+  .wwa-we-are-hiring-img img {
+    width: 48%;
+  }
+
+  .wwa-meet-our-team-content{
+    margin-top: 60px;
+  }
 }
 
 /* Who we are? CSS end ----------------------------------- */
