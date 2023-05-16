@@ -4433,14 +4433,221 @@ img.better-together-img {
     margin-bottom: 60px;
   }
 
-  .resource-details-section .col-md-5{
+  .resource-details-section .col-md-5 {
     width: 100%;
   }
 }
 
 @media (max-width: 500px) {
-
-
 }
 
 /* Resources detail  CSS end ------------------------------ */
+
+/* Who we are? CSS start ----------------------------------- */
+
+.wwa-para-section {
+  margin-bottom: 100px;
+}
+
+.wwa-hero-section h1 {
+  font-weight: 700;
+  font-size: 38px;
+  line-height: 46px;
+  color: #2d3436;
+  width: 566px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.wwa-hero-section span {
+  color: #3196f5;
+}
+
+.wwa-para-box-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -50px;
+}
+
+.wwa-para-content-box {
+  width: 911px;
+  background: rgba(255, 255, 255, 0.56);
+  border: 1px solid #ffffff;
+  border-radius: 7px;
+  padding: 66px 50px;
+  filter: drop-shadow(0px 29px 19px rgba(58, 69, 107, 0.11));
+  backdrop-filter: blur(100px);
+  font-size: 18px;
+  line-height: 23px;
+  color: #15293f;
+  font-weight: 500;
+}
+
+.wwa-core-values {
+  background-image: url("/images/Subtract_gray.svg"),
+    linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #95c8f7 100%);
+}
+
+.wwa-meet-our-team {
+  background: #f6f7f9;
+  padding-bottom: 82px;
+}
+
+.wwa-meet-our-team-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wwa-meet-our-team-content {
+  width: 1036px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wwa-meet-our-team-content h2 {
+  font-weight: 500;
+  font-size: 48.7195px;
+  line-height: 51px;
+  color: #15293f;
+  margin-bottom: 25px;
+}
+
+.wwa-meet-our-team-content span {
+  font-weight: 700;
+  color: #3196f5;
+}
+
+.wwa-meet-our-team-content p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  width: 653px;
+  color: #2d3436;
+}
+
+.wwa-meet-our-team-content-p {
+  font-size: 18px;
+  line-height: 20px;
+  color: #464646;
+  margin-bottom: 42px;
+}
+
+.wwa-meet-our-team-content h5 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 33px;
+  color: #2d3436;
+}
+
+.wwa-meet-our-team-leader-gird-box {
+  background: #ffffff;
+  box-shadow: 0px 13.0549px 8.47085px rgba(22, 22, 22, 0.08);
+  border-radius: 11px;
+  padding: 26px;
+}
+
+.wwa-meet-our-team-leader-gird-box img {
+  width: 132px;
+  height: 132px;
+  margin-top: -90px;
+  margin-bottom: 45px;
+}
+
+.wwa-meet-our-team-leader-gird-box h5 {
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 28px;
+  color: #004f91;
+}
+
+.wwa-meet-our-team-leader-gird-box h6 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 31px;
+  color: #3196f5;
+}
+
+.wwa-meet-our-team-leader-gird-box p {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 19px;
+  color: #2d3436;
+  text-align: left;
+  width: auto;
+}
+
+.wwa-meet-our-team-leader-gird {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 70px;
+  margin-top: 120px;
+}
+
+.wwa-we-are-hiring {
+  margin-top: 70px;
+  margin-bottom: 160px;
+}
+
+.wwa-we-are-hiring-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wwa-we-are-hiring-content {
+  width: 1036px;
+}
+
+.wwa-we-are-hiring-content h2 {
+  font-weight: 700;
+  font-size: 48.7195px;
+  line-height: 51px;
+  color: #15293f;
+  margin-bottom: 43px;
+}
+
+.wwa-we-are-hiring-content p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 26px;
+  color: #15293f;
+  margin-bottom: 46px;
+  width: 430px;
+}
+
+.wwa-we-are-hiring-content button {
+  background: #ff6332;
+  border-radius: 45px;
+  padding: 14px 23px;
+  font-weight: 700;
+  font-size: 19.2471px;
+  line-height: 23px;
+  letter-spacing: 0.566091px;
+  color: #ffffff;
+  border: none;
+}
+
+.wwa-we-are-hiring-img {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.wwa-we-are-hiring-img img {
+  width: 220px;
+  margin-left: 20px;
+}
+
+.wwa-we-are-hiring-img .f-image {
+  margin-top: 40px;
+}
+
+.wwa-we-are-hiring-img .s-image {
+  margin-bottom: 40px;
+}
+
+/* Who we are? CSS end ----------------------------------- */
