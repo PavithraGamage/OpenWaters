@@ -4986,21 +4986,342 @@ img.better-together-img {
   .learn-get-certified-content {
     width: auto;
   }
-
 }
 
 /* Learn CSS end ----------------------------------------- */
 
-
 /* Why Open Water CSS Start ------------------------------- */
 
+.why-open-water-hero-section {
+  height: 750px;
+  background: url(/images/as-vidoe-subtract.svg),
+    linear-gradient(180deg, #212034 42.19%, #374e6d 65.1%, #d2efff 100%);
+  background-repeat: no-repeat;
+  background-position: 0% 101%;
+  background-size: contain;
+  padding-top: 40px;
+}
 
+.why-open-water-hero-section h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 57px;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 27px;
+}
 
+.why-open-water-hero-section p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+  width: 525px;
+  margin-bottom: 40px;
+}
 
+.why-open-water-hero-section button {
+  background: #1c8ef8;
+  border: 9px solid rgba(255, 255, 255, 0.47);
+  border-radius: 35px;
+  font-weight: 600;
+  font-size: 19.2471px;
+  line-height: 23px;
+  letter-spacing: 0.566091px;
+  color: #ffffff;
+  padding: 13px 32px;
+}
 
+.number-one-platform-section {
+  padding: 80px 0px;
+  background: linear-gradient(360deg, #f4f6f9 0%, rgba(244, 246, 249, 0) 100%);
+}
+
+.number-one-platform-section-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.number-one-platform-section-content {
+  width: 880px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.number-one-platform-section-content h2 {
+  width: 698px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 46px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.number-one-platform-section-content h2 span {
+  color: #3196f5;
+}
+
+.number-one-platform-section-content p {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: center;
+  color: #2d3436;
+}
+
+.number-one-platform-product-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 80px;
+  margin-top: 75px;
+  margin-bottom: 120px;
+}
+
+.number-one-platform-product-grid-box {
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  color: #102f6b;
+}
+
+.number-one-platform-product-grid-box img {
+  margin-bottom: 18px;
+}
+
+.ow-number-one-platforms-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 880px;
+}
+
+.ow-number-one-platforms-2-divider {
+  margin-top: 80px;
+}
+
+.ow-number-one-platforms-2-divider-img {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.ow-number-one-platforms-2-divider-md4 ul {
+  padding-inline-start: 20px;
+  padding-top: 20px;
+  padding-bottom: 33px;
+  font-weight: 500;
+  font-size: 14.897px;
+  line-height: 25px;
+  color: #2d3436;
+}
+
+.ow-number-one-platforms-2-divider-md4 button {
+  background: #ff6332;
+  border-radius: 24px;
+  font-weight: 700;
+  font-size: 19.2471px;
+  line-height: 23px;
+  letter-spacing: 0.566091px;
+  color: #ffffff;
+  padding: 13px 23px;
+  border: none;
+}
+
+.wow-trusted-leaders-section {
+  margin-top: 77px;
+  margin-bottom: 140px;
+}
+
+.wow-trusted-leaders-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wow-trusted-leaders-btn-wrapper button {
+  background: #15293f;
+  border: 1px solid rgba(143, 157, 191, 0.36);
+  box-shadow: 0px 18px 12px rgba(22, 22, 22, 0.08);
+  border-radius: 6px;
+  width: 209.06px;
+  height: 55.22px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 51px;
+  color: #ffffff;
+}
+
+.wow-trusted-leaders-btn-wrapper button:hover {
+  background: #3196f5;
+  border: 1px solid rgba(143, 157, 191, 0.36);
+  box-shadow: 0px 18px 17px rgba(49, 150, 245, 0.29);
+  border-radius: 6px;
+}
+
+.wow-trusted-leaders-btn-wrapper button:focus {
+  background: #3196f5;
+  border: 1px solid rgba(143, 157, 191, 0.36);
+  box-shadow: 0px 18px 17px rgba(49, 150, 245, 0.29);
+  border-radius: 6px;
+}
+
+.wow-trusted-leaders-btn-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 50px;
+  margin-bottom: 98px;
+}
+
+.wow-trusted-leaders-logo-gird-associations {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  row-gap: 45px;
+}
+
+.wow-trusted-leaders-logo-gird-nonprofits {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  row-gap: 45px;
+}
+
+.wow-trusted-leaders-logo-gird-higher-education {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  row-gap: 45px;
+}
+
+.wow-trusted-leaders-logo-gird-media {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  row-gap: 45px;
+}
+
+.wow-trusted-leaders-logo-gird-corporate {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  row-gap: 45px;
+}
+
+.customer-love-section{
+  margin-bottom: 50px;
+}
+
+.customer-love-section h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #15293f;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.customer-love-section p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 23px;
+  text-align: center;
+  color: #2d3436;
+  margin-bottom: 50px;
+}
+
+.customer-love-card-wrapper {
+  width: 1017px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 85px;
+}
+
+.customer-love-card-wrapper-img img {
+  width: 100%;
+}
+
+.customer-love-card-content {
+  width: 66%;
+}
+
+.customer-love-card-wrapper-img {
+  width: 33%;
+}
+
+.customer-love-card-content h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  color: #15293f;
+  width: 442.77px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.customer-love-card-content p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0.05px;
+  color: #2d3436;
+  text-align: left;
+  margin-bottom: 15px;
+  width: 580px;
+}
+
+.customer-love-card-content h5 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 19px;
+  letter-spacing: 0.64px;
+  color: #2d3436;
+  margin-bottom: 6px;
+}
+
+.customer-love-card-content h6 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2px;
+  color: #15293f;
+  margin-bottom: 4px;
+}
+
+.customer-love-card-content h6 span {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.2px;
+  color: #3196f5;
+}
+
+.customer-love-card-content-margin{
+  margin-left: 87px;
+}
+
+.wow-slider-section-navigation{
+  position: relative;
+}
 
 /* Why Open Water CSS End ------------------------------- */
 
 
+/* Why Open Water responsive ------------------------------------ */
+@media (max-width: 1200px) {
+  
 
-
+}
