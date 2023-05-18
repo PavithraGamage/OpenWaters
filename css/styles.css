@@ -1497,8 +1497,27 @@ img.better-together-img {
     margin-right: var(--bs-gutter-x, 0.75rem) !important;
   }
 
+  .footer-cta {
+    height: 750px;
+    justify-content: flex-start;
+    background-image: url('/images/mobile-footer-cta-new-image.svg');
+    background-repeat: no-repeat;
+    padding-top: 90px;
+    background-position: bottom;
+    background-size: 100%;
+}
+
   .footer-cta .at-glance-para {
     width: auto;
+  }
+
+  #lightHouse{
+    display: none;
+  }
+
+
+  .wave-container{
+    display: none;
   }
 
   .inc-wrapper {
@@ -2970,7 +2989,7 @@ img.better-together-img {
   }
 
   /* id footer mobile fix */
-  .footer-cta {
+  .id-footer-cta {
     height: auto;
     padding: 80px 0px;
   }
