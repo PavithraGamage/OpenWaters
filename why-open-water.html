@@ -30,13 +30,13 @@
 
     <!-- slider css start -->
     <style>
-        .swiper {
+        .wow-slider-section .swiper {
             width: auto;
             height: auto;
             padding: 30px;
         }
 
-        .swiper-slide {
+        .wow-slider-section .swiper-slide {
             background: rgba(255, 255, 255, 0.95);
             box-shadow: 0px 34px 20px rgba(60, 61, 88, 0.1);
             border-radius: 6.48387px;
@@ -45,7 +45,7 @@
             padding: 30px;
         }
 
-        .swiper-slide img {
+        .wow-slider-section .swiper-slide img {
             display: block;
             width: 100%;
             height: auto;
@@ -54,14 +54,14 @@
         }
 
 
-        .swiper-slide h4 {
+        .wow-slider-section .swiper-slide h4 {
             font-weight: 800;
             font-size: 24px;
             line-height: 41px;
             color: #2D3436;
         }
 
-        .swiper-slide p {
+        .wow-slider-section .swiper-slide p {
             font-weight: 400;
             font-size: 16px;
             line-height: 29px;
@@ -69,13 +69,13 @@
             color: #2D3436;
         }
 
-        .wow-slider-btn {
+        .wow-slider-section .wow-slider-btn {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
-        .wow-slider-btn button {
+        .wow-slider-section .wow-slider-btn button {
             background: #15293F;
             border-radius: 80px;
             font-weight: 700;
@@ -86,7 +86,7 @@
             padding: 13px 23px;
         }
 
-        .swiper-button-next,
+        .wow-slider-section .swiper-button-next,
         .swiper-rtl .swiper-button-prev {
             right: var(--swiper-navigation-sides-offset, 10px);
             left: auto;
@@ -96,12 +96,12 @@
             transform: rotate(180deg);
         }
 
-        .swiper-button-next:after,
+        .wow-slider-section .swiper-button-next:after,
         .swiper-rtl .swiper-button-prev:after {
             content: none;
         }
 
-        .swiper-button-prev,
+        .wow-slider-section .swiper-button-prev,
         .swiper-rtl .swiper-button-next {
             left: var(--swiper-navigation-sides-offset, 90%);
             right: auto;
@@ -111,9 +111,37 @@
             margin-top: -18px;
         }
 
-        .swiper-button-prev:after,
+        .wow-slider-section .swiper-button-prev:after,
         .swiper-rtl .swiper-button-next:after {
             content: none;
+        }
+
+        /* slider responsive */
+
+        @media (max-width: 1200px) {
+
+            .wow-slider-section .swiper-button-prev,
+            .swiper-rtl .swiper-button-next {
+                left: var(--swiper-navigation-sides-offset, 85%);
+
+            }
+
+        }
+
+        @media (max-width: 500px) {
+
+            .wow-slider-section .swiper {
+                padding: 20px;
+            }
+
+            .wow-slider-section .swiper-button-prev,
+            .swiper-rtl .swiper-button-next {
+                left: var(--swiper-navigation-sides-offset, 68%);
+
+            }
+
+
+
         }
     </style>
 
@@ -123,12 +151,6 @@
 
 
 
-
-
-
-
-
-    <!-- slider css end -->
 
 
 
@@ -1181,7 +1203,7 @@
 
 
 
-  
+
 
 
 
@@ -1324,11 +1346,30 @@
 
 <script>
     var swiper = new Swiper(".wow-slider", {
-        slidesPerView: 3,
-        spaceBetween: 40,
+        slidesPerView: 1,
+        spaceBetween: 20,
+        loop: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: true,
+        },
         navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+            1024: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+            },
+            1400: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
         },
     });
 </script>

@@ -5170,9 +5170,9 @@ img.better-together-img {
 }
 
 .wow-trusted-leaders-btn-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  justify-items: center;
   margin-top: 50px;
   margin-bottom: 98px;
 }
@@ -5217,7 +5217,7 @@ img.better-together-img {
   row-gap: 45px;
 }
 
-.customer-love-section{
+.customer-love-section {
   margin-bottom: 50px;
 }
 
@@ -5309,19 +5309,157 @@ img.better-together-img {
   color: #3196f5;
 }
 
-.customer-love-card-content-margin{
+.customer-love-card-content-margin {
   margin-left: 87px;
 }
 
-.wow-slider-section-navigation{
+.wow-slider-section-navigation {
   position: relative;
 }
 
-/* Why Open Water CSS End ------------------------------- */
-
-
 /* Why Open Water responsive ------------------------------------ */
 @media (max-width: 1200px) {
-  
+  .wow-trusted-leaders-section img {
+    width: 80%;
+  }
+
+  .wow-trusted-leaders-btn-wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+  }
+
+  .customer-love-card-wrapper {
+    width: auto;
+  }
+
+  .customer-love-card-content-margin {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 900px) {
+  .number-one-platform-section-content {
+    width: auto;
+  }
+
+  .why-open-water-hero-section img {
+    width: 100%;
+  }
+
+  .why-open-water-hero-section {
+    height: 620px;
+  }
+
+  .number-one-platform-product-grid {
+    gap: 25px;
+    margin-bottom: 80px;
+  }
+
+  .ow-number-one-platforms-2 {
+    width: auto;
+  }
+
+  .ow-number-one-platforms-2-divider-img img {
+    width: 100%;
+  }
+
+  .ow-number-one-platforms-2-divider-md4 button {
+    padding: 13px 18px;
+  }
+
+  .customer-love-card-content h3 {
+    width: auto;
+  }
+
+  .customer-love-card-content p {
+    width: auto;
+  }
+
+  .customer-love-card-content {
+    width: 50%;
+  }
+
+  .customer-love-card-wrapper-img {
+    width: 45%;
+  }
 
 }
+
+@media (max-width: 500px) {
+  .why-open-water-hero-section p {
+    width: auto;
+  }
+
+  .number-one-platform-section-content h2 {
+    width: auto;
+  }
+
+  .number-one-platform-product-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .ow-number-one-platforms-2 h2{
+    text-align: center;
+  }
+
+  .ow-number-one-platforms-2 img {
+    width: 100%;
+  }
+
+  .ow-number-one-platforms-2-divider-img{
+    margin-top: 50px;
+  }
+
+  .wow-trusted-leaders-content-wrapper h4{
+    text-align: center;
+  }
+
+  .wow-trusted-leaders-btn-wrapper {
+    grid-template-columns: 1fr;
+}
+
+.wow-trusted-leaders-logo-gird-associations{
+  grid-template-columns: 1fr 1fr;
+}
+
+.wow-trusted-leaders-logo-gird-nonprofits{
+  grid-template-columns: 1fr 1fr;
+}
+
+.wow-trusted-leaders-logo-gird-higher-education {
+  grid-template-columns: 1fr 1fr;
+ 
+}
+
+.wow-trusted-leaders-logo-gird-media {
+  grid-template-columns: 1fr 1fr;
+
+}
+
+.wow-trusted-leaders-logo-gird-corporate {
+  grid-template-columns: 1fr 1fr;
+ 
+}
+
+.customer-love-card-wrapper {
+  flex-direction: column;
+}
+
+
+.customer-love-card-content {
+  width: 100%;
+  order: 1;
+  margin-top: 40px;
+}
+
+.customer-love-card-wrapper-img {
+  width: 100%;
+}
+
+.customer-love-card-content-margin {
+  margin-left: 0px;
+}
+
+}
+
+/* Why Open Water CSS End ------------------------------- */
