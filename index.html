@@ -193,7 +193,7 @@
               <button class="menu-integration-btn">Browse All</button>
             </a>
 
-          
+
 
           </div>
           <div class="col-5">
@@ -509,7 +509,7 @@
             <a href="integrations-listing.html">
               <button class="menu-integration-btn">Browse All</button>
             </a>
-           
+
 
           </div>
 
@@ -700,19 +700,18 @@
       <div id="grow-your-programs-lottie"></div>
 
 
-      <div class="watch-btn-wrapper" data-bs-toggle="modal" data-bs-target="#exampleModal">
+      <div class="watch-btn-wrapper" data-bs-toggle="modal" data-bs-target="#exampleModal" id="pop-btn">
         <img src="images/watch-btn-icon.svg" class="watch-btn-icon" alt="" />
         Watch the video
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
-              <div class="modal-body">
+              <div class="modal-body" id="iframe-body">
                 <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
 
 
-                <iframe src="https://player.vimeo.com/video/254187882" width="100%" height="100%" frameborder="0"
-                  allowfullscreen="allowfullscreen" data-ready="true"></iframe>
+
 
               </div>
             </div>
@@ -1724,7 +1723,27 @@
 
   })
 
-  
+
+</script>
+
+<!-- modal video -->
+<script>
+  // video url
+  var iframe = '<iframe src="https://player.vimeo.com/video/254187882" width="100%" height="100%" frameborder="0" allowfullscreen="allowfullscreen" data-ready="true" id="your-iframe-id"></iframe>';
+
+  // add this to modal body to render the video
+  var iframe_body = document.getElementById('iframe-body');
+
+  // load the video when click the btn
+  var pop_btn = document.getElementById('pop-btn');
+
+  // load event
+  pop_btn.addEventListener('click', function () {
+
+    iframe_body.innerHTML = iframe;
+
+  });
+
 </script>
 
 
