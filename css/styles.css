@@ -791,7 +791,7 @@ header {
   border-radius: 100px;
   border: none;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 20px;
   line-height: 22px;
   color: #fff;
@@ -2253,6 +2253,10 @@ img.better-together-img {
     left: 10%;
   }
 
+  .aw-hero {
+    background-image: url("/images/awards-software-mobile-background.svg");
+  }
+
   .aw-hero-wrapper p {
     width: auto;
   }
@@ -2343,6 +2347,10 @@ img.better-together-img {
     top: -180px;
     padding-bottom: 100px;
   }
+
+
+  /* new changes for mobile */
+
 }
 
 /* awards-software css end */
