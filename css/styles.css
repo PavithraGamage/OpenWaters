@@ -3012,6 +3012,7 @@ img.better-together-img {
   /* pd mobile header padding add */
   .product-demos-header {
     padding: 20px;
+    background-image: url("/images/blog-details-mobile-background.svg");
   }
 }
 
