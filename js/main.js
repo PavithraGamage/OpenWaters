@@ -44,6 +44,9 @@ function mobile_menu_show() {
 
   var close_btn = document.getElementById("mobile-nav-close-btn");
   close_btn.style.display = "block";
+
+  var body = document.querySelector('body');
+  body.style.overflow = "hidden";
 }
 
 function mobile_menu_hide() {
@@ -76,6 +79,9 @@ function mobile_menu_hide() {
 
   var box = document.getElementById("mobile-about");
   box.style.display = "none";
+
+  var body = document.querySelector('body');
+  body.style.overflow = "unset";
 }
 // mobile main drop down end -----------------------------------------
 

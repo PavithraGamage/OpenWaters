@@ -1305,6 +1305,8 @@ img.better-together-img {
     filter: drop-shadow(0px 23px 16px rgba(79, 79, 104, 0.25));
     backdrop-filter: blur(20px);
     z-index: 99;
+    height: calc(100vh - 60px);
+    overflow: scroll;
   }
 
   .mobile-platform-dropdown-row {
@@ -1337,6 +1339,8 @@ img.better-together-img {
     backdrop-filter: blur(20px);
     z-index: 99;
     padding: 40px 0px;
+    height: calc(100vh - 60px);
+    overflow: scroll;
   }
 
   #mobile-resource h5 {
