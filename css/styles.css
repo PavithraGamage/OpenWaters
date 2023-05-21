@@ -1365,6 +1365,21 @@ img.better-together-img {
     color: #15293f;
     padding-left: 20px;
   }
+
+  .footer-cta {
+    background-image: url("/images/white-cta-tab-background.svg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 105%;
+  }
+
+  #lightHouse {
+    display: none;
+  }
+
+  .wave-container {
+    display: none;
+  }
 }
 
 @media (max-width: 820px) {
@@ -1485,6 +1500,8 @@ img.better-together-img {
     text-align: center;
     padding-right: var(--bs-gutter-x, 0.75rem);
     padding-left: var(--bs-gutter-x, 0.75rem);
+    font-size: 40px;
+    line-height: 45px;
   }
 
   .testimonial-para {
@@ -1618,6 +1635,10 @@ img.better-together-img {
 
   .grow-your-programs .modal-content {
     height: 240px;
+  }
+
+  .faq-section{
+    padding-top: 70px;
   }
 }
 
@@ -1879,7 +1900,21 @@ img.better-together-img {
   font-size: 20px;
   line-height: 22px;
   color: #ffffff;
+}
+
+.aw-btn-wrapper {
   margin-top: 43px;
+  border-radius: 100px;
+  background: rgba(111, 142, 255, 0.17);
+  padding: 12px;
+}
+
+#online_form {
+  z-index: 5;
+}
+
+#user_friendly {
+  z-index: 5;
 }
 
 .aw-hero-wrapper button img {
@@ -2202,10 +2237,13 @@ img.better-together-img {
 @media (max-width: 600px) {
   .as-grow-your-programs-header h2 {
     width: auto;
+    font-size: 41px;
+    line-height: 41px;
   }
 
   .as-grow-your-programs-header p {
     width: auto;
+    margin-top: 25px;
   }
 
   .as-grow-your-programs-btn {
@@ -2225,6 +2263,7 @@ img.better-together-img {
 
   .as-grow-your-programs-swiper .swiper-wrapper .swiper-slide p {
     width: auto;
+    margin-top: 15px;
   }
 
   .as-grow-your-programs-slider-btn .swiper-button-prev,
@@ -2273,20 +2312,32 @@ img.better-together-img {
   .aw-industry-leaders-wrapper h6 {
     text-align: center;
     line-height: normal;
+    font-size: 17px;
   }
 
   .aw-awards {
-    grid-template-columns: 1fr;
     width: auto;
+    margin-bottom: 40px;
+  }
+
+  .aw-awards img {
+    width: 80%;
   }
 
   .aw-industry-leaders-wrapper p {
     width: auto;
+    margin-bottom: 30px;
   }
 
   .aw-clients {
-    grid-template-columns: 1fr;
-    row-gap: 45px;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 25px;
+    column-gap: 32px;
+    margin-bottom: 42px;
+  }
+
+  .aw-clients img {
+    width: 100%;
   }
 
   .additional-soft-heading-wrapper {
@@ -2305,19 +2356,33 @@ img.better-together-img {
 
   .additional-soft-heading-wrapper-mobile {
     display: block;
-    margin-top: 60px;
+    margin-top: 40px;
   }
 
   .additional-soft-heading-wrapper-mobile h4 {
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 28px;
+    line-height: 34px;
     color: #0d2943;
+    text-align: center;
   }
+
+  .as-traditional-awards-card-col-left p {
+    font-size: 17px;
+    margin-bottom: 0px;
+    margin-top: 13px;
+}
 
   .as-traditional-awards-card-wrapper {
     flex-direction: column;
+    margin-bottom: 15px;
+  }
+
+  .as-traditional-awards-card-col-right p{
+    font-size: 17px;
+    margin-bottom: 0px;
+    margin-top: 13px;
   }
 
   .as-traditional-awards-card-col-left {
@@ -2340,17 +2405,36 @@ img.better-together-img {
   }
 
   .as-traditional-wrapper {
-    padding-top: 85px;
+    padding-top: 40px;
   }
 
   .aw-traditional-awards {
     top: -180px;
-    padding-bottom: 100px;
+    padding-bottom: 65px;
   }
-
 
   /* new changes for mobile */
 
+  .aw-hero-wrapper h1 {
+    font-size: 42px;
+    margin-top: 75px;
+  }
+
+  .aw-btn-wrapper {
+    margin-top: 14px;
+  }
+
+  .aw-video-wrapper {
+    top: 0px;
+  }
+
+  .aw-video {
+    margin: 20px 0px;
+  }
+
+  .aw-industry-leaders {
+    margin-top: 50px;
+  }
 }
 
 /* awards-software css end */
