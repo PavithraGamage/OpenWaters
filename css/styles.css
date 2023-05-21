@@ -23,12 +23,12 @@ header {
   align-items: center;
 }
 
-.nav-bar .container{
+.nav-bar .container {
   padding-right: 0px;
   padding-right: 0px;
 }
 
-.nav-bar .col-2{
+.nav-bar .col-2 {
   padding-left: 0px;
 }
 
@@ -1225,7 +1225,7 @@ img.better-together-img {
   }
 
   .hero-section {
-    height: 50vh;
+    height: 30vh;
   }
 
   .testimonial-slider {
@@ -1446,7 +1446,7 @@ img.better-together-img {
 @media (max-width: 500px) {
   .hero-section {
     background-image: url("../images/ow-home-mobile-hero-image.svg");
-    height: 90vh;
+    height: 79vh;
   }
 
   .h1-headding {
@@ -1650,7 +1650,7 @@ img.better-together-img {
     height: 240px;
   }
 
-  .faq-section{
+  .faq-section {
     padding-top: 70px;
   }
 }
@@ -2385,14 +2385,14 @@ img.better-together-img {
     font-size: 17px;
     margin-bottom: 0px;
     margin-top: 13px;
-}
+  }
 
   .as-traditional-awards-card-wrapper {
     flex-direction: column;
     margin-bottom: 15px;
   }
 
-  .as-traditional-awards-card-col-right p{
+  .as-traditional-awards-card-col-right p {
     font-size: 17px;
     margin-bottom: 0px;
     margin-top: 13px;
@@ -3080,8 +3080,7 @@ img.better-together-img {
 }
 
 @media (max-width: 500px) {
-
-  .blog-content-section{
+  .blog-content-section {
     margin-bottom: 92px;
   }
 
@@ -3115,7 +3114,13 @@ img.better-together-img {
   /* pd mobile header padding add */
   .product-demos-header {
     padding: 20px;
+    height: 232px;
     background-image: url("/images/blog-details-mobile-background.svg");
+  }
+
+  .product-demos-header h1{
+    font-size: 40px;
+    line-height: 48px;
   }
 }
 
@@ -3352,7 +3357,7 @@ img.better-together-img {
   font-style: normal;
   font-weight: 600;
   font-size: 44px;
-  line-height: 52px;
+  line-height: 49px;
   color: #2d3436;
   margin-bottom: 40px;
 }
@@ -3360,8 +3365,8 @@ img.better-together-img {
 .blog-details-main-content p {
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 34px;
+  font-size: 18px;
+  line-height: 32px;
   letter-spacing: 0.25px;
   color: #15293f;
 }
@@ -3461,6 +3466,12 @@ img.better-together-img {
 
 /* Blog Detail responsive ------------------------------------- */
 
+@media (max-width: 1200px) {
+  .blog-details-main-content {
+    width: 95%;
+  }
+}
+
 @media (max-width: 900px) {
   .intro-author-details {
     display: none;
@@ -3475,7 +3486,7 @@ img.better-together-img {
   }
 
   .blog-details-main-content {
-    width: 100%;
+    width: 95%;
     margin-bottom: 60px;
   }
 
@@ -3485,8 +3496,16 @@ img.better-together-img {
 }
 
 @media (max-width: 500px) {
+  .blog-details-content-section {
+    margin-top: 26px;
+    margin-bottom: 92px;
+  }
   .intro-author-details-mobile img {
     width: 65px;
+  }
+
+  .blog-details-main-content{
+    width: 100%;
   }
 
   .blog-details-main-content .intro-author-details-mobile p {
@@ -3496,6 +3515,7 @@ img.better-together-img {
   .blog-details-main-content h2 {
     font-size: 38px;
     line-height: 43px;
+    margin-bottom: 12px;
   }
 
   .blog-details-main-content p {
@@ -4138,6 +4158,10 @@ img.better-together-img {
   justify-content: center;
 }
 
+.cp-our-core-values-mobile-img{
+  display: none;
+}
+
 .cp-our-core-values-contents {
   width: 965px;
   display: flex;
@@ -4315,6 +4339,14 @@ img.better-together-img {
   .cp-main-image-wrapper img {
     width: 100%;
   }
+
+  .cp-our-core-values{
+    padding-bottom: 107px;
+  }
+
+  .wwa-meet-our-team{
+    padding-top: 50px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -4326,9 +4358,6 @@ img.better-together-img {
     width: 100%;
   }
 
-  .cp-our-core-values {
-    padding-bottom: 115px;
-  }
 
   .cp-perks-benefits-grid-wrapper {
     width: auto;
@@ -4361,6 +4390,14 @@ img.better-together-img {
     margin-bottom: 40px;
   }
 
+  .cp-our-core-values-desktop-img{
+    display: none;
+  }
+
+  .cp-our-core-values-mobile-img{
+    display: block;
+  }
+
   .cp-our-mission-section-content {
     font-size: 23px;
     line-height: 31px;
@@ -4368,6 +4405,7 @@ img.better-together-img {
 
   .cp-our-core-values {
     padding-bottom: 75px;
+    padding-top: 61px;
   }
 
   .cp-perks-benefits-content {
@@ -4582,7 +4620,7 @@ img.better-together-img {
 /* Who we are? CSS start ----------------------------------- */
 
 .wwa-para-section {
-  margin-bottom: 100px;
+  margin-bottom: 12px;
 }
 
 .wwa-hero-section h1 {
@@ -4611,13 +4649,17 @@ img.better-together-img {
   background: rgba(255, 255, 255, 0.56);
   border: 1px solid #ffffff;
   border-radius: 7px;
-  padding: 66px 50px;
+  padding: 50px;
   filter: drop-shadow(0px 29px 19px rgba(58, 69, 107, 0.11));
   backdrop-filter: blur(100px);
   font-size: 18px;
   line-height: 23px;
   color: #15293f;
   font-weight: 500;
+}
+
+.wwa-para-content-box p:last-child{
+  margin-bottom: 0px;
 }
 
 .wwa-core-values {
@@ -4725,7 +4767,7 @@ img.better-together-img {
 
 .wwa-we-are-hiring {
   margin-top: 70px;
-  margin-bottom: 160px;
+  margin-bottom: 78px;
 }
 
 .wwa-we-are-hiring-content-wrapper {
@@ -4795,6 +4837,14 @@ img.better-together-img {
   .wwa-we-are-hiring-content {
     width: auto;
   }
+
+  .wwa-para-content-box{
+    padding: 40px;
+  }
+
+  .wwa-meet-our-team-leader-gird{
+    gap: 37px;
+  }
 }
 
 @media (max-width: 900px) {
@@ -4814,18 +4864,21 @@ img.better-together-img {
 @media (max-width: 500px) {
   .wwa-hero-section h1 {
     width: auto;
+    line-height: 41px;
   }
 
   .wwa-para-content-box {
     padding: 30px;
+    font-weight: 400;
   }
 
   .wwa-para-box-wrapper {
-    margin-top: -30xp;
+    margin-top: -27px;
   }
 
   .wwa-meet-our-team-content p {
     width: auto;
+    text-align: center;
   }
 
   .wwa-meet-our-team-leader-gird {
@@ -4835,6 +4888,7 @@ img.better-together-img {
 
   .wwa-we-are-hiring-content p {
     width: auto;
+    text-align: center;
   }
 
   .wwa-we-are-hiring-img {
@@ -4848,6 +4902,21 @@ img.better-together-img {
   .wwa-meet-our-team-content {
     margin-top: 60px;
   }
+
+  .wwa-we-are-hiring-content{
+    text-align: center;
+  }
+
+  .wwa-we-are-hiring {
+    margin-top: 58px;
+    margin-bottom: 62px;
+}
+
+.wwa-we-are-hiring-content h2{
+  margin-bottom: 29px;
+}
+
+
 }
 
 /* Who we are? CSS end ----------------------------------- */
