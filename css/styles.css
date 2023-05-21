@@ -1076,8 +1076,9 @@ header {
 .content-section {
   background-image: url("../images/new-footer.svg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%;
   margin-top: 70px;
+  background-position-y: 101%;
 }
 
 img.better-together-img {
@@ -1595,7 +1596,10 @@ img.better-together-img {
   }
 
   .content-section {
-    background-position-y: 400px;
+    padding: 0px 20px;
+    margin-top: 39px;
+    background-position-y: 101%;
+    background-size: 240%;
   }
 
   .menu-dropdown-image {
@@ -2836,7 +2840,7 @@ img.better-together-img {
 
 .blog-content-section {
   margin-top: 92px;
-  margin-bottom: 106px;
+  margin-bottom: 92px;
 }
 
 .blog-card-wrapper {
@@ -2892,7 +2896,7 @@ img.better-together-img {
 }
 
 .pagination {
-  margin-top: 150px;
+  margin-top: 92px;
   justify-content: flex-end;
 }
 
@@ -3076,6 +3080,11 @@ img.better-together-img {
 }
 
 @media (max-width: 500px) {
+
+  .blog-content-section{
+    margin-bottom: 92px;
+  }
+
   .blog-card-wrapper {
     grid-template-columns: 1fr;
   }
@@ -3094,6 +3103,7 @@ img.better-together-img {
 
   .pagination {
     justify-content: center;
+    margin-top: 92px;
   }
 
   /* id footer mobile fix */
