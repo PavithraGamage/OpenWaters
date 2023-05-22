@@ -120,7 +120,7 @@ header {
   background: #ff6332;
   border-radius: 100px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 20px;
   line-height: 22px;
   letter-spacing: 0.5px;
@@ -132,7 +132,7 @@ header {
 }
 
 .hero-company-logo {
-  margin-top: 16px;
+  margin-top: 6px;
 }
 
 .grow-your-programs {
@@ -671,7 +671,7 @@ header {
 }
 
 .integrations .testimonials-heading {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .integrations .at-glance-para {
@@ -696,6 +696,7 @@ header {
   line-height: 51px;
   color: #3196f5;
   text-align: center;
+  margin-bottom: 40px;
 }
 
 /* industry slider css start */
@@ -779,6 +780,7 @@ header {
   font-size: 44px;
   line-height: 51px;
   text-align: center;
+  margin-bottom: 23px;
 }
 
 .at-glance-title span {
@@ -789,8 +791,8 @@ header {
   text-align: center;
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 29px;
+  font-size: 16px;
+  line-height: 23px;
   color: #15293f;
   width: 464.32px;
 }
@@ -807,6 +809,10 @@ header {
   width: 159px;
   height: 50px;
   margin-top: 50px;
+}
+
+.integrations-at-glance-btn {
+  margin-top: 16px;
 }
 
 .testimonials {
@@ -1029,7 +1035,7 @@ header {
   backdrop-filter: blur(1px);
   z-index: 8;
   position: relative;
-  top: 88px;
+  top: 92px;
 }
 
 .footer-cta-content-wrapper {
@@ -1229,7 +1235,30 @@ img.better-together-img {
   }
 
   .hero-section {
-    height: 30vh;
+    height: 40vh;
+    background-position: 60% 0%;
+  }
+
+  .the-power-of-open-water-container-p{
+    font-size: 17.2903px;
+    line-height: 24px;
+  }
+
+  .the-open-water-platform-heading-contents{
+    margin-bottom: 40px;
+  }
+
+  .at-glance-title{
+    margin-bottom: 16px;
+  }
+
+  .the-power-of-open-water-container{
+    padding-top: 90px;
+  }
+
+  .grow-your-programs {
+    margin-top: 78px;
+    margin-bottom: 66px;
   }
 
   .testimonial-slider {
@@ -1447,19 +1476,32 @@ img.better-together-img {
   }
 
   .the-power-of-open-water-box h4 {
-    font-size: 37px;
+    font-size: 30px;
   }
 }
 
 @media (max-width: 500px) {
   .hero-section {
-    background-image: url("../images/ow-home-mobile-hero-image.svg");
+    background-image: url("../images/ow-home-mobile-hero-image-new.svg");
     height: 79vh;
   }
 
   .h1-headding {
     width: auto;
     font-size: 48px;
+    line-height: 48px;
+  }
+
+  .hero-para{
+    margin-top: 11px;
+  }
+
+  .h2-headding{
+    line-height: 43.5px;
+  }
+
+  .grow-your-programs-contents h5{
+    font-size: 18px;
   }
 
   .hero-company-logo {
@@ -1533,7 +1575,7 @@ img.better-together-img {
   }
 
   .footer-cta {
-    height: 750px;
+    height: 665px;
     justify-content: flex-start;
     background-image: url("/images/mobile-footer-cta-new-image.svg");
     background-repeat: no-repeat;
@@ -1574,8 +1616,16 @@ img.better-together-img {
     width: 90%;
   }
 
+  img.better-together-mobile-img{
+    width: 100%;
+  }
+
+  .testimonials{
+    padding-top: 75px;
+  }
+
   .the-power-of-open-water-box h4 {
-    font-size: 35px;
+    font-size: 32px;
   }
 
   .desktop-software-col {
@@ -3126,7 +3176,7 @@ img.better-together-img {
     background-image: url("/images/blog-details-mobile-background.svg");
   }
 
-  .product-demos-header h1{
+  .product-demos-header h1 {
     font-size: 40px;
     line-height: 48px;
   }
@@ -3512,7 +3562,7 @@ img.better-together-img {
     width: 65px;
   }
 
-  .blog-details-main-content{
+  .blog-details-main-content {
     width: 100%;
   }
 
@@ -4166,7 +4216,7 @@ img.better-together-img {
   justify-content: center;
 }
 
-.cp-our-core-values-mobile-img{
+.cp-our-core-values-mobile-img {
   display: none;
 }
 
@@ -4348,11 +4398,11 @@ img.better-together-img {
     width: 100%;
   }
 
-  .cp-our-core-values{
+  .cp-our-core-values {
     padding-bottom: 107px;
   }
 
-  .wwa-meet-our-team{
+  .wwa-meet-our-team {
     padding-top: 50px;
   }
 }
@@ -4365,7 +4415,6 @@ img.better-together-img {
   .cp-our-core-values-contents img {
     width: 100%;
   }
-
 
   .cp-perks-benefits-grid-wrapper {
     width: auto;
@@ -4398,11 +4447,11 @@ img.better-together-img {
     margin-bottom: 40px;
   }
 
-  .cp-our-core-values-desktop-img{
+  .cp-our-core-values-desktop-img {
     display: none;
   }
 
-  .cp-our-core-values-mobile-img{
+  .cp-our-core-values-mobile-img {
     display: block;
   }
 
@@ -4666,7 +4715,7 @@ img.better-together-img {
   font-weight: 500;
 }
 
-.wwa-para-content-box p:last-child{
+.wwa-para-content-box p:last-child {
   margin-bottom: 0px;
 }
 
@@ -4846,11 +4895,11 @@ img.better-together-img {
     width: auto;
   }
 
-  .wwa-para-content-box{
+  .wwa-para-content-box {
     padding: 40px;
   }
 
-  .wwa-meet-our-team-leader-gird{
+  .wwa-meet-our-team-leader-gird {
     gap: 37px;
   }
 }
@@ -4911,20 +4960,18 @@ img.better-together-img {
     margin-top: 60px;
   }
 
-  .wwa-we-are-hiring-content{
+  .wwa-we-are-hiring-content {
     text-align: center;
   }
 
   .wwa-we-are-hiring {
     margin-top: 58px;
     margin-bottom: 62px;
-}
+  }
 
-.wwa-we-are-hiring-content h2{
-  margin-bottom: 29px;
-}
-
-
+  .wwa-we-are-hiring-content h2 {
+    margin-bottom: 29px;
+  }
 }
 
 /* Who we are? CSS end ----------------------------------- */
