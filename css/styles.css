@@ -1091,6 +1091,10 @@ img.better-together-img {
   margin-bottom: -90px;
 }
 
+.better-together-mobile-img {
+  display: none;
+}
+
 .footer-headings {
   font-style: normal;
   font-weight: 800;
@@ -1239,20 +1243,20 @@ img.better-together-img {
     background-position: 60% 0%;
   }
 
-  .the-power-of-open-water-container-p{
+  .the-power-of-open-water-container-p {
     font-size: 17.2903px;
     line-height: 24px;
   }
 
-  .the-open-water-platform-heading-contents{
+  .the-open-water-platform-heading-contents {
     margin-bottom: 40px;
   }
 
-  .at-glance-title{
+  .at-glance-title {
     margin-bottom: 16px;
   }
 
-  .the-power-of-open-water-container{
+  .the-power-of-open-water-container {
     padding-top: 90px;
   }
 
@@ -1492,15 +1496,15 @@ img.better-together-img {
     line-height: 48px;
   }
 
-  .hero-para{
+  .hero-para {
     margin-top: 11px;
   }
 
-  .h2-headding{
+  .h2-headding {
     line-height: 43.5px;
   }
 
-  .grow-your-programs-contents h5{
+  .grow-your-programs-contents h5 {
     font-size: 18px;
   }
 
@@ -1553,7 +1557,13 @@ img.better-together-img {
   }
 
   .cta-headding {
-    font-size: 30px;
+    font-size: 29px;
+    line-height: 38px;
+    padding: 38px;
+  }
+
+  .cta-background {
+    background-position: 85% 0%;
   }
 
   .testimonials-heading {
@@ -1561,7 +1571,7 @@ img.better-together-img {
     padding-right: var(--bs-gutter-x, 0.75rem);
     padding-left: var(--bs-gutter-x, 0.75rem);
     font-size: 40px;
-    line-height: 45px;
+    line-height: 37px;
   }
 
   .testimonial-para {
@@ -1614,13 +1624,16 @@ img.better-together-img {
   img.better-together-img {
     margin-bottom: -55px;
     width: 90%;
+    display: none;
   }
 
-  img.better-together-mobile-img{
+  .better-together-mobile-img {
+    display: block;
     width: 100%;
+    margin-bottom: -88px;
   }
 
-  .testimonials{
+  .testimonials {
     padding-top: 75px;
   }
 
@@ -1710,6 +1723,10 @@ img.better-together-img {
 
   .faq-section {
     padding-top: 70px;
+  }
+
+  .home-page-cta{
+    margin-bottom: 56px;
   }
 }
 
@@ -2765,6 +2782,14 @@ img.better-together-img {
 @media (max-width: 1200px) {
   .id-h1-wrapper {
     margin-bottom: 55px;
+  }
+
+  .id-right-bar h4{
+    line-height: 29px;
+  }
+
+  .pd-videos-and-resources{
+    margin-bottom: 0px !important;
   }
 }
 
@@ -4076,6 +4101,10 @@ img.better-together-img {
   padding-top: 0px;
 }
 
+.contact-us-reviews-img-mobile{
+  display: none;
+}
+
 /* Contact Us responsive ------------------------------------ */
 @media (max-width: 1200px) {
   .contact-box {
@@ -4107,8 +4136,31 @@ img.better-together-img {
 }
 
 @media (max-width: 500px) {
+
+  .contact-main-col-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-main-col-wrapper h1{
+  text-align: center;
+  font-size: 40px;
+  line-height: 43px;
+  margin-bottom: 20px;
+}
+
   .contact-main-col-wrapper p {
     width: auto;
+    text-align: center;
+  }
+
+  .contact-us-reviews-img-mobile{
+    display: block;
+  }
+
+  .contact-us-reviews-img-desktop{
+    display: none;
   }
 
   .contact-box {
@@ -4130,6 +4182,7 @@ img.better-together-img {
 
   .contact-main-section {
     background-position: 0% 100%;
+    padding-bottom: 120px;
   }
 }
 
@@ -4240,8 +4293,8 @@ img.better-together-img {
 .cp-our-core-values-contents p {
   width: 590.3px;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 29px;
+  font-size: 16px;
+  line-height: 24px;
   color: #15293f;
   margin-bottom: 75px;
 }
@@ -4432,10 +4485,22 @@ img.better-together-img {
 @media (max-width: 500px) {
   .career-page-hero-section-contents h1 {
     text-align: center;
+    font-size: 40px;
+    line-height: 43px;
+  }
+
+  .career-page-hero-section-contents img {
+    width: 77%;
+  }
+
+  .image-section {
+    top: -373px;
+    margin-bottom: -360px;
   }
 
   .cp-main-image-wrapper img {
     margin-top: 50px;
+    border-radius: 15px;
   }
 
   .cp-our-mission-section-content {
@@ -4482,8 +4547,19 @@ img.better-together-img {
   }
 
   .cp-current-openings-job-list h5 {
-    font-size: 25px;
-    line-height: 33px;
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .cp-our-core-values-contents h2{
+    font-size: 44px;
+    line-height: 40px;
+    margin-bottom: 28px;
+  }
+
+  .cp-perks-benefits-content h2{
+    font-size: 44px;
+    line-height: 40px;
   }
 }
 
@@ -5362,6 +5438,10 @@ img.better-together-img {
   width: 880px;
 }
 
+.ow-number-one-platforms-2-mobile-img{
+  display: none;
+}
+
 .ow-number-one-platforms-2-divider {
   margin-top: 80px;
 }
@@ -5586,6 +5666,10 @@ img.better-together-img {
 
 /* Why Open Water responsive ------------------------------------ */
 @media (max-width: 1200px) {
+
+  .why-open-water-hero-section {
+    height: 660px;
+  }
   .wow-trusted-leaders-section img {
     width: 80%;
   }
@@ -5602,6 +5686,19 @@ img.better-together-img {
   .customer-love-card-content-margin {
     margin-left: 50px;
   }
+
+  .number-one-platform-product-grid{
+    gap: 30px;
+    margin-bottom: 100px;
+  }
+
+  .wow-trusted-leaders-btn-wrapper button{
+    width: 100%;
+  }
+
+  .wow-slider-section {
+    margin-bottom: 109px;
+}
 }
 
 @media (max-width: 900px) {
@@ -5662,7 +5759,26 @@ img.better-together-img {
 
   .number-one-platform-product-grid {
     grid-template-columns: 1fr 1fr;
+    margin-top: 43px;
   }
+
+  .ow-number-one-platforms-2-desktop-img{
+    display: none;
+  }
+
+  .ow-number-one-platforms-2-mobile-img{
+    display: block;
+  }
+
+  .ow-number-one-platforms-2-divider {
+    margin-top: 32px;
+}
+
+.ow-number-one-platforms-2-divider-md4 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
   .ow-number-one-platforms-2 h2 {
     text-align: center;
@@ -5672,12 +5788,17 @@ img.better-together-img {
     width: 100%;
   }
 
+  .ow-number-one-platforms-2-divider-img{
+    margin-top: 70px;
+  }
+
   .ow-number-one-platforms-2-divider-img {
     margin-top: 50px;
   }
 
   .wow-trusted-leaders-content-wrapper h4 {
     text-align: center;
+    width: 250px;
   }
 
   .wow-trusted-leaders-btn-wrapper {
