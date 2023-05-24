@@ -2845,6 +2845,16 @@ img.better-together-img {
     grid-template-columns: 1fr;
   }
 
+  .id-h1-wrapper h1{
+    font-size: 33px;
+    line-height: 37px;
+  }
+
+  .id-h1-wrapper p{
+    font-size: 18px;
+    line-height: 25px;
+  }
+
   .id-ow-imis-overview img {
     width: 100%;
   }
@@ -5753,6 +5763,28 @@ img.better-together-img {
     width: auto;
   }
 
+  .number-one-platform-section{
+    padding-top: 80px;
+    padding-bottom: 45px;
+  }
+
+
+  .wow-trusted-leaders-section{
+    margin-top: 64px;
+  }
+
+  .customer-love-section{
+    margin-bottom: 0px;
+  }
+  .customer-love-section h2{
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .customer-love-section p{
+    font-size: 18px;
+    line-height: 23px;
+  }
   .number-one-platform-section-content h2 {
     width: auto;
   }
