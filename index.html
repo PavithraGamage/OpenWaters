@@ -669,7 +669,7 @@
     <div class="container hero-contents">
       <h1 class="h1-headding">We’ll help you Navigate</h1>
       <p class="hero-para">Software & support to empower your mission</p>
-      <a href="http://google.lk">
+      <a href="#grow-your-programs">
         <button class="hero-btn">Learn More</button>
       </a>
 
@@ -683,7 +683,7 @@
     </div>
   </section>
 
-  <section class="grow-your-programs">
+  <section class="grow-your-programs" id="grow-your-programs">
     <div class="container grow-your-programs-contents">
       <h2 class="h2-headding">
         <span>Grow your programs</span> without the migraines
@@ -700,15 +700,34 @@
       <div id="grow-your-programs-lottie"></div>
 
 
+      <div class="watch-btn-wrapper-main">
+        <div class="watch-btn-wrapper" data-bs-toggle="modal" data-bs-target="#exampleModal" id="pop-btn">
+          <img src="images/watch-btn-icon.svg" class="watch-btn-icon" alt="" />
+          Watch the video
+        </div>
+      </div>
+
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-body" id="iframe-body"></div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 
       <div class="watch-btn-wrapper" data-bs-toggle="modal" data-bs-target="#exampleModal" id="pop-btn">
         <img src="images/watch-btn-icon.svg" class="watch-btn-icon" alt="" />
         Watch the video
-        <!-- Modal -->
+        Modal
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
               <div class="modal-body" id="iframe-body">
-                <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 
 
 
@@ -718,7 +737,11 @@
           </div>
         </div>
 
-      </div>
+      </div> -->
+
+
+
+
     </div>
   </section>
 
@@ -866,7 +889,7 @@
   <section class="industry-leaders">
     <h2>Trusted by the Industry Leaders</h2>
 
-    <div class="swiper industry-swiper">
+    <!-- <div class="swiper industry-swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <img src="images/ford-foundation.svg" alt="" />
@@ -905,7 +928,29 @@
           <img src="images/texas.svg" alt="" />
         </div>
       </div>
+    </div> -->
+
+    <div class="container">
+      <div class="industry-leaders-grid-wrapper">
+
+        <div class="industry-leaders-grid">
+          <img src="images/ford-foundation.svg" alt="" />
+          <img src="images/prsa.svg" alt="" />
+          <img src="images/james.svg" alt="" />
+          <img src="images/oracal.svg" alt="" />
+          <img src="images/asae.svg" alt="" />
+          <img src="images/texas.svg" alt="" />
+
+        </div>
+
+
+      </div>
+
     </div>
+
+
+
+
   </section>
 
   <section class="home-page-cta">
@@ -1747,6 +1792,23 @@
   });
 
 </script>
+
+<!-- lottie video watch btn -->
+<script>
+
+  var watch_video_btn = document.querySelector('.watch-btn-wrapper-main');
+  var pop_btn_active = document.querySelector('.modal');
+
+  watch_video_btn.addEventListener('click', function () {
+    watch_video_btn.style.display = 'none';
+  });
+
+  pop_btn_active.addEventListener('click', function () {
+    watch_video_btn.style.display = 'block';
+  });
+ 
+</script>
+
 
 
 </html>

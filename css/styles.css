@@ -6,6 +6,10 @@
   font-family: "Inter", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .link-to {
   text-decoration: none;
 }
@@ -138,6 +142,7 @@ header {
 .grow-your-programs {
   margin-top: 65px;
   margin-bottom: 100px;
+  position: relative;
 }
 
 .grow-your-programs-contents {
@@ -190,16 +195,30 @@ header {
   padding-bottom: 21px;
 }
 
+.watch-btn-wrapper-main{
+  padding: 12px;
+  background: rgba(254, 223, 214, 0.33);
+  border-radius: 100px;
+ position: absolute;
+ z-index: 5;
+ top: 600px;
+
+}
+
+.modal-backdrop.show{
+  z-index: 1;
+}
+
 .watch-btn-wrapper {
   background: #ff6332;
-  border: 12px solid #fff5f1;
+  border: none;
   border-radius: 100px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   width: 270px;
-  height: 75px;
+  height: 55px;
   color: #ffffff;
   font-style: normal;
   font-weight: 600;
@@ -214,6 +233,10 @@ header {
   margin-top: 46px;
   margin-bottom: 21px;
   margin-left: -30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
 }
 
 .the-open-water-platform hr {
@@ -1738,6 +1761,16 @@ img.better-together-img {
   .home-page-cta {
     margin-bottom: 56px;
   }
+
+  .watch-btn-wrapper-main{
+    top: 80%;
+    padding: 8px;
+  }
+
+  .watch-btn-wrapper {
+    width: 230px;
+    height: 45px;
+}
 }
 
 /* home page css end --------------------------------------------------- */
@@ -5898,3 +5931,37 @@ img.better-together-img {
 }
 
 /* Why Open Water CSS End ------------------------------- */
+
+/* new client additions home start ------------------------ */
+
+.industry-leaders-grid-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.industry-leaders-grid {
+  width: 885px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.industry-leaders-grid img {
+  width: 100%;
+}
+
+/* responsive ------------------ */
+@media (max-width: 900px) {
+  .industry-leaders-grid {
+    width: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .industry-leaders-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+/* new client additions home end ------------------------ */
