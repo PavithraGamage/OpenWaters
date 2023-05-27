@@ -713,6 +713,7 @@
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-body" id="iframe-body"></div>
+            <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
           </div>
         </div>
       </div>
@@ -1790,6 +1791,20 @@
     iframe_body.innerHTML = iframe;
 
   });
+
+
+  // close event
+  var close_event = document.querySelector('#exampleModal');
+
+  close_event.addEventListener('click', function(){
+
+    iframe_body.innerHTML = null;
+
+  });
+  
+
+
+
 
 </script>
 

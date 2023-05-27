@@ -338,6 +338,8 @@ header {
   visibility: hidden;
   opacity: 0;
   transition: visibility 0.2s linear, opacity 0.2s linear;
+  position: relative;
+  z-index: 100;
 }
 
 .platform-dropdown {
@@ -479,6 +481,8 @@ header {
   visibility: hidden;
   opacity: 0;
   transition: visibility 0.3s linear, opacity 0.3s linear;
+  position: relative;
+  z-index: 100;
 }
 
 .resources-dropdown {
@@ -553,6 +557,8 @@ header {
   visibility: hidden;
   opacity: 0;
   transition: visibility 0.3s linear, opacity 0.3s linear;
+  position: relative;
+  z-index: 100;
 }
 
 .about-dropdown {
@@ -5985,3 +5991,5 @@ img.better-together-img {
   opacity: 1;
   visibility: visible;
 }
+
+
