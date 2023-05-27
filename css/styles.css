@@ -1979,8 +1979,9 @@ img.better-together-img {
 }
 
 .aw-hero-wrapper button {
-  background: #3196f5;
-  border: 12px solid rgba(111, 142, 255, 0.17);
+  background: #FF6332;
+  /* border: 12px solid rgba(111, 142, 255, 0.17); */
+  border: none;
   border-radius: 35px;
   width: 246.19px;
   height: 50px;
@@ -5100,9 +5101,14 @@ img.better-together-img {
   gap: 40px;
 }
 
+.learn-hero-section-btn-wrapper .aw-btn-wrapper{
+  margin-top: 0px;
+}
+
 .learn-hero-section-btn-wrapper button {
   background: #3196f5;
-  border: 9px solid #ffffff2b;
+  /* border: 9px solid #ffffff2b; */
+  border: none;
   border-radius: 35px;
   font-weight: 500;
   font-size: 16px;
@@ -5320,8 +5326,9 @@ img.better-together-img {
 
   .learn-hero-section-btn-wrapper {
     display: flex;
-    gap: 20px;
+    gap: 0px;
     flex-direction: column;
+    align-items: center;
   }
 
   .learn-hero-section {
@@ -5372,7 +5379,8 @@ img.better-together-img {
 
 .why-open-water-hero-section button {
   background: #1c8ef8;
-  border: 9px solid rgba(255, 255, 255, 0.47);
+  /* border: 9px solid rgba(255, 255, 255, 0.47); */
+  border: none;
   border-radius: 35px;
   font-weight: 600;
   font-size: 19.2471px;
@@ -5380,6 +5388,13 @@ img.better-together-img {
   letter-spacing: 0.566091px;
   color: #ffffff;
   padding: 13px 32px;
+}
+
+.why-open-water-hero-section .aw-btn-wrapper{
+  margin-top: 0px;
+  padding: 9px;
+  background: rgba(255, 255, 255, 0.47);;
+
 }
 
 .number-one-platform-section {
