@@ -332,9 +332,12 @@ header {
 }
 
 .platform-dropdown-wrapper {
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.2s linear, opacity 0.2s linear;
 }
 
 .platform-dropdown {
@@ -470,9 +473,12 @@ header {
 }
 
 .resources-dropdown-wrapper {
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s linear, opacity 0.3s linear;
 }
 
 .resources-dropdown {
@@ -541,9 +547,12 @@ header {
 }
 
 .about-dropdown-wrapper {
-  display: none;
+  display: flex;
   flex-direction: column;
   align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s linear, opacity 0.3s linear;
 }
 
 .about-dropdown {
@@ -5965,3 +5974,14 @@ img.better-together-img {
   }
 }
 /* new client additions home end ------------------------ */
+
+
+
+/* menu animations */
+
+
+.menu-active{
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+}

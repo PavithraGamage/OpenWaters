@@ -1,36 +1,36 @@
 // platform drop down start --------------------------------
 function platform_dropdown_show() {
   var box = document.getElementById("platform-dropdown");
-  box.style.display = "flex";
+  box.classList.add('menu-active');
 }
 
 function platform_dropdown_hide() {
   var box = document.getElementById("platform-dropdown");
-  box.style.display = "none";
+  box.classList.remove('menu-active');
 }
 // platform drop down end --------------------------------
 
 // resources drop down start --------------------------------
 function resources_dropdown_show() {
   var box = document.getElementById("resources-dropdown");
-  box.style.display = "flex";
+  box.classList.add('menu-active');
 }
 
 function resources_dropdown_hide() {
   var box = document.getElementById("resources-dropdown");
-  box.style.display = "none";
+  box.classList.remove('menu-active');
 }
 // resources drop down end --------------------------------
 
 // about drop down start --------------------------------
 function about_dropdown_show() {
   var box = document.getElementById("about-dropdown");
-  box.style.display = "flex";
+  box.classList.add('menu-active');
 }
 
 function about_dropdown_hide() {
   var box = document.getElementById("about-dropdown");
-  box.style.display = "none";
+  box.classList.remove('menu-active');
 }
 // about drop down end --------------------------------
 
