@@ -868,6 +868,16 @@ header {
   display: flex;
 }
 
+.testimonial-image-wrapper img:first-child {
+  width: 85px;
+  height: 85px;
+  background: #cfebf0;
+  border: 5px solid #ffffff;
+  box-shadow: 0px 12px 14px rgba(20, 38, 84, 0.15);
+  border-radius: 52px;
+  margin-bottom: 30px;
+}
+
 .testimonial-company-logo {
   margin-left: 30px;
 }
@@ -1725,7 +1735,7 @@ img.better-together-img {
     padding-top: 70px;
   }
 
-  .home-page-cta{
+  .home-page-cta {
     margin-bottom: 56px;
   }
 }
@@ -1979,7 +1989,7 @@ img.better-together-img {
 }
 
 .aw-hero-wrapper button {
-  background: #FF6332;
+  background: #ff6332;
   /* border: 12px solid rgba(111, 142, 255, 0.17); */
   border: none;
   border-radius: 35px;
@@ -2785,11 +2795,11 @@ img.better-together-img {
     margin-bottom: 55px;
   }
 
-  .id-right-bar h4{
+  .id-right-bar h4 {
     line-height: 29px;
   }
 
-  .pd-videos-and-resources{
+  .pd-videos-and-resources {
     margin-bottom: 0px !important;
   }
 }
@@ -2846,12 +2856,12 @@ img.better-together-img {
     grid-template-columns: 1fr;
   }
 
-  .id-h1-wrapper h1{
+  .id-h1-wrapper h1 {
     font-size: 33px;
     line-height: 37px;
   }
 
-  .id-h1-wrapper p{
+  .id-h1-wrapper p {
     font-size: 18px;
     line-height: 25px;
   }
@@ -4112,7 +4122,7 @@ img.better-together-img {
   padding-top: 0px;
 }
 
-.contact-us-reviews-img-mobile{
+.contact-us-reviews-img-mobile {
   display: none;
 }
 
@@ -4147,30 +4157,29 @@ img.better-together-img {
 }
 
 @media (max-width: 500px) {
-
   .contact-main-col-wrapper {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
+  }
 
-.contact-main-col-wrapper h1{
-  text-align: center;
-  font-size: 40px;
-  line-height: 43px;
-  margin-bottom: 20px;
-}
+  .contact-main-col-wrapper h1 {
+    text-align: center;
+    font-size: 40px;
+    line-height: 43px;
+    margin-bottom: 20px;
+  }
 
   .contact-main-col-wrapper p {
     width: auto;
     text-align: center;
   }
 
-  .contact-us-reviews-img-mobile{
+  .contact-us-reviews-img-mobile {
     display: block;
   }
 
-  .contact-us-reviews-img-desktop{
+  .contact-us-reviews-img-desktop {
     display: none;
   }
 
@@ -4562,13 +4571,13 @@ img.better-together-img {
     line-height: 23px;
   }
 
-  .cp-our-core-values-contents h2{
+  .cp-our-core-values-contents h2 {
     font-size: 44px;
     line-height: 40px;
     margin-bottom: 28px;
   }
 
-  .cp-perks-benefits-content h2{
+  .cp-perks-benefits-content h2 {
     font-size: 44px;
     line-height: 40px;
   }
@@ -5101,7 +5110,7 @@ img.better-together-img {
   gap: 40px;
 }
 
-.learn-hero-section-btn-wrapper .aw-btn-wrapper{
+.learn-hero-section-btn-wrapper .aw-btn-wrapper {
   margin-top: 0px;
 }
 
@@ -5390,11 +5399,10 @@ img.better-together-img {
   padding: 13px 32px;
 }
 
-.why-open-water-hero-section .aw-btn-wrapper{
+.why-open-water-hero-section .aw-btn-wrapper {
   margin-top: 0px;
   padding: 9px;
-  background: rgba(255, 255, 255, 0.47);;
-
+  background: rgba(255, 255, 255, 0.47);
 }
 
 .number-one-platform-section {
@@ -5463,7 +5471,7 @@ img.better-together-img {
   width: 880px;
 }
 
-.ow-number-one-platforms-2-mobile-img{
+.ow-number-one-platforms-2-mobile-img {
   display: none;
 }
 
@@ -5691,7 +5699,6 @@ img.better-together-img {
 
 /* Why Open Water responsive ------------------------------------ */
 @media (max-width: 1200px) {
-
   .why-open-water-hero-section {
     height: 660px;
   }
@@ -5712,18 +5719,18 @@ img.better-together-img {
     margin-left: 50px;
   }
 
-  .number-one-platform-product-grid{
+  .number-one-platform-product-grid {
     gap: 30px;
     margin-bottom: 100px;
   }
 
-  .wow-trusted-leaders-btn-wrapper button{
+  .wow-trusted-leaders-btn-wrapper button {
     width: 100%;
   }
 
   .wow-slider-section {
     margin-bottom: 109px;
-}
+  }
 }
 
 @media (max-width: 900px) {
@@ -5778,25 +5785,24 @@ img.better-together-img {
     width: auto;
   }
 
-  .number-one-platform-section{
+  .number-one-platform-section {
     padding-top: 80px;
     padding-bottom: 45px;
   }
 
-
-  .wow-trusted-leaders-section{
+  .wow-trusted-leaders-section {
     margin-top: 64px;
   }
 
-  .customer-love-section{
+  .customer-love-section {
     margin-bottom: 0px;
   }
-  .customer-love-section h2{
+  .customer-love-section h2 {
     font-size: 40px;
     line-height: 40px;
   }
 
-  .customer-love-section p{
+  .customer-love-section p {
     font-size: 18px;
     line-height: 23px;
   }
@@ -5809,23 +5815,23 @@ img.better-together-img {
     margin-top: 43px;
   }
 
-  .ow-number-one-platforms-2-desktop-img{
+  .ow-number-one-platforms-2-desktop-img {
     display: none;
   }
 
-  .ow-number-one-platforms-2-mobile-img{
+  .ow-number-one-platforms-2-mobile-img {
     display: block;
   }
 
   .ow-number-one-platforms-2-divider {
     margin-top: 32px;
-}
+  }
 
-.ow-number-one-platforms-2-divider-md4 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .ow-number-one-platforms-2-divider-md4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
   .ow-number-one-platforms-2 h2 {
     text-align: center;
@@ -5835,7 +5841,7 @@ img.better-together-img {
     width: 100%;
   }
 
-  .ow-number-one-platforms-2-divider-img{
+  .ow-number-one-platforms-2-divider-img {
     margin-top: 70px;
   }
 
