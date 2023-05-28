@@ -2052,7 +2052,7 @@ img.better-together-img {
   margin-top: 43px;
   border-radius: 100px;
   background: rgba(254, 223, 214, 0.33);
-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
   padding: 8px;
 }
 
@@ -4140,8 +4140,7 @@ backdrop-filter: blur(4px);
   outline: none;
 }
 
-
-.input-2-col .dropdown button{
+.input-2-col .dropdown button {
   height: 43px;
   background: #f4f8fb;
   border: 1px solid #cfd3dc;
@@ -4155,11 +4154,11 @@ backdrop-filter: blur(4px);
   font-size: 15px;
 }
 
-.input-2-col .dropdown button:focus{
+.input-2-col .dropdown button:focus {
   box-shadow: none;
 }
 
-.input-2-col select{
+.input-2-col select {
   height: 43px;
   background-color: #f4f8fb;
   border: 1px solid #cfd3dc;
@@ -4167,26 +4166,16 @@ backdrop-filter: blur(4px);
   border-radius: 4px;
 }
 
-
-.input-2-col select:focus{
+.input-2-col select:focus {
   border: 1px solid #cfd3dc;
   box-shadow: none;
 }
 
-.input-2-col .form-select option{
-  background-color: #f4f8fb;
-  border: 1px solid #cfd3dc;
-  box-shadow: none;
-  border-radius: 1px;
-}
-
-
-
-.input-2-col .dropdown .dropdown-menu{
+.input-2-col .dropdown .dropdown-menu {
   width: 100%;
 }
 
-.input-2-col .dropdown .dropdown-toggle::after{
+.input-2-col .dropdown .dropdown-toggle::after {
   content: none;
 }
 
@@ -6093,23 +6082,22 @@ backdrop-filter: blur(4px);
 
 /* responsive ------------------ */
 @media (max-width: 900px) {
- 
-  .the-ow-name-content{
+  .the-ow-name-content {
     width: auto;
   }
 
-  .the-ow-name{
+  .the-ow-name {
     margin-bottom: 0px;
   }
-
 }
 
 @media (max-width: 500px) {
-
-  .the-ow-name-content h4{
+  .the-ow-name-content h4 {
     line-height: 34px;
   }
-
 }
 
 /* who we are new section start ------------------------- */
+
+
+select option:hover{background-color:yellow;}
