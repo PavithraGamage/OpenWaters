@@ -2441,6 +2441,7 @@ img.better-together-img {
 
   .aw-hero {
     background-image: url("/images/awards-software-mobile-background.svg");
+    background-position: 50% 0%;
   }
 
   .aw-hero-wrapper p {
@@ -6127,4 +6128,41 @@ img.better-together-img {
 /* who we are new section start ------------------------- */
 
 
-select option:hover{background-color:yellow;}
+/* Abstract Management Software start ---------------------- */
+
+.am-hero{
+  background-image: url("/images/Group 427321717.svg");
+}
+.abstract-management-software-wrapper .aw-clients {
+  gap: 30px;
+  width: 892px;
+}
+
+@media (max-width: 900px) {
+
+  .abstract-management-software-wrapper .aw-clients {
+    gap: 30px;
+    width: auto;
+  }
+
+
+  .abstract-management-software-wrapper .aw-clients img{
+    width: 85%;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .am-hero{
+    background-image: url("/images/iPhone 14 Pro - 18.svg");
+  }
+
+
+  .abstract-management-software-wrapper .aw-clients img{
+    width: 90%;
+  }
+}
+
+
+/* Abstract Management Software end ---------------------- */
