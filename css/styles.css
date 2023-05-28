@@ -819,6 +819,7 @@ header {
   line-height: 51px;
   text-align: center;
   margin-bottom: 23px;
+  color: #15293F;
 }
 
 .at-glance-title span {
@@ -878,7 +879,7 @@ header {
   font-weight: 700;
   font-size: 48.7195px;
   line-height: 51px;
-  color: #2d3436;
+  color: #15293F;
 }
 
 .testimonials-reviews {
