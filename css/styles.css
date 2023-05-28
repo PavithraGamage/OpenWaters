@@ -3182,6 +3182,13 @@ img.better-together-img {
   margin-top: 20px;
 }
 
+.blog-content-section .register-section img{
+  background: #D9FCFC;
+  padding: 25px;
+  width: 85%;
+
+}
+
 /* The OpenWater Blog responsive */
 @media (max-width: 1200px) {
   .blog-content-section input {
@@ -3198,6 +3205,11 @@ img.better-together-img {
 
   .blog-content-section .dropdown-menu {
     width: 95%;
+  }
+
+  .blog-content-section .register-section img{
+    width: 95%;
+  
   }
 }
 
@@ -3232,6 +3244,11 @@ img.better-together-img {
   .blog-content-section .col-md-9 {
     width: 100%;
     margin-top: 40px;
+  }
+
+  .blog-content-section .register-section img{
+    width: 50%;
+  
   }
 }
 
@@ -3278,6 +3295,11 @@ img.better-together-img {
   .product-demos-header h1 {
     font-size: 40px;
     line-height: 48px;
+  }
+
+  .blog-content-section .register-section img{
+    width: 100%;
+  
   }
 }
 
