@@ -4159,6 +4159,29 @@ backdrop-filter: blur(4px);
   box-shadow: none;
 }
 
+.input-2-col select{
+  height: 43px;
+  background-color: #f4f8fb;
+  border: 1px solid #cfd3dc;
+  font-size: 15px;
+  border-radius: 4px;
+}
+
+
+.input-2-col select:focus{
+  border: 1px solid #cfd3dc;
+  box-shadow: none;
+}
+
+.input-2-col .form-select option{
+  background-color: #f4f8fb;
+  border: 1px solid #cfd3dc;
+  box-shadow: none;
+  border-radius: 1px;
+}
+
+
+
 .input-2-col .dropdown .dropdown-menu{
   width: 100%;
 }
