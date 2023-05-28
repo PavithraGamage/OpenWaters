@@ -196,7 +196,7 @@ header {
 }
 
 .watch-btn-wrapper-main {
-  padding: 12px;
+  padding: 9px;
   background: rgba(254, 223, 214, 0.33);
   border-radius: 100px;
   position: absolute;
@@ -216,8 +216,8 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  width: 270px;
-  height: 55px;
+  width: 250px;
+  height: 45px;
   color: #ffffff;
   font-style: normal;
   font-weight: 600;
@@ -3178,6 +3178,10 @@ img.better-together-img {
   background-color: #fff;
 }
 
+.blog-content-section .register-section{
+  margin-top: 20px;
+}
+
 /* The OpenWater Blog responsive */
 @media (max-width: 1200px) {
   .blog-content-section input {
@@ -3199,14 +3203,14 @@ img.better-together-img {
 
 @media (max-width: 900px) {
   .blog-content-section .col-md-3 {
-    width: 100%;
+    width: 95%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
   }
 
   .blog-content-section .explore-posts {
-    margin-top: 0px;
+    margin-top: 40px;
   }
 
   .blog-content-section input {
@@ -3242,6 +3246,7 @@ img.better-together-img {
 
   .blog-content-section .col-md-3 {
     flex-direction: column;
+    width: 100%;
   }
 
   .blog-content-section .explore-posts {
