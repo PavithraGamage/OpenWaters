@@ -195,17 +195,16 @@ header {
   padding-bottom: 21px;
 }
 
-.watch-btn-wrapper-main{
+.watch-btn-wrapper-main {
   padding: 12px;
   background: rgba(254, 223, 214, 0.33);
   border-radius: 100px;
- position: absolute;
- z-index: 5;
- top: 600px;
-
+  position: absolute;
+  z-index: 5;
+  top: 600px;
 }
 
-.modal-backdrop.show{
+.modal-backdrop.show {
   z-index: 1;
 }
 
@@ -1777,7 +1776,7 @@ img.better-together-img {
     margin-bottom: 56px;
   }
 
-  .watch-btn-wrapper-main{
+  .watch-btn-wrapper-main {
     top: 80%;
     padding: 8px;
   }
@@ -1785,7 +1784,7 @@ img.better-together-img {
   .watch-btn-wrapper {
     width: 230px;
     height: 45px;
-}
+  }
 }
 
 /* home page css end --------------------------------------------------- */
@@ -2041,7 +2040,7 @@ img.better-together-img {
   /* border: 12px solid rgba(111, 142, 255, 0.17); */
   border: none;
   border-radius: 35px;
-  width: 246.19px;
+  width: 210px;
   height: 50px;
   font-weight: 600;
   font-size: 20px;
@@ -2052,8 +2051,9 @@ img.better-together-img {
 .aw-btn-wrapper {
   margin-top: 43px;
   border-radius: 100px;
-  background: rgba(111, 142, 255, 0.17);
-  padding: 12px;
+  background: rgba(254, 223, 214, 0.33);
+backdrop-filter: blur(4px);
+  padding: 8px;
 }
 
 #online_form {
@@ -5981,15 +5981,85 @@ img.better-together-img {
 }
 /* new client additions home end ------------------------ */
 
-
-
 /* menu animations */
 
-
-.menu-active{
+.menu-active {
   display: flex;
   opacity: 1;
   visibility: visible;
 }
 
+/* who we are new section start ------------------------- */
 
+.the-ow-name {
+  margin: 100px 0px;
+}
+
+.the-ow-name-content-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.the-ow-name-content {
+  width: 940px;
+  text-align: center;
+}
+
+.the-ow-name-content h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 51px;
+  color: #15293f;
+  margin-bottom: 30px;
+}
+
+.the-ow-name-content h4 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 51px;
+  color: #ff6332;
+  margin-bottom: 20px;
+}
+
+.the-ow-name-content p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #15293f;
+  margin-bottom: 30px;
+}
+
+.the-ow-name-content h3 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 51px;
+  color: #3196f5;
+}
+
+/* responsive ------------------ */
+@media (max-width: 900px) {
+ 
+  .the-ow-name-content{
+    width: auto;
+  }
+
+  .the-ow-name{
+    margin-bottom: 0px;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .the-ow-name-content h4{
+    line-height: 34px;
+  }
+
+}
+
+/* who we are new section start ------------------------- */
