@@ -6199,8 +6199,20 @@ img.better-together-img {
   }
 }
 
-
-
-
-
 /* Scholarship Management Software CSS End --------------- */
+
+/* Fellowship Management Software CSS Start -------------- */
+
+.fm-hero{
+  background-image: url("/images/Group\ 427321720.svg");
+}
+
+
+@media (max-width: 500px) {
+  .fm-hero {
+    background-image: url("/images/iPhone 14 Pro - 21.svg");
+  }
+}
+
+
+/* Fellowship Management Software CSS End -------------- */
