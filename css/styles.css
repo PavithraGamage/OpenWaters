@@ -6134,6 +6134,7 @@ img.better-together-img {
 .am-hero {
   background-image: url("/images/Group 427321717.svg");
 }
+
 .abstract-management-software-wrapper .aw-clients {
   gap: 30px;
   width: 892px;
@@ -6161,3 +6162,23 @@ img.better-together-img {
 }
 
 /* Abstract Management Software end ---------------------- */
+
+/* Grant Management Software CSS start -------------------- */
+
+.grant-management-software-wrapper .aw-clients img{
+  width: 100%;
+}
+
+.ag-hero{
+  background-image: url("/images/Group\ 427321718.svg");
+}
+
+@media (max-width: 500px) {
+  .am-hero {
+    background-image: url("/images/iPhone 14 Pro - 19.svg");
+  }
+}
+
+
+
+/* Grant Management Software CSS end -------------------- */
