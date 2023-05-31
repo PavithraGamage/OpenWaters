@@ -836,7 +836,7 @@
               scholarship recipients.
             </p>
           </div>
-          <div class="col open-water-platform-box">
+          <div class="col open-water-platform-box" id="power-animation-trigger-point">
             <hr class="blue" />
 
 
@@ -1848,12 +1848,12 @@
 <script>
 
 
-const numberContainer = document.querySelector('#number-counter');
+const animation_trigger_point = document.querySelector('#power-animation-trigger-point');
 const animate = document.querySelector('.power-of-open-water-box-wrapper');
 
 window.addEventListener('scroll', () => {
   const scrolled = window.scrollY;
-  const elementPosition = numberContainer.offsetTop;
+  const elementPosition = animation_trigger_point.offsetTop;
   
 
   if (scrolled >= elementPosition) {
