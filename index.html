@@ -13,6 +13,8 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
   <!-- swiper js css -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <!-- animate css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <!-- home js -->
   <script src="js/main.js"></script>
   <!-- bootstrap js cdn -->
@@ -30,7 +32,7 @@
 
 <body>
   <!-- navigation start -->
-  <header>
+  <header class="animate__animated">
     <nav class="nav-bar">
       <div class="container">
         <div class="row">
@@ -868,7 +870,7 @@
         </p>
       </div>
 
-      <div class="power-of-open-water-box-wrapper">
+      <div class="power-of-open-water-box-wrapper animate__animated">
 
 
         <div class="the-open-water-border-box">
@@ -1789,18 +1791,7 @@
     });
   }
 
-  const numberContainer = document.querySelector('#number-counter');
 
-  window.addEventListener('scroll', () => {
-    const scrolled = window.scrollY;
-    const elementPosition = numberContainer.offsetTop;
-
-    if (scrolled >= elementPosition) {
-      counter();
-
-    }
-
-  })
 
 
 </script> -->
@@ -1834,9 +1825,6 @@
   });
 
 
-
-
-
 </script>
 
 <!-- lottie video watch btn -->
@@ -1852,6 +1840,30 @@
   pop_btn_active.addEventListener('click', function () {
     watch_video_btn.style.display = 'block';
   });
+
+</script>
+
+
+<!-- animation trigger -->
+<script>
+
+
+const numberContainer = document.querySelector('#number-counter');
+const animate = document.querySelector('.power-of-open-water-box-wrapper');
+
+window.addEventListener('scroll', () => {
+  const scrolled = window.scrollY;
+  const elementPosition = numberContainer.offsetTop;
+  
+
+  if (scrolled >= elementPosition) {
+    
+    animate.classList.add('animate__fadeInUp', 'power-of-open-water-box-wrapper-active')
+  }
+
+
+})
+
 
 </script>
 

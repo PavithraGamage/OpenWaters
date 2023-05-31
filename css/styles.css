@@ -724,6 +724,11 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 25px;
+  visibility: hidden;
+}
+
+.power-of-open-water-box-wrapper-active{
+ visibility: visible;
 }
 
 .industry-leaders {
