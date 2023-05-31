@@ -726,7 +726,7 @@ header {
   gap: 25px;
   visibility: hidden;
   --animate-delay: 0s;
-  --animate-duration: 0.75s;
+  --animate-duration: 1s;
 }
 
 .power-of-open-water-box-wrapper-active{
