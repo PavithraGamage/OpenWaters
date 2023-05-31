@@ -725,6 +725,8 @@ header {
   grid-template-columns: 1fr 1fr;
   gap: 25px;
   visibility: hidden;
+  --animate-delay: 0s;
+  --animate-duration: 0.3s;
 }
 
 .power-of-open-water-box-wrapper-active{
